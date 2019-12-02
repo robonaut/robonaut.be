@@ -1,0 +1,89 @@
+version: 2
+defaults: &defaults
+  working_directory: ~/robonaut.be
+  docker:
+    - image: circleci/node:12.13
+
+whitelist: &whitelist
+  paths:
+    - .npmignore
+    - tsconfig.json
+    - .babel.config.js
+    - .eslintrc.js
+    - webpack/*
+    - node_modules/*
+    - test/*
+    - src/*
+    - Makefile
+    - package-lock.json
+    - package.json
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: "Checking Versions"
+          command: |
+            node --version
+            npm --version
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: "npm install"
+          command: npm i
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: ~/robonaut.be
+          <<: *whitelist
+
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/robonaut.be
+      - run:
+          name: "npm test"
+          command: npm t
+      - persist_to_workspace:
+          root: ~/robonaut.be
+          <<: *whitelist
+
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/robonaut.be
+      # - setup_remote_docker
+      - run:
+          name: Install aws-cli
+          command: |
+            sudo apt-get install python-dev
+            curl -O https://bootstrap.pypa.io/get-pip.py
+            sudo python get-pip.py
+            sudo pip install awscli
+      - run:
+          name: "build"
+          command: make build
+      - run:
+          name: "deploy"
+          command: make deploy
+
+workflows:
+  version: 2
+  build-test-deploy:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
