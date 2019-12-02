@@ -1,4 +1,5 @@
 module.exports = {
+  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
     es6: true,
@@ -6,6 +7,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
   globals: {
@@ -21,10 +24,13 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier', 'simple-import-sort'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'simple-import-sort'],
   rules: {
     'react/display-name': 0,
     'react/prop-types': 1,
+    curly: 'error',
+    'prettier/prettier': ['error'],
+    'no-console': 1,
     eqeqeq: 1,
     'simple-import-sort/sort': 1,
     'require-atomic-updates': 1,

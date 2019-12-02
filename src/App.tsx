@@ -3,7 +3,7 @@ import { renderToString } from 'react-dom/server';
 
 const App: React.StatelessComponent<{}> = () => (
   <div className="container">
-    <h1>Coming Soon!</h1>
+    <h1>Coming!</h1>
   </div>
 );
 
