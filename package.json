@@ -10,8 +10,7 @@
     "lint": "eslint --ext .tsx,.ts ./src/",
     "lint:fix": "npm run lint -- --fix",
     "test": "",
-    "typecheck": "tsc -p tsconfig.json",
-    "render": "ts-node render"
+    "typecheck": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
