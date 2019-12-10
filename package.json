@@ -10,7 +10,8 @@
     "lint": "eslint --ext .tsx,.ts ./src/",
     "lint:fix": "npm run lint -- --fix",
     "test": "",
-    "typecheck": "tsc -p tsconfig.json"
+    "typecheck": "tsc -p tsconfig.json",
+    "render": "ts-node render"
   },
   "repository": {
     "type": "git",
@@ -44,7 +45,7 @@
     "eslint-plugin-prettier": "3.1.1",
     "eslint-plugin-react": "7.17.0",
     "eslint-plugin-simple-import-sort": "5.0.0",
-    "html-webpack-plugin": "3.2.0",
+    "html-webpack-plugin": "4.0.0-beta.11",
     "husky": "3.1.0",
     "prettier": "1.19.1",
     "ts-loader": "6.2.1",
@@ -55,8 +56,10 @@
     "webpack-dev-server": "3.9.0"
   },
   "dependencies": {
+    "navi": "0.13.6",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "react-navi": "0.13.6"
   },
   "husky": {
     "hooks": {

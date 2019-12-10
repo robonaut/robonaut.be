@@ -1,7 +1,8 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import { renderHtml } from '../src/App';
 import webpack from 'webpack';
+import { renderStatic } from '../src/App';
+import { routeDefinitions } from '../src/routes';
 
 const configuration: webpack.Configuration = {
   entry: {
@@ -28,16 +29,19 @@ const configuration: webpack.Configuration = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Robonaut',
-      filename: 'index.html',
-      template: 'src/index.html',
-      favicon: 'src/favicon.ico',
-      app: renderHtml().app,
-      inject: true,
-    }),
-  ],
+  plugins: Object.keys(routeDefinitions).map(
+    routePath =>
+      new HtmlWebpackPlugin({
+        filename:
+          routePath === '/'
+            ? 'index.html'
+            : path.join(routePath.slice(1), 'index.html'),
+        template: 'src/index.html',
+        favicon: 'src/favicon.ico',
+        templateParameters: renderStatic(routePath),
+        inject: true,
+      })
+  ),
   resolve: {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
     extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
