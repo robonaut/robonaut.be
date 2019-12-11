@@ -1,7 +1,6 @@
 .PHONY: build gzipHtml provision
 
 build:
-	- rm -rf dist
 	npm run build
 	make -s gzip
 

@@ -10,18 +10,11 @@ const configuration: webpack.Configuration = {
   },
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: 'js/[name].[hash].js',
+    filename: 'js/[name].[contenthash].js',
     publicPath: '/',
   },
   module: {
     rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules\/(?!(antd)\/).*/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
@@ -44,7 +37,7 @@ const configuration: webpack.Configuration = {
   ),
   resolve: {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
-    extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   target: 'web',
 };
@@ -58,6 +51,11 @@ const developmentConfig: webpack.Configuration = {
 const productionConfig: webpack.Configuration = {
   ...configuration,
   mode: 'production',
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
 };
 
 const webpackConfig: webpack.Configuration =
