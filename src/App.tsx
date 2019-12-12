@@ -14,17 +14,12 @@ const App: React.StatelessComponent<{}> = () => (
 
 export default App;
 
-export const renderStatic = async (
-  url: string
-): Promise<{
-  body: string;
-  title: string;
-}> => {
+export function renderStatic(url: string): string {
   const body = renderToString(
     <ServerLocation url={url}>
       <App />
     </ServerLocation>
   );
 
-  return { body, title: 'jiha' };
-};
+  return body;
+}

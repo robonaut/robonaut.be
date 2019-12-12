@@ -22,12 +22,15 @@ const configuration: webpack.Configuration = {
     ],
   },
   plugins: routeDefinitions.map(
-    ({ path }: { path: string }) =>
+    ({ path, title }: { path: string; title: string }) =>
       new HtmlWebpackPlugin({
         filename: path === '/' ? 'index.html' : `${path.slice(1)}/index.html`,
         template: 'src/index.html',
         favicon: 'src/favicon.ico',
-        templateParameters: renderStatic(path),
+        templateParameters: {
+          title,
+          body: renderStatic(path),
+        },
         inject: true,
       })
   ),
