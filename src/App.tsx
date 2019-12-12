@@ -1,15 +1,14 @@
-import { createMemoryNavigation } from 'navi';
-import React, { Suspense } from 'react';
+import { Router, ServerLocation } from '@reach/router';
+import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { Router, View } from 'react-navi';
 
-import { routes } from './routes';
+import { routeDefinitions } from './routes';
 
 const App: React.StatelessComponent<{}> = () => (
-  <Router routes={routes}>
-    <Suspense fallback={null}>
-      <View />
-    </Suspense>
+  <Router>
+    {routeDefinitions.map(({ Component, path }, routeIdx) => (
+      <Component key={`route-${routeIdx}`} path={path} />
+    ))}
   </Router>
 );
 
@@ -17,17 +16,15 @@ export default App;
 
 export const renderStatic = async (
   url: string
-): Promise<{ body: string; title: string }> => {
-  const navigation = createMemoryNavigation({
-    routes,
-    url,
-  });
-  const currentRoute = await navigation.getRoute();
+): Promise<{
+  body: string;
+  title: string;
+}> => {
   const body = renderToString(
-    <Router navigation={navigation}>
-      <View />
-    </Router>
+    <ServerLocation url={url}>
+      <App />
+    </ServerLocation>
   );
 
-  return { body, title: currentRoute.title };
+  return { body, title: 'jiha' };
 };

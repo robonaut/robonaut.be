@@ -10,7 +10,6 @@ const configuration: webpack.Configuration = {
   },
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: 'js/[name].[contenthash].js',
     publicPath: '/',
   },
   module: {
@@ -22,16 +21,13 @@ const configuration: webpack.Configuration = {
       },
     ],
   },
-  plugins: Object.keys(routeDefinitions).map(
-    routePath =>
+  plugins: routeDefinitions.map(
+    ({ path }: { path: string }) =>
       new HtmlWebpackPlugin({
-        filename:
-          routePath === '/'
-            ? 'index.html'
-            : path.join(routePath.slice(1), 'index.html'),
+        filename: path === '/' ? 'index.html' : `${path.slice(1)}/index.html`,
         template: 'src/index.html',
         favicon: 'src/favicon.ico',
-        templateParameters: renderStatic(routePath),
+        templateParameters: renderStatic(path),
         inject: true,
       })
   ),
@@ -44,6 +40,10 @@ const configuration: webpack.Configuration = {
 
 const developmentConfig: webpack.Configuration = {
   ...configuration,
+  output: {
+    ...configuration.output,
+    filename: 'js/[name].[hash].js',
+  },
   mode: 'development',
   devtool: 'source-map',
 };
@@ -51,6 +51,10 @@ const developmentConfig: webpack.Configuration = {
 const productionConfig: webpack.Configuration = {
   ...configuration,
   mode: 'production',
+  output: {
+    ...configuration.output,
+    filename: 'js/[name].[contenthash].js',
+  },
   optimization: {
     splitChunks: {
       chunks: 'all',
