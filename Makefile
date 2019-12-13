@@ -1,4 +1,4 @@
-.PHONY: build gzipHtml provision
+.PHONY: build gzip gzipHtml gzipJS gzipCSS deploy
 
 build:
 	npm run build
