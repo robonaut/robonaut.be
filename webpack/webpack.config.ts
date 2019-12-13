@@ -29,7 +29,7 @@ const configuration: webpack.Configuration = {
         favicon: 'src/favicon.ico',
         templateParameters: {
           title,
-          body: renderStatic(path),
+          ...renderStatic(path),
         },
         inject: true,
       })
