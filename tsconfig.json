@@ -11,6 +11,9 @@
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       "noUnusedLocals": true,
-      "resolveJsonModule": true,
-    }
+      "resolveJsonModule": true
+    },
+    "include": [
+      "src"
+    ]
 }
