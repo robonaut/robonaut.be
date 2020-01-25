@@ -2,7 +2,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/robonaut.be
   docker:
-    - image: circleci/node:12.13
+    - image: circleci/node:12.14
 
 whitelist: &whitelist
   paths:
@@ -58,7 +58,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/robonaut.be
-      # - setup_remote_docker
       - run:
           name: Install aws-cli
           command: |
