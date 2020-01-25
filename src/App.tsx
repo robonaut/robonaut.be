@@ -9,6 +9,7 @@ import { MainContainer } from './style/layout';
 
 const App: React.StatelessComponent<{}> = () => (
   <MainContainer>
+    <GlobalStyle />
     <Router>
       {routeDefinitions.map(({ Component, path }, routeIdx) => (
         <Component key={`route-${routeIdx}`} path={path} />
@@ -22,10 +23,12 @@ export default App;
 export function renderStatic(url: string): { style: string; body: string } {
   const sheet = new ServerStyleSheet();
   const body = renderToString(
-    <ServerLocation url={url}>
-      <GlobalStyle />
-      <App />
-    </ServerLocation>
+    sheet.collectStyles(
+      <ServerLocation url={url}>
+        <GlobalStyle />
+        <App />
+      </ServerLocation>
+    )
   );
 
   const style = sheet.getStyleTags();
