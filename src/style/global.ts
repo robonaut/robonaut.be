@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-display: auto;
     /* font-size: ${px2vw(24)}; */
 
     /* @media (min-width: 768px) {
