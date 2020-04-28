@@ -1,8 +1,8 @@
-version: 2
+version: 2.1
 defaults: &defaults
   working_directory: ~/robonaut.be
   docker:
-    - image: circleci/node:12.14
+    - image: circleci/node:12
 
 whitelist: &whitelist
   paths:
