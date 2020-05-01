@@ -12,12 +12,18 @@ const Renderers: Record<string, React.FC<any>> = {
   text: Text,
 };
 
-export function renderToken(token: any, idx: number): JSX.Element {
+export function renderToken(token: any, idx: number): JSX.Element | null {
   const NullRenderer = (): null => null;
   const Renderer = Renderers[token.type] ?? NullRenderer;
 
   if (Renderer === NullRenderer) {
     console.log('NOT IMPLEMENTED', token);
+  }
+
+  if (token.type === 'table') {
+    console.log('NOT IMPLEMENTED', token);
+
+    return null;
   }
 
   return (
