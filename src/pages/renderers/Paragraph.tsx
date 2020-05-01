@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default ({ text }: { text: string }): JSX.Element => <p>{text}</p>;
+export default ({ children }: { children: JSX.Element }): JSX.Element => {
+  return <p>{children}</p>;
+};

@@ -3,15 +3,16 @@ import React from 'react';
 import { MainTitle } from '../../style/layout';
 
 export default ({
-  text,
   depth,
+  children,
 }: {
   text: string;
   depth: number;
+  children: JSX.Element;
 }): JSX.Element => {
   if (depth === 1) {
-    return <MainTitle>{text}</MainTitle>;
+    return <MainTitle>{children}</MainTitle>;
   }
 
-  return React.createElement(`h${depth}`, null, text);
+  return React.createElement(`h${depth}`, null, children);
 };

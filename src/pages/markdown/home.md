@@ -3,6 +3,13 @@
 Hi, this is my personal website
 
 ## check this out
-```js
-some code here
+
+```typescript
+const a = 'string';
+
+function immutable() {
+  return false;
+}
 ```
+
+this should be a [link](https://robonaut.be)

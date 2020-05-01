@@ -1,15 +1,18 @@
 import { lexer } from 'marked';
 import React from 'react';
 
-import { Heading, List, Paragraph } from './renderers';
+import { Code, Heading, Link, List, Paragraph, Text } from './renderers';
 
 const Renderers: Record<string, React.FC<any>> = {
+  code: Code,
   heading: Heading,
-  paragraph: Paragraph,
+  link: Link,
   list: List,
+  paragraph: Paragraph,
+  text: Text,
 };
 
-function renderToken(token: any, idx: number): JSX.Element {
+export function renderToken(token: any, idx: number): JSX.Element {
   const NullRenderer = (): null => null;
   const Renderer = Renderers[token.type] ?? NullRenderer;
 
@@ -17,7 +20,11 @@ function renderToken(token: any, idx: number): JSX.Element {
     console.log('NOT IMPLEMENTED', token);
   }
 
-  return <Renderer key={`token-${idx}`} {...token} />;
+  return (
+    <Renderer key={`token-${idx}`} {...token}>
+      {token.tokens ? token.tokens.map(renderToken) : null}
+    </Renderer>
+  );
 }
 
 export default (markdown: string): JSX.Element => {
