@@ -10,6 +10,7 @@ const Components: Record<string, JSX.Element> = {
 if (!process.env.SERVER_SIDE) {
   Object.keys(Components).forEach((key) => {
     const markdown = require(`./markdown/${key}.md`).default;
+
     Components[key] = render(markdown);
   });
 } else {
@@ -17,6 +18,7 @@ if (!process.env.SERVER_SIDE) {
     const markdown = require('fs')
       .readFileSync(`${__dirname}/markdown/${key}.md`)
       .toString();
+
     Components[key] = render(markdown);
   });
 }
