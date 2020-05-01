@@ -43,7 +43,7 @@ const configuration: webpack.Configuration = {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
-  target: 'web',
+  target: 'node',
 
   devServer: {
     hot: true,

@@ -17,6 +17,7 @@ module.exports = {
     module: 'readonly',
     process: 'readonly',
     require: 'readonly',
+    __dirname: 'readonly',
   },
   parserOptions: {
     ecmaFeatures: {

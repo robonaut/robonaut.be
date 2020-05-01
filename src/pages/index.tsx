@@ -13,6 +13,14 @@ if (!process.env.SERVER_SIDE) {
 
     Components[key] = render(markdown);
   });
+} else {
+  Object.keys(Components).forEach((key) => {
+    const markdown = require('fs')
+      .readFileSync(`${__dirname}/markdown/${key}.md`)
+      .toString();
+
+    Components[key] = render(markdown);
+  });
 }
 
 export default Components;
