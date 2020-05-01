@@ -43,8 +43,8 @@ const configuration: webpack.Configuration = {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
-  target: 'node',
-
+  target: 'web',
+  node: { fs: 'empty' },
   devServer: {
     hot: true,
     inline: true,
