@@ -1,8 +1,8 @@
 import { RouteComponentProps } from '@reach/router';
 import React from 'react';
 
-import { MainTitle } from '../style/layout';
+import pages from '../pages';
 
-const About: React.FC<RouteComponentProps> = () => <MainTitle>About</MainTitle>;
+const About: React.FC<RouteComponentProps> = () => <>{pages.about}</>;
 
 export default About;

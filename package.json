@@ -29,6 +29,7 @@
   "homepage": "https://github.com/robonaut/robonaut.be#readme",
   "devDependencies": {
     "@types/html-webpack-plugin": "3.2.2",
+    "@types/marked": "0.7.4",
     "@types/node": "13.13.4",
     "@types/reach__router": "1.3.5",
     "@types/react": "16.9.34",

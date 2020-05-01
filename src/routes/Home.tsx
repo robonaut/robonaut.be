@@ -1,11 +1,8 @@
 import { RouteComponentProps } from '@reach/router';
 import React from 'react';
 
-import { home } from '../markdown';
-import { MainTitle } from '../style/layout';
+import pages from '../pages';
 
-console.log(home);
-
-const Home: React.FC<RouteComponentProps> = () => <MainTitle>Home</MainTitle>;
+const Home: React.FC<RouteComponentProps> = () => <>{pages.home}</>;
 
 export default Home;

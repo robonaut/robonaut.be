@@ -8,4 +8,5 @@ export const MainContainer = styled.div`
 
 export const MainTitle = styled.div`
   color: ${colors.navy};
+  font-size: 32px;
 `;
