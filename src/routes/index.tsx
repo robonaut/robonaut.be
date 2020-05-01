@@ -1,10 +1,5 @@
-import { RouteComponentProps } from '@reach/router';
-import React from 'react';
-
-import { MainTitle } from '../style/layout';
-
-const Home: React.FC<RouteComponentProps> = () => <MainTitle>Home</MainTitle>;
-const About: React.FC<RouteComponentProps> = () => <MainTitle>About</MainTitle>;
+import Home from './Home';
+import About from './About';
 
 export const routeDefinitions = [
   { title: 'Home', path: '/', Component: Home },

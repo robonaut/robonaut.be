@@ -1,15 +1,15 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
-import { renderStatic } from '../src/App';
-import { routeDefinitions } from '../src/routes';
+import { renderStatic } from './src/App';
+import { routeDefinitions } from './src/routes';
 
 const configuration: webpack.Configuration = {
   entry: {
     app: ['./src/index.tsx'],
   },
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.join(__dirname, './dist'),
     publicPath: '/',
   },
   module: {
@@ -39,6 +39,13 @@ const configuration: webpack.Configuration = {
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
   target: 'web',
+
+  devServer: {
+    hot: true,
+    inline: true,
+    port: 3000,
+    open: true,
+  },
 };
 
 const developmentConfig: webpack.Configuration = {
