@@ -1,5 +1,5 @@
-import Home from './Home';
 import About from './About';
+import Home from './Home';
 
 export const routeDefinitions = [
   { title: 'Home', path: '/', Component: Home },

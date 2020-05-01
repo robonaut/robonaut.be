@@ -1,5 +1,5 @@
-import React from 'react';
 import { RouteComponentProps } from '@reach/router';
+import React from 'react';
 
 import { MainTitle } from '../style/layout';
 
