@@ -11,7 +11,8 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "",
     "typecheck": "tsc -p tsconfig.json",
-    "postinstall": "rm -rf node_modules/@types/react-native"
+    "postinstall": "rm -rf node_modules/@types/react-native",
+    "version:patch": "HUSKY_SKIP_HOOKS=1 npm version patch"
   },
   "repository": {
     "type": "git",
