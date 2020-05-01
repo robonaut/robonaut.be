@@ -16,6 +16,7 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
     module: 'readonly',
     process: 'readonly',
+    require: 'readonly',
   },
   parserOptions: {
     ecmaFeatures: {

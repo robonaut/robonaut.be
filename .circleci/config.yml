@@ -8,6 +8,7 @@ whitelist: &whitelist
   paths:
     - .npmignore
     - tsconfig.json
+    - webpack.config.ts
     - .babel.config.js
     - .eslintrc.js
     - webpack/*
