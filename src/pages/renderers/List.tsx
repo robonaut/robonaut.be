@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({ items }: { items: Array<{ text: string }> }) => {
+export default ({ items }: { items: Array<{ text: string }> }): JSX.Element => {
   return (
     <ul>
       {items.map((item, itemIdx) => (
