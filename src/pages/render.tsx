@@ -27,7 +27,7 @@ export function renderToken(token: any, idx: number): JSX.Element | null {
   }
 
   return (
-    <Renderer key={`token-${idx}`} {...token}>
+    <Renderer key={`token-${idx}`} {...token} isFirst={idx === 0}>
       {token.tokens ? token.tokens.map(renderToken) : null}
     </Renderer>
   );

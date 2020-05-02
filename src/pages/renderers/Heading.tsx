@@ -4,9 +4,15 @@ import { Heading } from '../../style/layout';
 
 export default ({
   depth,
+  isFirst,
   children,
 }: {
   text: string;
   depth: number;
+  isFirst: boolean;
   children: JSX.Element;
-}): JSX.Element => <Heading depth={depth}>{children}</Heading>;
+}): JSX.Element => (
+  <Heading isFirst={isFirst} depth={depth}>
+    {children}
+  </Heading>
+);
