@@ -37,6 +37,7 @@
     "@types/react-syntax-highlighter": "11.0.4",
     "@types/styled-components": "5.1.0",
     "@types/webpack": "4.41.12",
+    "@types/webpack-bundle-analyzer": "2.13.3",
     "@types/webpack-dev-server": "3.10.1",
     "@types/webpack-env": "1.15.2",
     "@typescript-eslint/eslint-plugin": "2.30.0",
@@ -54,6 +55,7 @@
     "ts-node": "8.9.1",
     "typescript": "3.8.3",
     "webpack": "4.43.0",
+    "webpack-bundle-analyzer": "3.7.0",
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "3.10.3"
   },
@@ -62,7 +64,6 @@
     "marked": "1.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-syntax-highlighter": "12.2.1",
     "styled-components": "5.1.0"
   },
   "husky": {

@@ -1,6 +1,4 @@
 import React from 'react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { vs2015 } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 export default ({
   text,
@@ -9,7 +7,8 @@ export default ({
   lang: string;
   text: string;
 }): JSX.Element => (
-  <SyntaxHighlighter language={lang} style={vs2015}>
-    {text}
-  </SyntaxHighlighter>
+  <p>
+    <span>{text}</span>
+    <span>{lang}</span>
+  </p>
 );

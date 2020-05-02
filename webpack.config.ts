@@ -1,5 +1,6 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import webpack from 'webpack';
 import { renderStatic } from './src/App';
 import { routeDefinitions } from './src/routes';
@@ -26,19 +27,22 @@ const configuration: webpack.Configuration = {
       },
     ],
   },
-  plugins: routeDefinitions.map(
-    ({ path, title }: { path: string; title: string }) =>
-      new HtmlWebpackPlugin({
-        filename: path === '/' ? 'index.html' : `${path.slice(1)}/index.html`,
-        template: 'src/index.html',
-        favicon: 'src/favicon.ico',
-        templateParameters: {
-          title,
-          ...renderStatic(path),
-        },
-        inject: true,
-      })
-  ),
+  plugins: [
+    ...routeDefinitions.map(
+      ({ path, title }: { path: string; title: string }) =>
+        new HtmlWebpackPlugin({
+          filename: path === '/' ? 'index.html' : `${path.slice(1)}/index.html`,
+          template: 'src/index.html',
+          favicon: 'src/favicon.ico',
+          templateParameters: {
+            title,
+            ...renderStatic(path),
+          },
+          inject: true,
+        })
+    ),
+    // new BundleAnalyzerPlugin(),
+  ],
   resolve: {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
