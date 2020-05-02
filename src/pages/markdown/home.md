@@ -18,13 +18,5 @@ this should be a [link](https://robonaut.be)
 
 ## think about this
 
-#### why not
-
-###### If you code like this you will die
-
-
-blank
-
-blank
 
 and another [link](#tohere)

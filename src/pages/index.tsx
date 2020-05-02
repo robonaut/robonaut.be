@@ -7,7 +7,7 @@ const Components: Record<string, JSX.Element> = {
   about: <div />,
 };
 
-if (!process.env.SERVER_SIDE) {
+if (!process.env.IS_WEBPACK) {
   Object.keys(Components).forEach((key) => {
     const markdown = require(`./markdown/${key}.md`).default;
 

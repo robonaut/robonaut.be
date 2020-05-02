@@ -9,16 +9,20 @@ export default ({
   text: string;
 }): JSX.Element => {
   const className = `language-${lang}`;
-  const [html, setHtml] = useState('');
+  const [isClient, setIsClient] = useState(false);
+  const html = Prism.highlight(text, Prism.languages.javascript, 'javascript');
 
   useEffect(() => {
-    // This solves an issue with incorrect rehydration from the server
-    setHtml(Prism.highlight(text, Prism.languages.javascript, 'javascript'));
+    setIsClient(true);
   }, []);
 
   return (
     <pre className={className}>
-      <code className={className} dangerouslySetInnerHTML={{ __html: html }} />
+      <code
+        key={isClient ? 'client' : 'server'}
+        className={className}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </pre>
   );
 };
