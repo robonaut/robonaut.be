@@ -29,5 +29,6 @@ export default ({
   if (type === 'code') {
     return <pre className={className}>{Code}</pre>;
   }
+
   return Code;
 };
