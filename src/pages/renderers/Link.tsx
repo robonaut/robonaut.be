@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyledLink } from '../../style/layout';
 
 export default ({
   text,
@@ -7,7 +8,7 @@ export default ({
   text: string;
   href: string;
 }): JSX.Element => (
-  <a href={href} target="_blank" rel="noopener noreferrer">
+  <StyledLink href={href} target="_blank" rel="noopener noreferrer">
     {text}
-  </a>
+  </StyledLink>
 );

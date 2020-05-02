@@ -1,5 +1,6 @@
 import React from 'react';
+import { StyledParagraph } from '../../style/layout';
 
 export default ({ children }: { children: JSX.Element }): JSX.Element => {
-  return <p>{children}</p>;
+  return <StyledParagraph>{children}</StyledParagraph>;
 };

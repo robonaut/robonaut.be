@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading } from '../../style/layout';
+import { StyledHeading } from '../../style/layout';
 
 export default ({
   depth,
@@ -12,7 +12,7 @@ export default ({
   isFirst: boolean;
   children: JSX.Element;
 }): JSX.Element => (
-  <Heading isFirst={isFirst} depth={depth}>
+  <StyledHeading isFirst={isFirst} depth={depth}>
     {children}
-  </Heading>
+  </StyledHeading>
 );

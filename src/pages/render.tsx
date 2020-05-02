@@ -11,6 +11,8 @@ const Renderers: Record<string, React.FC<any>> = {
   list: List,
   paragraph: Paragraph,
   text: Text,
+  em: Text,
+  strong: Text,
 };
 
 export function renderToken(token: any, idx: number): JSX.Element | null {

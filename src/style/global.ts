@@ -24,6 +24,15 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0px;
   }
+  ul {
+    list-style-type: none;
+    margin: 16px;
+    padding: 0;
+  }
+
+  li::before {
+    content: "• ";
+  }
 
   /**
   * prism.js default theme for JavaScript, CSS and HTML

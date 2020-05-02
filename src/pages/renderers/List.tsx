@@ -1,11 +1,14 @@
 import React from 'react';
+import { StyledList, StyledListItem } from '../../style/layout';
 
 export default ({ items }: { items: Array<{ text: string }> }): JSX.Element => {
   return (
-    <ul>
+    <StyledList>
       {items.map((item, itemIdx) => (
-        <li key={`list-item-${itemIdx}`}>{item.text}</li>
+        <StyledListItem key={`list-item-${itemIdx}`}>
+          {item.text}
+        </StyledListItem>
       ))}
-    </ul>
+    </StyledList>
   );
 };
