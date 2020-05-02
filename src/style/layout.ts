@@ -17,7 +17,6 @@ export const StyledNavigation = styled.div`
   top: 0;
   position: fixed;
   padding: ${MAIN_PADDING};
-  justify-content: flex-start;
 `;
 
 export const StyledNavigationLink = styled(Link)`
@@ -37,7 +36,7 @@ export const StyledHeading = styled.div<{ depth: number; isFirst: boolean }>`
   font-weight: bold;
   margin-bottom: ${(props): number => (1 / props.depth) * 1}rem;
   margin-top: ${(props): number =>
-    props.depth === 1 ? (1.5 / props.depth) * 2 : (1 / props.depth) * 2}rem;
+    props.isFirst ? 3 / props.depth : 1.5 / props.depth}rem;
   border-bottom: ${(props): string =>
     props.depth === 1 ? `1px solid ${colors.whiteDarker}` : 'none'};
 `;
