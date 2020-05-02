@@ -5,12 +5,30 @@ import { ServerStyleSheet } from 'styled-components';
 
 import { routeDefinitions } from './routes';
 import GlobalStyle from './style/global';
-import { MainContainer } from './style/layout';
+import {
+  MainContainer,
+  StyledNavigation,
+  StyledNavigationLink,
+} from './style/layout';
+
+const createNavigationLink = (
+  { path, title }: { path: string; title: string },
+  idx: number
+) => {
+  return (
+    <StyledNavigationLink key={`nav-link-${idx}`} to={path}>
+      {title}
+    </StyledNavigationLink>
+  );
+};
 
 const App: React.StatelessComponent<{}> = () => (
   <MainContainer>
     <GlobalStyle />
-    <Router>
+    <StyledNavigation>
+      {routeDefinitions.map(createNavigationLink)}
+    </StyledNavigation>
+    <Router primary={false}>
       {routeDefinitions.map(({ Component, path }, routeIdx) => (
         <Component key={`route-${routeIdx}`} path={path} />
       ))}

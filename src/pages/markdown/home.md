@@ -24,3 +24,26 @@ and another [link](#tohere)
 
 * list
 * lo
+
+
+# Next phase
+
+## think about this
+
+What about an inline `$ npm start` block
+
+and another [link](#tohere)
+
+* list
+* lo
+
+# Next phase
+
+## think about this
+
+What about an inline `$ npm start` block
+
+and another [link](#tohere)
+
+* list
+* lo
