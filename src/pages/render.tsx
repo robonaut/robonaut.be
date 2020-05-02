@@ -5,6 +5,7 @@ import { Code, Heading, Link, List, Paragraph, Text } from './renderers';
 
 const Renderers: Record<string, React.FC<any>> = {
   code: Code,
+  codespan: Code,
   heading: Heading,
   link: Link,
   list: List,

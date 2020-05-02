@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 
 export default ({
   text,
-  lang,
+  type,
+  lang = 'javascript',
 }: {
-  lang: string;
   text: string;
+  type: string;
+  lang: string;
 }): JSX.Element => {
   const className = `language-${lang}`;
   const [isClient, setIsClient] = useState(false);
@@ -16,13 +18,16 @@ export default ({
     setIsClient(true);
   }, []);
 
-  return (
-    <pre className={className}>
-      <code
-        key={isClient ? 'client' : 'server'}
-        className={className}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </pre>
+  const Code = (
+    <code
+      key={isClient ? 'client' : 'server'}
+      className={className}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   );
+
+  if (type === 'code') {
+    return <pre className={className}>{Code}</pre>;
+  }
+  return Code;
 };
