@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { StyledText } from '../../style/layout';
 
 export default ({

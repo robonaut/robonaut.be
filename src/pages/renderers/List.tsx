@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { StyledList, StyledListItem } from '../../style/layout';
 
 export default ({ items }: { items: Array<{ text: string }> }): JSX.Element => {

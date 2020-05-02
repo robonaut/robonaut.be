@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { StyledLink } from '../../style/layout';
 
 export default ({
