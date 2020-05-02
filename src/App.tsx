@@ -14,7 +14,7 @@ import {
 const createNavigationLink = (
   { path, title }: { path: string; title: string },
   idx: number
-) => {
+): JSX.Element => {
   return (
     <StyledNavigationLink key={`nav-link-${idx}`} to={path}>
       {title}

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { px2vw } from './utils';
+import { MAX_WIDTH } from './sizes';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -11,18 +11,11 @@ const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
-    /* font-size: ${px2vw(24)}; */
-
-    /* @media (min-width: 768px) {
-      font-size: ${px2vw(18)};
-    }
-
-    @media (min-width: 1024px) {
-      font-size: ${px2vw(16)};
-    } */
   }
   body {
     margin: 0px;
+    max-width: ${MAX_WIDTH}px;
+    margin: auto;
   }
   ul {
     list-style-type: none;
