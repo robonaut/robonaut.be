@@ -7,6 +7,7 @@ import { routeDefinitions } from './routes';
 import GlobalStyle from './style/global';
 import {
   MainContainer,
+  StyledHeader,
   StyledNavigation,
   StyledNavigationLink,
 } from './style/layout';
@@ -25,9 +26,11 @@ const createNavigationLink = (
 const App: React.StatelessComponent<{}> = () => (
   <MainContainer>
     <GlobalStyle />
-    <StyledNavigation>
-      {routeDefinitions.map(createNavigationLink)}
-    </StyledNavigation>
+    <StyledHeader>
+      <StyledNavigation>
+        {routeDefinitions.map(createNavigationLink)}
+      </StyledNavigation>
+    </StyledHeader>
     <Router primary={false}>
       {routeDefinitions.map(({ Component, path }, routeIdx) => (
         <Component key={`route-${routeIdx}`} path={path} />

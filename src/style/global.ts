@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0px;
     max-width: ${MAX_WIDTH}px;
     margin: auto;
+    overflow-y: scroll;
   }
   ul {
     list-style-type: none;

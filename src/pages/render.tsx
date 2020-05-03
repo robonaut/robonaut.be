@@ -1,18 +1,19 @@
 import { lexer } from 'marked';
 import React from 'react';
 
-import { Code, Heading, Link, List, Paragraph, Text } from './renderers';
+import { Code, Heading, Link, List, Paragraph, Quote, Text } from './renderers';
 
 const Renderers: Record<string, React.FC<any>> = {
+  blockquote: Quote,
   code: Code,
   codespan: Code,
+  em: Text,
   heading: Heading,
   link: Link,
   list: List,
   paragraph: Paragraph,
-  text: Text,
-  em: Text,
   strong: Text,
+  text: Text,
 };
 
 export function renderToken(token: any, idx: number): JSX.Element | null {

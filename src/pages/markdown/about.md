@@ -9,12 +9,19 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 >Ilja is a gifted Full Stack Engineer and brought lots of maturity to the team. He has a deep understanding of the whole software development lifecycle and set out to build a solid exemplary pipeline. He should not only join your team, he should lead it.
 
+> Another quote ***[ilja](https://robonaut.be)***
 
 Finally some `tagged` content
 
 ```typescript
 interface System {
-  a: string;w
+  a: string;
 }
 return System
+```
+
+@icon test
+
+```sh
+$ npm start
 ```

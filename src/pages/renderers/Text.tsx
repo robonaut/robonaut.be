@@ -5,7 +5,11 @@ import { StyledText } from '../../style/layout';
 export default ({
   text,
   type,
+  children,
 }: {
   text: string;
   type: string;
-}): JSX.Element => <StyledText type={type}>{text}</StyledText>;
+  children: JSX.Element;
+}): JSX.Element => (
+  <StyledText type={type}>{children ? children : text}</StyledText>
+);

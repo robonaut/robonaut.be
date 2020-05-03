@@ -2,20 +2,25 @@ import { Link } from '@reach/router';
 import styled from 'styled-components';
 
 import colors from './colors';
-import { MAIN_PADDING } from './sizes';
+import { MAIN_PADDING, MAX_WIDTH } from './sizes';
 
 export const MainContainer = styled.div`
   padding: ${MAIN_PADDING};
   position: relative;
 `;
 
-export const StyledNavigation = styled.div`
-  background-color: ${colors.whiteDarker};
-  display: flex;
+export const StyledHeader = styled.div`
   left: 0;
   right: 0;
   top: 0;
   position: fixed;
+  background-color: ${colors.whiteDarker};
+`;
+
+export const StyledNavigation = styled.div`
+  display: flex;
+  margin: auto;
+  max-width: ${MAX_WIDTH}px;
   padding: ${MAIN_PADDING};
 `;
 
@@ -53,6 +58,12 @@ export const StyledLink = styled.a``;
 
 export const StyledText = styled.span<{ type: string }>`
   font-weight: ${(props): string =>
-    props.type === 'strong' ? 'bold' : 'normal'};
-  font-style: ${(props): string => (props.type === 'em' ? 'italic' : 'normal')};
+    props.type === 'strong' ? 'bold' : 'inherit'};
+  font-style: ${(props): string =>
+    props.type === 'em' ? 'italic' : 'inherit'};
+`;
+
+export const StyledQuote = styled.div`
+  border-left: 8px solid ${colors.whiteDarker};
+  padding-left: 8px;
 `;
