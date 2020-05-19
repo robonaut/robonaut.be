@@ -1,6 +1,6 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';3
 import webpack from 'webpack';
 import { renderStatic } from './src/App';
 import { routeDefinitions } from './src/routes';

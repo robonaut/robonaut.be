@@ -1,5 +1,26 @@
 import Prism from 'prismjs';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+
+// @ts-ignore
+Prism.manual = true;
+
+function decodeHtml(htmlString: string) {
+  if (process.env.IS_WEBPACK) {
+    return htmlString;
+  }
+  const parser = new DOMParser();
+  const { body } = parser.parseFromString(htmlString, 'text/html');
+
+  return body.textContent ?? '';
+}
+
+function createCodeMarkup(text: string) {
+  console.log(Prism.highlight(text, Prism.languages.javascript, 'javascript'));
+
+  return {
+    __html: Prism.highlight(text, Prism.languages.javascript, 'javascript'),
+  };
+}
 
 export default ({
   text,
@@ -11,23 +32,24 @@ export default ({
   lang: string;
 }): JSX.Element => {
   const className = `language-${lang}`;
-  const [isClient, setIsClient] = useState(false);
-  const html = Prism.highlight(text, Prism.languages.javascript, 'javascript');
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const Code = (
     <code
-      key={isClient ? 'client' : 'server'}
+      key={process.env.IS_WEBPACK ? 'server' : 'client'}
       className={className}
-      dangerouslySetInnerHTML={{ __html: html }}
+      dangerouslySetInnerHTML={createCodeMarkup(decodeHtml(text))}
     />
   );
 
   if (type === 'code') {
-    return <pre className={className}>{Code}</pre>;
+    return (
+      <pre
+        key={process.env.IS_WEBPACK ? 'server' : 'client'}
+        className={className}
+      >
+        {Code}
+      </pre>
+    );
   }
 
   return Code;

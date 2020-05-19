@@ -11,6 +11,6 @@ if (module.hot) {
 }
 
 // Render
-const renderFn = process.env.NODE_ENV === 'production' ? 'hydrate' : 'render';
+const renderFn = process.env.IS_WEBPACK ? 'render' : 'hydrate';
 
 ReactDom[renderFn](<App />, document.getElementById('app'));

@@ -38,6 +38,7 @@ module.exports = {
     'require-atomic-updates': 1,
     'newline-after-var': 2,
     'newline-before-return': 2,
+    '@typescript-eslint/ban-ts-ignore': 1,
   },
   settings: {
     react: {

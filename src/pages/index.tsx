@@ -5,6 +5,7 @@ import render from './render';
 const Components: Record<string, JSX.Element> = {
   home: <div />,
   about: <div />,
+  wws: <div />,
 };
 
 if (!process.env.IS_WEBPACK) {
