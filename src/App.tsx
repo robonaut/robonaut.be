@@ -23,7 +23,7 @@ const createNavigationLink = (
   );
 };
 
-const App: React.StatelessComponent<{}> = () => (
+const App: React.StatelessComponent = () => (
   <MainContainer>
     <GlobalStyle />
     <StyledHeader>

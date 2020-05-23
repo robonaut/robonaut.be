@@ -13,6 +13,7 @@ const Renderers: Record<string, React.FC<any>> = {
   list: List,
   paragraph: Paragraph,
   strong: Text,
+  br: Text,
   text: Text,
 };
 

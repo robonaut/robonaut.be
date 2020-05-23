@@ -10,6 +10,10 @@ export default ({
   text: string;
   type: string;
   children: JSX.Element;
-}): JSX.Element => (
-  <StyledText type={type}>{children ? children : text}</StyledText>
-);
+}): JSX.Element => {
+  if (type === 'br') {
+    return <br />;
+  }
+
+  return <StyledText type={type}>{children ? children : text}</StyledText>;
+};
