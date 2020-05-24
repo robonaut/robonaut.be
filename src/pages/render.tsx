@@ -28,6 +28,7 @@ const Renderers: Record<string, React.FC<any>> = {
 };
 
 export function renderToken(token: any, idx: number): JSX.Element | null {
+  console.log(token);
   const Renderer = Renderers[token.type] ?? null;
 
   if (Renderer === null) {

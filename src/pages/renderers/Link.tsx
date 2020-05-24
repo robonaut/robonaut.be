@@ -5,11 +5,13 @@ import { StyledLink } from '../../style/layout';
 export default ({
   text,
   href,
+  children,
 }: {
   text: string;
   href: string;
+  children: JSX.Element;
 }): JSX.Element => (
   <StyledLink href={href} target="_blank" rel="noopener noreferrer">
-    {text}
+    {children ? children : text}
   </StyledLink>
 );

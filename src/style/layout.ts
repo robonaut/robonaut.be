@@ -40,8 +40,7 @@ export const StyledHeading = styled.div<{ depth: number; isFirst: boolean }>`
   font-size: ${(props): number => 1 + 2 / props.depth}rem;
   font-weight: bold;
   margin-bottom: ${(props): number => (1 / props.depth) * 1}rem;
-  margin-top: ${(props): number =>
-    props.isFirst ? 3 / props.depth : 1.5 / props.depth}rem;
+  margin-top: ${(props): number => 4 / props.depth}rem;
   border-bottom: ${(props): string =>
     props.depth === 1 ? `1px solid ${colors.whiteDarker}` : 'none'};
 `;
@@ -68,4 +67,14 @@ export const StyledQuote = styled.div`
   padding-left: 8px;
 `;
 
-export const StyledImage = styled.img``;
+export const StyledImage = styled.img`
+  width: calc(20% - 4px);
+  border-radius: 8px;
+  object-fit: contain;
+  &[alt='apple_appstore'] {
+    width: 100px;
+  }
+  &[alt='google_playstore'] {
+    width: 112px;
+  }
+`;

@@ -1,4 +1,5 @@
 import path from 'path';
+import CopyPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 // import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';3
 import webpack from 'webpack';
@@ -28,6 +29,8 @@ const configuration: webpack.Configuration = {
     ],
   },
   plugins: [
+    // @ts-ignore
+    new CopyPlugin({ patterns: [{ from: 'src/assets', to: 'assets' }] }),
     ...routeDefinitions.map(
       ({ path, title }: { path: string; title: string }) =>
         new HtmlWebpackPlugin({
