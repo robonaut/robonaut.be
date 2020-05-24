@@ -39,6 +39,9 @@ export const StyledNavigationLink = styled(Link)`
 `;
 
 export const StyledHeading = styled.div<{ depth: number; isFirst: boolean }>`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: ${colors.navy};
   font-size: ${(props): number => 1 + 2 / props.depth}rem;
   font-weight: bold;
