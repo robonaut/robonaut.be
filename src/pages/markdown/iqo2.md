@@ -22,7 +22,6 @@ This app has push notifications support and is backed by technologies such as **
 ![Contacts](/assets/images/iqo2/Contacts.png)
 ![Contact_Summary](/assets/images/iqo2/Contact_Summary.png)
 ![Contact_Metrics](/assets/images/iqo2/Contact_Metrics.png)
-
 ![Event_Detail](/assets/images/iqo2/Event_Detail.png)
 ![Event_Map](/assets/images/iqo2/Event_Map.png)
 ![Event_Zones](/assets/images/iqo2/Event_Zones.png)

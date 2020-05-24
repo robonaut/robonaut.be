@@ -74,7 +74,7 @@ export const StyledQuote = styled.div`
 `;
 
 export const StyledImage = styled.img`
-  width: calc(20% - 4px);
+  width: calc(50% - 4px);
   border-radius: 8px;
   object-fit: contain;
   &[alt='apple_appstore'] {
@@ -82,5 +82,12 @@ export const StyledImage = styled.img`
   }
   &[alt='google_playstore'] {
     width: 112px;
+  }
+  @media (min-width: 768px) {
+    width: calc(25% - 8px);
+  }
+
+  @media (min-width: 1024px) {
+    width: calc(20% - 4px);
   }
 `;
