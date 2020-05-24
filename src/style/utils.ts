@@ -1,2 +1,2 @@
-export const px2vw = (size: number, width = 1440): string =>
+export const px2vw = (size: number, width = 1024): string =>
   `${(size / width) * 100}vw`;

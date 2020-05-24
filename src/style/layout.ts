@@ -5,7 +5,10 @@ import colors from './colors';
 import { MAIN_PADDING, MAX_WIDTH } from './sizes';
 
 export const MainContainer = styled.div`
-  padding: ${MAIN_PADDING};
+  padding-top: 4rem;
+  padding-left: ${MAIN_PADDING};
+  padding-right: ${MAIN_PADDING};
+  padding-bottom: 2rem;
   position: relative;
 `;
 
@@ -40,7 +43,7 @@ export const StyledHeading = styled.div<{ depth: number; isFirst: boolean }>`
   font-size: ${(props): number => 1 + 2 / props.depth}rem;
   font-weight: bold;
   margin-bottom: ${(props): number => (1 / props.depth) * 1}rem;
-  margin-top: ${(props): number => 4 / props.depth}rem;
+  margin-top: ${(props): number => (props.isFirst ? 0 : 5 / props.depth)}rem;
   border-bottom: ${(props): string =>
     props.depth === 1 ? `1px solid ${colors.whiteDarker}` : 'none'};
 `;
