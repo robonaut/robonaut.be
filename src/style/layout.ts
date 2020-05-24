@@ -67,3 +67,5 @@ export const StyledQuote = styled.div`
   border-left: 8px solid ${colors.whiteDarker};
   padding-left: 8px;
 `;
+
+export const StyledImage = styled.img``;

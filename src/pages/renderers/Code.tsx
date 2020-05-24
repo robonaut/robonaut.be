@@ -15,8 +15,6 @@ function decodeHtml(htmlString: string) {
 }
 
 function createCodeMarkup(text: string) {
-  console.log(Prism.highlight(text, Prism.languages.javascript, 'javascript'));
-
   return {
     __html: Prism.highlight(text, Prism.languages.javascript, 'javascript'),
   };

@@ -1,7 +1,16 @@
 import { lexer } from 'marked';
 import React from 'react';
 
-import { Code, Heading, Link, List, Paragraph, Quote, Text } from './renderers';
+import {
+  Code,
+  Heading,
+  Image,
+  Link,
+  List,
+  Paragraph,
+  Quote,
+  Text,
+} from './renderers';
 
 const Renderers: Record<string, React.FC<any>> = {
   blockquote: Quote,
@@ -15,6 +24,7 @@ const Renderers: Record<string, React.FC<any>> = {
   strong: Text,
   br: Text,
   text: Text,
+  image: Image,
 };
 
 export function renderToken(token: any, idx: number): JSX.Element | null {
