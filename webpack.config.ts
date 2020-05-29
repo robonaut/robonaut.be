@@ -1,7 +1,7 @@
 import path from 'path';
 import CopyPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import webpack from 'webpack';
 import { renderStatic } from './src/App';
 import { routeDefinitions } from './src/routes';
@@ -44,7 +44,7 @@ const configuration: webpack.Configuration = {
           inject: true,
         })
     ),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ],
   resolve: {
     modules: [path.resolve('./src'), path.resolve('./node_modules')],
