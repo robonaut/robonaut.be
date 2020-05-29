@@ -13,7 +13,7 @@ Migrated the existing SQL Server database to AWS Aurora MySQL hereby reducing co
 [![apple_appstore](/assets/images/apple_appstore.png)](https://apps.apple.com/us/app/iqo2/id1330388026?ls=1)
 [![google_playstore](/assets/images/google_playstore.png)](https://play.google.com/store/apps/details?id=com.iqo2.tracker)
 
-A mobile app was created in **React Native**. In the app coaches and athletes can keep track of their progress and view both planned and executed workouts. Athletes can keep track of their body metrics and also view their training zones.
+Created a mobile app in **React Native**. In the app coaches and athletes can keep track of their progress and view both planned and executed workouts. Athletes can keep track of their body metrics and also view their training zones.
 
 This app has push notifications support and is backed by technologies such as **Redux**, **Redux Saga**, **Firebase**, **Mapbox**, **D3**, **Styled Components** and **React Navigation**.
 
@@ -31,7 +31,7 @@ This app has push notifications support and is backed by technologies such as **
 
 ### API
 
-Created a brand new https API using **Typescript**, **Node.js** and **Koa.js**. User authentication was implemented using **JSON Web Tokens**. The API is fully tested with a test coverage of **98%**. Also created DB migration and syncing functionality. A custom push notification integration was also written allowing for targeted communication between coaches and athletes.
+Created a brand new https API using **Typescript**, **Node.js** and **Koa.js**. User authentication was implemented using **JSON Web Tokens**. The API is fully tested with a test coverage of **98%**. Wrote a custom push notification integration allowing for targeted communication between coaches and athletes.
 
 For backwards compatibility, path based routing was introduced on the load balancer to allow for a seamless transition from the V1 version to the V2 version.
 
