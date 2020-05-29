@@ -1,8 +1,8 @@
 import React from 'react';
+
 // import { FaAddressCard, FaCode, FaHeart, FaLaptopCode } from 'react-icons/fa';
 // import { IconType } from 'react-icons/lib';
 // import { MdSchool, MdThumbUp } from 'react-icons/md';
-
 // import colors from '../../style/colors';
 import { StyledImage } from '../../style/layout';
 
