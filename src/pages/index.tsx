@@ -5,7 +5,6 @@ import render from './render';
 const Components: Record<string, JSX.Element> = {
   home: <div />,
   about: <div />,
-  wws: <div />,
   iqo2: <div />,
 };
 
