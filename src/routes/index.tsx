@@ -1,9 +1,7 @@
-import About from './About';
-import Home from './Home';
-import Projects from './Projects';
+import Graph from "./Graph";
+import Home from "./Home";
 
 export const routeDefinitions = [
-  { title: 'Home', path: '/', Component: Home },
-  { title: 'About', path: '/about', Component: About },
-  { title: 'Projects', path: '/projects', Component: Projects },
+  { title: "Home", path: "/", Component: Home },
+  { title: "Graph", path: "/graph", Component: Graph },
 ];

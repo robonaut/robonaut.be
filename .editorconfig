@@ -17,7 +17,5 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 2
 
-# Makefile
-[{Makefile,**.mk}]
-# Use tabs for indentation (Makefiles require tabs)
+[Makefile]
 indent_style = tab

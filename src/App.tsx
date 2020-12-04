@@ -1,16 +1,38 @@
-import { Router, ServerLocation } from '@reach/router';
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import { ServerStyleSheet } from 'styled-components';
+import React from "react";
+import { renderToString } from "react-dom/server";
+import {
+  BrowserRouter as Router,
+  Route,
+  StaticRouter,
+  Switch,
+} from "react-router-dom";
+import { ServerStyleSheet } from "styled-components";
 
-import { routeDefinitions } from './routes';
-import GlobalStyle from './style/global';
+import { routeDefinitions } from "./routes";
+import GlobalStyle from "./style/global";
 import {
   MainContainer,
   StyledHeader,
   StyledNavigation,
   StyledNavigationLink,
-} from './style/layout';
+} from "./style/layout";
+
+const getRouterContent = (): JSX.Element => (
+  <>
+    <StyledHeader>
+      <StyledNavigation>
+        {routeDefinitions.map(createNavigationLink)}
+      </StyledNavigation>
+    </StyledHeader>
+    <Switch>
+      {routeDefinitions.map(({ Component, path }, routeIdx) => (
+        <Route key={`route-${routeIdx}`} path={path} exact={path === "/"}>
+          <Component />
+        </Route>
+      ))}
+    </Switch>
+  </>
+);
 
 const createNavigationLink = (
   { path, title }: { path: string; title: string },
@@ -23,32 +45,22 @@ const createNavigationLink = (
   );
 };
 
-const App: React.StatelessComponent = () => (
-  <MainContainer>
-    <GlobalStyle />
-    <StyledHeader>
-      <StyledNavigation>
-        {routeDefinitions.map(createNavigationLink)}
-      </StyledNavigation>
-    </StyledHeader>
-    <Router primary={false}>
-      {routeDefinitions.map(({ Component, path }, routeIdx) => (
-        <Component key={`route-${routeIdx}`} path={path} />
-      ))}
-    </Router>
-  </MainContainer>
-);
+export default function App(): JSX.Element {
+  return (
+    <MainContainer>
+      <GlobalStyle />
+      <Router>{getRouterContent()}</Router>
+    </MainContainer>
+  );
+}
 
-export default App;
-
-export function renderStatic(url: string): { style: string; body: string } {
+export function renderStatic(
+  location: string
+): { style: string; body: string } {
   const sheet = new ServerStyleSheet();
   const body = renderToString(
     sheet.collectStyles(
-      <ServerLocation url={url}>
-        <GlobalStyle />
-        <App />
-      </ServerLocation>
+      <StaticRouter location={location}>{getRouterContent()}</StaticRouter>
     )
   );
 

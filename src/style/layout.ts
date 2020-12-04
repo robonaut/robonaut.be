@@ -1,8 +1,8 @@
-import { Link } from '@reach/router';
-import styled from 'styled-components';
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-import colors from './colors';
-import { MAIN_PADDING, MAX_WIDTH } from './sizes';
+import colors from "./colors";
+import { MAIN_PADDING, MAX_WIDTH } from "./sizes";
 
 export const MainContainer = styled.div`
   padding-top: 4rem;
@@ -32,62 +32,8 @@ export const StyledNavigationLink = styled(Link)`
   margin-right: 1rem;
   text-decoration: none;
 
-  &[aria-current='page'] {
+  &[aria-current="page"] {
     font-weight: bolder;
     border-bottom: 1px solid ${colors.grey};
-  }
-`;
-
-export const StyledHeading = styled.div<{ depth: number; isFirst: boolean }>`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: ${colors.navy};
-  font-size: ${(props): number => 1 + 2 / props.depth}rem;
-  font-weight: bold;
-  margin-bottom: ${(props): number => (1 / props.depth) * 1}rem;
-  margin-top: ${(props): number => (props.isFirst ? 0 : 5 / props.depth)}rem;
-  border-bottom: ${(props): string =>
-    props.depth === 1 ? `1px solid ${colors.whiteDarker}` : 'none'};
-`;
-
-export const StyledParagraph = styled.p`
-  margin-top: 1rem;
-`;
-
-export const StyledList = styled.ul``;
-
-export const StyledListItem = styled.li``;
-
-export const StyledLink = styled.a``;
-
-export const StyledText = styled.span<{ type: string }>`
-  font-weight: ${(props): string =>
-    props.type === 'strong' ? 'bold' : 'inherit'};
-  font-style: ${(props): string =>
-    props.type === 'em' ? 'italic' : 'inherit'};
-`;
-
-export const StyledQuote = styled.div`
-  border-left: 8px solid ${colors.whiteDarker};
-  padding-left: 8px;
-`;
-
-export const StyledImage = styled.img`
-  width: calc(50% - 4px);
-  border-radius: 8px;
-  object-fit: contain;
-  &[alt='apple_appstore'] {
-    width: 100px;
-  }
-  &[alt='google_playstore'] {
-    width: 112px;
-  }
-  @media (min-width: 768px) {
-    width: calc(25% - 8px);
-  }
-
-  @media (min-width: 1024px) {
-    width: calc(20% - 4px);
   }
 `;
