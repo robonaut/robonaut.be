@@ -1,8 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-import { MAX_WIDTH } from "./sizes";
-import { px2vw } from "./utils";
-
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -11,10 +8,10 @@ const GlobalStyle = createGlobalStyle`
   }
   :root {
     font-family: 'Open Sans', sans-serif;
-    font-size: ${px2vw(24, 768)};
+    font-size: 100%;
 
     @media (min-width: 768px) {
-      font-size: ${px2vw(18, 768)};
+      font-size: 80%;
     }
 
     @media (min-width: 1024px) {
@@ -22,12 +19,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
   }
-  body {
+  html body {
     margin: 0px;
-    max-width: ${MAX_WIDTH}px;
     margin: auto;
     overflow-y: scroll;
   }
+
   ul {
     list-style-type: none;
     margin: 16px;
@@ -36,6 +33,10 @@ const GlobalStyle = createGlobalStyle`
 
   li::before {
     content: "• ";
+  }
+
+  iframe {
+    border-width: 0px;
   }
 `;
 

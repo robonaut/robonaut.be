@@ -35,6 +35,11 @@ const configuration: webpack.Configuration = {
           inject: true,
         })
     ),
+    // fix "process is not defined" error:
+    // (do "npm install process" before running the build)
+    new webpack.ProvidePlugin({
+      process: "process/browser",
+    }),
   ],
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"],
@@ -73,6 +78,8 @@ const productionConfig: webpack.Configuration = {
 };
 
 const webpackConfig: webpack.Configuration =
-  process.env.NODE_ENV === "production" ? productionConfig : developmentConfig;
+  process.env.WEBPACK_ENV === "production"
+    ? productionConfig
+    : developmentConfig;
 
 export default webpackConfig;
