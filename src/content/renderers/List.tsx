@@ -1,15 +1,9 @@
+import { Tokens } from "marked";
 import React from "react";
 
-import { StyledList, StyledListItem } from "../../style/layout";
+import { StyledList } from "../../style/layout";
+import { renderToken } from "../render";
 
-export default ({ items }: { items: Array<{ text: string }> }): JSX.Element => {
-  return (
-    <StyledList>
-      {items.map((item, itemIdx) => (
-        <StyledListItem key={`list-item-${itemIdx}`}>
-          {item.text}
-        </StyledListItem>
-      ))}
-    </StyledList>
-  );
+export default ({ items }: { items: Tokens.ListItem[] }): JSX.Element => {
+  return <StyledList>{items.map(renderToken)}</StyledList>;
 };
