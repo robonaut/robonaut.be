@@ -7,8 +7,10 @@ import {
   Image,
   Link,
   List,
+  ListItem,
   Paragraph,
   Quote,
+  Table,
   Text,
 } from "./renderers";
 
@@ -21,11 +23,13 @@ const Renderers: Record<string, React.FC<any>> = {
   heading: Heading,
   link: Link,
   list: List,
+  list_item: ListItem,
   paragraph: Paragraph,
   strong: Text,
   br: Text,
   text: Text,
   image: Image,
+  table: Table,
 };
 
 export function renderToken(token: Token, idx: number): JSX.Element | null {
@@ -40,7 +44,7 @@ export function renderToken(token: Token, idx: number): JSX.Element | null {
     <Renderer key={`token-${idx}`} {...token} isFirst={idx === 0}>
       {
         // @ts-ignore
-        token.tokens ? token.tokens.map(renderToken) : null
+        Array.isArray(token.tokens) ? token.tokens.map(renderToken) : null
       }
     </Renderer>
   );
