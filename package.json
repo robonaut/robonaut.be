@@ -1,6 +1,6 @@
 {
   "name": "@robonaut/website",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Robonaut website",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,9 @@
     "postinstall": "./scripts/fix_typings.sh",
     "test": "",
     "typecheck": "tsc -p tsconfig.json",
-    "version:patch": "HUSKY_SKIP_HOOKS=1 npm version patch"
+    "version:bump": "npm run version:patch && npm run version:commit",
+    "version:patch": "npm --no-git-tag-version version patch",
+    "version:commit": "git add package.json package-lock.json && git commit -n -m \"v${npm_package_version}\""
   },
   "repository": {
     "type": "git",
