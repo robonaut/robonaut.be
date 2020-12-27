@@ -1,8 +1,9 @@
+import CopyPlugin from "copy-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 import webpack from "webpack";
 import { routeDefinitions } from "./src/routes";
-import { renderStatic } from "./src/App";
+import { renderStatic } from "./src/server";
 
 const configuration: webpack.Configuration = {
   entry: {
@@ -15,6 +16,11 @@ const configuration: webpack.Configuration = {
   module: {
     rules: [
       {
+        test: /\.md?$/,
+        use: "raw-loader",
+        exclude: /node_modules/,
+      },
+      {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
@@ -22,6 +28,7 @@ const configuration: webpack.Configuration = {
     ],
   },
   plugins: [
+    new CopyPlugin({ patterns: [{ from: "src/assets", to: "assets" }] }),
     ...routeDefinitions.map(
       ({ path, title }: { path: string; title: string }) =>
         new HtmlWebpackPlugin({
@@ -33,12 +40,11 @@ const configuration: webpack.Configuration = {
             ...renderStatic(path),
           },
           inject: true,
+          scriptLoading: "defer",
         })
     ),
-    // fix "process is not defined" error:
-    // (do "npm install process" before running the build)
-    new webpack.ProvidePlugin({
-      process: "process/browser",
+    new webpack.DefinePlugin({
+      "process.env.APP_ENV": JSON.stringify("browser"),
     }),
   ],
   resolve: {
@@ -78,8 +84,6 @@ const productionConfig: webpack.Configuration = {
 };
 
 const webpackConfig: webpack.Configuration =
-  process.env.WEBPACK_ENV === "production"
-    ? productionConfig
-    : developmentConfig;
+  process.env.NODE_ENV === "production" ? productionConfig : developmentConfig;
 
 export default webpackConfig;

@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import prism from "./prism";
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -38,6 +40,8 @@ const GlobalStyle = createGlobalStyle`
   iframe {
     border-width: 0px;
   }
+
+  ${prism}
 `;
 
 export default GlobalStyle;

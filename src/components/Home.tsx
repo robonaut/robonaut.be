@@ -1,14 +1,9 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
-const Home: React.FunctionComponent = () => {
-  const { t } = useTranslation();
+import { getContent } from "../content";
 
-  return (
-    <>
-      <p>{t("pages.home.intro")}</p>
-    </>
-  );
+const Home: React.FunctionComponent = (): JSX.Element | null => {
+  return getContent("home");
 };
 
 export default Home;

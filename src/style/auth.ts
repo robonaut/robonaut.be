@@ -84,3 +84,12 @@ export const StyledLoginErrorText = styled.p`
   color: ${colors.red};
   font-size: 0.8rem;
 `;
+
+export const StyledLoginAsGuest = styled.a`
+  color: navy;
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover {
+    color: blue;
+  }
+`;

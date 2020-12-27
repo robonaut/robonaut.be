@@ -1,15 +1,9 @@
-import Home from "../components/Home";
+import About from "../components/About";
 import Login from "../components/Login";
 import Projects from "../components/Projects";
 import i18n from "../i18n";
 
 export const routeDefinitions = [
-  {
-    key: "home",
-    title: i18n.t("navigation.home.title"),
-    path: "/",
-    Component: Home,
-  },
   {
     key: "login",
     title: i18n.t("navigation.login.title"),
@@ -17,7 +11,13 @@ export const routeDefinitions = [
     Component: Login,
   },
   {
-    key: "projecgts",
+    key: "about",
+    title: i18n.t("navigation.about.title"),
+    path: "/",
+    Component: About,
+  },
+  {
+    key: "projects",
     title: i18n.t("navigation.projects.title"),
     path: "/projects",
     Component: Projects,

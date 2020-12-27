@@ -3,6 +3,9 @@
     "home": {
       "title": "Home"
     },
+    "about": {
+      "title": "About"
+    },
     "projects": {
       "title": "Projects"
     },
@@ -14,7 +17,8 @@
     "login": {
       "welcome": "Welcome to robonaut.be",
       "usernameEmptyError": "Please provide a username",
-      "passwordEmptyError": "Please provide a password"
+      "passwordEmptyError": "Please provide a password",
+      "loginAsGuest": "login as guest"
     },
     "home": {
       "intro": "This is my personal website"

@@ -1,20 +1,9 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
-import Table from "../elements/table";
-import { StyledTableContainer, StyledTableTitle } from "../style/table";
+import { getContent } from "../content";
 
-const Processors = (): JSX.Element => {
-  const { t } = useTranslation();
-
-  return (
-    <>
-      <StyledTableTitle>{t("pages.projects.title")}</StyledTableTitle>
-      <StyledTableContainer>
-        <Table columns={[]} data={[]} />
-      </StyledTableContainer>
-    </>
-  );
+const Projects = (): JSX.Element | null => {
+  return <>{getContent("projects/iqo2")}</>;
 };
 
-export default Processors;
+export default Projects;

@@ -10,7 +10,7 @@ const authStatusReducer = (
 };
 
 const initialAuthData = {
-  token: "fake-token",
+  token: "",
   agent: {
     agentid: "",
     email: "",
@@ -33,6 +33,16 @@ const authDataReducer = (
     action.payload.error?.status === 401
   ) {
     return initialAuthData;
+  }
+
+  if (
+    action.type === ActionTypes.AUTH_LOGIN &&
+    action.payload.username === "guest"
+  ) {
+    return {
+      ...state,
+      token: "guest-token",
+    };
   }
 
   if (action.type === ActionTypes.AUTH_LOGOUT) {
