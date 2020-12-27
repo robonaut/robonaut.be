@@ -1,11 +1,10 @@
-# Robonaut website
+# WWS Portal
 
 ## Install dependencies
 
 ```sh
 $ npm i
 ```
-
 
 ## Running tests
 ```sh
@@ -21,6 +20,5 @@ $ npm start
 ## Deployment
 
 ```sh
-$ make build
-$ make deploy
+$ npm run build
 ```

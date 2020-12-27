@@ -1,90 +1,89 @@
-import path from 'path';
-import CopyPlugin from 'copy-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-// import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import webpack from 'webpack';
-import { renderStatic } from './src/App';
-import { routeDefinitions } from './src/routes';
+import CopyPlugin from "copy-webpack-plugin";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import path from "path";
+import webpack from "webpack";
+import { routeDefinitions } from "./src/routes";
+import { renderStatic } from "./src/server";
 
 const configuration: webpack.Configuration = {
   entry: {
-    app: ['./src/index.tsx'],
+    app: ["./src/index.tsx"],
   },
   output: {
-    path: path.join(__dirname, './dist'),
-    publicPath: '/',
+    path: path.join(__dirname, "./dist"),
+    publicPath: "/",
   },
   module: {
     rules: [
       {
-        test: /\.(md)$/i,
-        use: 'raw-loader',
+        test: /\.md?$/,
+        use: "raw-loader",
         exclude: /node_modules/,
       },
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
     ],
   },
   plugins: [
-    // @ts-ignore
-    new CopyPlugin({ patterns: [{ from: 'src/assets', to: 'assets' }] }),
+    new CopyPlugin({ patterns: [{ from: "src/assets", to: "assets" }] }),
     ...routeDefinitions.map(
       ({ path, title }: { path: string; title: string }) =>
         new HtmlWebpackPlugin({
-          filename: path === '/' ? 'index.html' : `${path.slice(1)}/index.html`,
-          template: 'src/index.html',
-          favicon: 'src/favicon.ico',
+          filename: path === "/" ? "index.html" : `${path.slice(1)}/index.html`,
+          template: "src/index.html",
+          favicon: "src/favicon.ico",
           templateParameters: {
             title,
             ...renderStatic(path),
           },
           inject: true,
+          scriptLoading: "defer",
         })
     ),
-    // new BundleAnalyzerPlugin(),
+    new webpack.DefinePlugin({
+      "process.env.APP_ENV": JSON.stringify("browser"),
+    }),
   ],
   resolve: {
-    modules: [path.resolve('./src'), path.resolve('./node_modules')],
-    extensions: ['.tsx', '.ts', '.js', '.jsx'],
+    extensions: [".tsx", ".ts", ".js", ".jsx"],
   },
-  target: 'web',
-  node: { fs: 'empty' },
-  devServer: {
-    hot: true,
-    inline: true,
-    port: 3000,
-    open: true,
-  },
+  target: "web",
 };
 
 const developmentConfig: webpack.Configuration = {
   ...configuration,
   output: {
     ...configuration.output,
-    filename: 'js/[name].[hash].js',
+    filename: "js/[name].[fullhash].js",
   },
-  mode: 'development',
-  devtool: 'source-map',
+  mode: "development",
+  devtool: "source-map",
+  devServer: {
+    hot: true,
+    inline: true,
+    port: 3030,
+    open: true,
+  },
 };
 
 const productionConfig: webpack.Configuration = {
   ...configuration,
-  mode: 'production',
+  mode: "production",
   output: {
     ...configuration.output,
-    filename: 'js/[name].[contenthash].js',
+    filename: "js/[name].[contenthash].js",
   },
   optimization: {
     splitChunks: {
-      chunks: 'all',
+      chunks: "all",
     },
   },
 };
 
 const webpackConfig: webpack.Configuration =
-  process.env.NODE_ENV === 'production' ? productionConfig : developmentConfig;
+  process.env.NODE_ENV === "production" ? productionConfig : developmentConfig;
 
 export default webpackConfig;

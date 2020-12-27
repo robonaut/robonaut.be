@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "allowJs": false,
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
     "target": "es6",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
@@ -18,7 +19,13 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "include": [
-    "src"
-  ]
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    // same as our --compilerOptions flag and our TS_NODE_COMPILER_OPTIONS environment variable
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
