@@ -33,10 +33,6 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-  li::before {
-    content: "• ";
-  }
-
   iframe {
     border-width: 0px;
   }

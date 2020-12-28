@@ -12,7 +12,7 @@ export default ({
   isFirst: boolean;
   children: JSX.Element;
 }): JSX.Element => (
-  <StyledHeading isFirst={isFirst} depth={depth}>
+  <StyledHeading isFirst={isFirst} className={`heading-${depth}`}>
     {children}
   </StyledHeading>
 );

@@ -2,20 +2,15 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 import colors from "./colors";
-import { MAIN_PADDING } from "./sizes";
+import { HEADER_HEIGHT, MAIN_PADDING } from "./sizes";
 
 // MAIN
 
-export const MainContainer = styled.div`
-  position: relative;
-  padding: ${MAIN_PADDING};
-`;
+export const MainContainer = styled.div``;
 
 export const MainContent = styled.div`
-  margin-top: 4rem;
-  padding: ${MAIN_PADDING};
+  padding: ${HEADER_HEIGHT} ${MAIN_PADDING} ${MAIN_PADDING} ${MAIN_PADDING};
   position: relative;
-  padding-bottom: 2rem;
 `;
 
 export const StyledHeader = styled.div`
@@ -24,28 +19,39 @@ export const StyledHeader = styled.div`
   top: 0;
   position: fixed;
   z-index: 1;
-  background-color: ${colors.whiteDarker};
+  background-color: ${colors.navy};
+  height: ${HEADER_HEIGHT};
+  padding: 0 ${MAIN_PADDING};
 `;
 
 export const StyledHeaderContent = styled.div`
   display: flex;
   align-items: center;
-  padding: ${MAIN_PADDING};
+  font-size: 1rem;
+  height: 100%;
+  justify-content: space-between;
 `;
 
 export const StyledNavigation = styled.div`
   display: flex;
   flex: 1;
+  margin-left: 2rem;
 `;
 
 export const StyledNavigationLink = styled(NavLink)`
   color: ${colors.blue};
   margin-right: 1rem;
   text-decoration: none;
+  color: ${colors.silver};
+
+  &:hover {
+    color: ${colors.blue};
+  }
 
   &[aria-current="page"] {
-    font-weight: bolder;
-    border-bottom: 1px solid ${colors.grey};
+    font-weight: bold;
+    color: ${colors.white};
+    border-bottom: 1px solid ${colors.white};
   }
 `;
 
@@ -62,7 +68,6 @@ export const StyledErrorContainer = styled.div`
   justify-content: center;
   opacity: 0.8;
   background-color: ${colors.red};
-  padding: ${MAIN_PADDING};
 `;
 
 export const StyledErrorTextContainer = styled.div`
@@ -91,17 +96,46 @@ export const StyledErrorClose = styled.div`
   cursor: pointer;
 `;
 
-export const StyledHeading = styled.div<{ depth: number; isFirst: boolean }>`
+export const StyledHeading = styled.div<{ isFirst: boolean }>`
   display: flex;
   flex-direction: row;
   align-items: center;
   color: ${colors.navy};
-  font-size: ${(props): number => 1 + 2 / props.depth}rem;
-  font-weight: bold;
-  margin-bottom: ${(props): number => (1 / props.depth) * 2}rem;
-  margin-top: ${(props): number => (props.isFirst ? 0 : 5 / props.depth)}rem;
-  border-bottom: ${(props): string =>
-    props.depth === 1 ? `1px solid ${colors.whiteDarker}` : "none"};
+
+  &.heading-1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  &.heading-2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  &.heading-3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  &.heading-4 {
+    background-color: ${colors.whiteDarker};
+    padding 0.4rem 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  &.heading-5 {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1rem;
+  }
 `;
 
 export const StyledParagraph = styled.p`
@@ -142,4 +176,11 @@ export const StyledImage = styled.img`
   @media (min-width: 1024px) {
     width: calc(20% - 4px);
   }
+`;
+
+export const StyledAvatar = styled.img`
+  border-radius: 2rem;
+  width: 4rem;
+  height: 4rem;
+  flex-grow: none;
 `;

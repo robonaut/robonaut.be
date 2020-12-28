@@ -4,6 +4,7 @@ import React from "react";
 import {
   Code,
   Heading,
+  Html,
   Image,
   Link,
   List,
@@ -17,18 +18,19 @@ import {
 // eslint-disable-next-line  @typescript-eslint/no-explicit-any
 const Renderers: Record<string, React.FC<any>> = {
   blockquote: Quote,
+  br: Text,
   code: Code,
   codespan: Code,
   em: Text,
   heading: Heading,
+  html: Html,
+  image: Image,
   link: Link,
   list: List,
   list_item: ListItem,
   paragraph: Paragraph,
   strong: Text,
-  br: Text,
   text: Text,
-  image: Image,
   table: Table,
 };
 

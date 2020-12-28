@@ -3,6 +3,7 @@ import { connect, ConnectedProps } from "react-redux";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 import Errors from "../elements/errors";
+import Profile from "../elements/profile";
 import ErrorBoundary from "../errors/boundary";
 import { actionCreators } from "../redux/actions";
 import { RootState } from "../redux/reducers";
@@ -63,10 +64,11 @@ const Router = ({
 
   return (
     <>
-      <StyledHeader>
-        <Errors />
-        {isLoggedIn && (
+      {isLoggedIn && (
+        <StyledHeader>
+          <Errors />
           <StyledHeaderContent>
+            <Profile />
             <StyledNavigation>
               {routeDefinitions.map(createNavigationLink)}
             </StyledNavigation>
@@ -81,8 +83,8 @@ const Router = ({
               </StyledLogout>
             </StyledUserContainer>
           </StyledHeaderContent>
-        )}
-      </StyledHeader>
+        </StyledHeader>
+      )}
       <Switch>
         {routeDefinitions.map(({ Component, path, key }, routeIdx) => {
           return (

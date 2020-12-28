@@ -24,7 +24,10 @@ export const StyledLogout = styled.div`
 
 export const StyledLogoutIcon = styled(RiLogoutBoxRLine)`
   font-size: 2rem;
-  color: ${colors.blue};
+  color: ${colors.silver};
+  &:hover {
+    color: ${colors.blue};
+  }
 `;
 
 export const StyledLoginContainer = styled.div`
