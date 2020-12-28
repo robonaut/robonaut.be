@@ -46,7 +46,7 @@ export const StyledLoginWelcome = styled.div`
 
 export const StyledLoginWelcomeText = styled.p`
   text-align: center;
-  color: ${colors.blue};
+  color: ${colors.navy};
   font-size: 1.4rem;
   white-space: pre-line;
 `;
@@ -72,10 +72,14 @@ export const StyledLoginInput = styled.input`
     border-color: ${colors.blue};
   }
   &[type="submit"] {
+    cursor: pointer;
     border: none;
-    background-color: ${colors.blue};
+    background-color: ${colors.navy};
     color: ${colors.white};
     font-weight: bold;
+    &:hover {
+      background-color: ${colors.blue};
+    }
   }
 `;
 
@@ -93,6 +97,6 @@ export const StyledLoginAsGuest = styled.a`
   cursor: pointer;
   text-decoration: underline;
   &:hover {
-    color: blue;
+    color: ${colors.blue};
   }
 `;

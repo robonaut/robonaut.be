@@ -19,6 +19,9 @@ Software engineer with a background in theoretical physics who specializes in sc
 * SQL *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
 * Python *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
 * Ruby *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+* Java *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+* C# *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
+* PHP *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
 
 
 
