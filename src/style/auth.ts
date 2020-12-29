@@ -20,11 +20,17 @@ export const StyledLogout = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @media print {
+    display: none;
+  }
 `;
 
 export const StyledLogoutIcon = styled(RiLogoutBoxRLine)`
   font-size: 2rem;
-  color: ${colors.blue};
+  color: ${colors.silver};
+  &:hover {
+    color: ${colors.blue};
+  }
 `;
 
 export const StyledLoginContainer = styled.div`
@@ -43,8 +49,8 @@ export const StyledLoginWelcome = styled.div`
 
 export const StyledLoginWelcomeText = styled.p`
   text-align: center;
-  color: ${colors.blue};
-  font-size: 1.4rem;
+  color: ${colors.navy};
+  font-size: 2rem;
   white-space: pre-line;
 `;
 
@@ -57,22 +63,27 @@ export const StyledLoginForm = styled.form`
 `;
 
 export const StyledLoginInput = styled.input`
+  font-size: 1.6rem;
   border-style: solid;
   border-width: 1px;
   border-color: ${colors.grey};
   border-radius: 4px;
   padding: 0.6rem;
-  margin: 0.4rem;
+  margin: 0.6rem;
   width: ${LOGIN_FORM_WIDTH}px;
   color: ${colors.navy};
   &:hover {
     border-color: ${colors.blue};
   }
   &[type="submit"] {
+    cursor: pointer;
     border: none;
-    background-color: ${colors.blue};
+    background-color: ${colors.navy};
     color: ${colors.white};
     font-weight: bold;
+    &:hover {
+      background-color: ${colors.blue};
+    }
   }
 `;
 
@@ -89,7 +100,8 @@ export const StyledLoginAsGuest = styled.a`
   color: navy;
   cursor: pointer;
   text-decoration: underline;
+  margin-top: 1rem;
   &:hover {
-    color: blue;
+    color: ${colors.blue};
   }
 `;

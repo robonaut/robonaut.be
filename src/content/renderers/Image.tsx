@@ -1,8 +1,16 @@
 import React from "react";
-import { FaAddressCard, FaCode, FaHeart, FaLaptopCode } from "react-icons/fa";
+import {
+  FaAddressCard,
+  FaCode,
+  FaHeart,
+  FaLaptopCode,
+  FaList,
+  FaRegStar,
+  FaStar,
+  FaThumbsUp,
+} from "react-icons/fa";
 import { IconType } from "react-icons/lib";
 
-import colors from "../../style/colors";
 import { StyledImage } from "../../style/layout";
 
 const icons: Record<string, IconType> = {
@@ -10,6 +18,10 @@ const icons: Record<string, IconType> = {
   FaCode,
   FaHeart,
   FaLaptopCode,
+  FaList,
+  FaRegStar,
+  FaStar,
+  FaThumbsUp,
 };
 
 export default ({
@@ -26,7 +38,7 @@ export default ({
       return null;
     }
 
-    return <Icon style={{ marginRight: "1rem", color: colors.navy }} />;
+    return <Icon className={`icon ${href}`} />;
   }
 
   return <StyledImage src={href} alt={text} />;

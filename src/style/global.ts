@@ -10,31 +10,39 @@ const GlobalStyle = createGlobalStyle`
   }
   :root {
     font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
+    font-size: 62.5%;
 
     @media (min-width: 768px) {
-      font-size: 80%;
+
     }
 
     @media (min-width: 1024px) {
-      font-size: 100%
+
+    }
+
+    @media print {
+      @page { margin: 0; }
+      html {
+        font-size: 11px;
+      }
+      body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+      }
     }
 
   }
-  html body {
+  body {
     margin: 0px;
     margin: auto;
     overflow-y: scroll;
+    font-size: 1.4rem;
   }
 
   ul {
     list-style-type: none;
-    margin: 16px;
+    margin: 1rem;
     padding: 0;
-  }
-
-  li::before {
-    content: "• ";
   }
 
   iframe {

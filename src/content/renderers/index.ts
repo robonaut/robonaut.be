@@ -1,5 +1,6 @@
 export { default as Code } from "./Code";
 export { default as Heading } from "./Heading";
+export { default as Html } from "./Html";
 export { default as Image } from "./Image";
 export { default as Link } from "./Link";
 export { default as List } from "./List";

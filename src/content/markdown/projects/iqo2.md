@@ -1,8 +1,8 @@
-# iQO2 
+# Projects
 
-iQO2 is a comprehensive software for endurance athletes, coaches and teams designed to train smarter and optimize performance with powerful tools to plan and analyze training sessions and races.
+## iQO2 
 
-Our software is being used daily by professional teams and sport federations like Topsport Vlaanderen - Baloise team , WM3 Pro Cycling Team , Lotto-Soudal Cycling Team , Cibel Team , Granville , Veranda Willems-Crelan , Royal Belgian Cycling Federation  and many professional coaches and test centers.
+iQO2 is a comprehensive software platform for endurance athletes, coaches and teams designed to train smarter and optimize performance with powerful tools to plan and analyze training sessions and races. Our software is being used daily by professional teams and sport federations like Topsport Vlaanderen - Baloise team , WM3 Pro Cycling Team , Lotto-Soudal Cycling Team , Cibel Team , Granville , Veranda Willems-Crelan , Royal Belgian Cycling Federation  and many professional coaches and test centers.
 
 ### DB Migration
 
@@ -13,9 +13,9 @@ Migrated the existing SQL Server database to AWS Aurora MySQL hereby reducing co
 [![apple_appstore](/assets/images/apple_appstore.png)](https://apps.apple.com/us/app/iqo2/id1330388026?ls=1)
 [![google_playstore](/assets/images/google_playstore.png)](https://play.google.com/store/apps/details?id=com.iqo2.tracker)
 
-Created a mobile app in **React Native**. In the app coaches and athletes can keep track of their progress and view both planned and executed workouts. Athletes can keep track of their body metrics and also view their training zones.
+Created a mobile app in **React Native**. In the app coaches and athletes can keep track of their progress and view both planned and executed workouts. Athletes can keep track of their body metrics and also view their training zones. This app has push notifications support and is backed by technologies such as **Redux**, **Redux Saga**, **Firebase**, **Mapbox**, **D3**, **Styled Components** and **React Navigation**.
 
-This app has push notifications support and is backed by technologies such as **Redux**, **Redux Saga**, **Firebase**, **Mapbox**, **D3**, **Styled Components** and **React Navigation**.
+#### Screenshots
 
 ![Login](/assets/images/iqo2/Login.png)
 ![Feed](/assets/images/iqo2/Feed.png)
