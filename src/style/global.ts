@@ -20,6 +20,17 @@ const GlobalStyle = createGlobalStyle`
       font-size: 100%
     }
 
+    @media print {
+      @page { margin: 0; }
+      html {
+        font-size: 11px;
+      }
+      body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+
   }
   html body {
     margin: 0px;
@@ -29,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
 
   ul {
     list-style-type: none;
-    margin: 16px;
+    margin: 1rem;
     padding: 0;
   }
 

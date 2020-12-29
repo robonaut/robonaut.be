@@ -20,6 +20,9 @@ export const StyledLogout = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @media print {
+    display: none;
+  }
 `;
 
 export const StyledLogoutIcon = styled(RiLogoutBoxRLine)`

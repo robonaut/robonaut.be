@@ -53,7 +53,7 @@ export function renderToken(token: Token, idx: number): JSX.Element | null {
 }
 
 export default (markdown: string): JSX.Element | null => {
-  const tokens = lexer(markdown);
+  const tokens = lexer(markdown, { gfm: true });
 
   return <>{tokens.map(renderToken)}</>;
 };

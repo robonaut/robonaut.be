@@ -1,10 +1,10 @@
 {
   "navigation": {
-    "home": {
-      "title": "Home"
-    },
     "about": {
       "title": "About"
+    },
+    "contact": {
+      "title": "Contact"
     },
     "projects": {
       "title": "Projects"
@@ -19,12 +19,6 @@
       "usernameEmptyError": "Please provide a username",
       "passwordEmptyError": "Please provide a password",
       "loginAsGuest": "login as guest"
-    },
-    "home": {
-      "intro": "This is my personal website"
-    },
-    "projects": {
-      "title": "Projects"
     }
   }
 }

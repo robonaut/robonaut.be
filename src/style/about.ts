@@ -4,21 +4,13 @@ import styled from "styled-components";
 import colors from "./colors";
 
 export const StyledAboutPage = styled.div`
-  .heading-4 {
-    background-color: ${colors.whiteDarker};
-  }
-
-  .heading-3 .icon {
-    margin-right: 1rem;
-  }
-
   ul li {
     display: inline-block;
     &:not(:last-child) {
       margin-right: 2rem;
     }
     > span {
-      color: ${colors.navy};
+      color: ${colors.blue};
       font-weight: bold;
       display: flex;
       flex-direction: column;
@@ -27,5 +19,12 @@ export const StyledAboutPage = styled.div`
         font-size: 0.6rem;
       }
     }
+  }
+  .work-entry {
+    color: ${colors.blue};
+  }
+
+  .company {
+    color: red;
   }
 `;

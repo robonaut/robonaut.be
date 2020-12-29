@@ -11,6 +11,9 @@ export const MainContainer = styled.div``;
 export const MainContent = styled.div`
   padding: ${HEADER_HEIGHT} ${MAIN_PADDING} ${MAIN_PADDING} ${MAIN_PADDING};
   position: relative;
+  @media print {
+    padding: 0 ${MAIN_PADDING};
+  }
 `;
 
 export const StyledHeader = styled.div`
@@ -22,6 +25,9 @@ export const StyledHeader = styled.div`
   background-color: ${colors.navy};
   height: ${HEADER_HEIGHT};
   padding: 0 ${MAIN_PADDING};
+  @media print {
+    position: relative;
+  }
 `;
 
 export const StyledHeaderContent = styled.div`
@@ -103,31 +109,56 @@ export const StyledHeading = styled.div<{ isFirst: boolean }>`
   color: ${colors.navy};
 
   &.heading-1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid ${colors.silver};
+    color: ${colors.navy};
   }
 
   &.heading-2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 1.4rem;
-    margin-bottom: 1rem;
+    color: ${colors.navy};
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
+    .icon {
+      margin-right: 1rem;
+    }
   }
 
   &.heading-3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-
-  &.heading-4 {
+    color: ${colors.navy};
     background-color: ${colors.whiteDarker};
     padding 0.4rem 1rem;
     border-radius: 8px;
     font-size: 1.2rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    .icon {
+      margin-right: 1rem;
+    }
+    a {
+      font-size: 1rem;
+      margin-left: 1rem;
+      text-decoration: none;
+      color: ${colors.blue};
+    }
+  }
+
+  &.heading-4 {
+    display: inline-block;
+    color: ${colors.blue};
+    border-radius: 8px;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   &.heading-5 {
@@ -135,10 +166,11 @@ export const StyledHeading = styled.div<{ isFirst: boolean }>`
     font-weight: bold;
     font-style: italic;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 
-export const StyledParagraph = styled.p`
+export const StyledParagraph = styled.div`
   margin-top: 1rem;
 `;
 
@@ -156,8 +188,23 @@ export const StyledText = styled.span<{ type: string }>`
 `;
 
 export const StyledQuote = styled.div`
-  border-left: 8px solid ${colors.whiteDarker};
+  border-left: 8px solid ${colors.silver};
   padding-left: 8px;
+
+  + * .cite {
+    display: inline-block;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+
+  + * .author {
+    color: ${colors.blue};
+  }
+
+  + * .role {
+    color: ${colors.grey};
+    margin-left: 1rem;
+  }
 `;
 
 export const StyledImage = styled.img`

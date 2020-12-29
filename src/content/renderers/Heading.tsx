@@ -3,6 +3,7 @@ import React from "react";
 import { StyledHeading } from "../../style/layout";
 
 export default ({
+  text,
   depth,
   isFirst,
   children,
@@ -12,7 +13,10 @@ export default ({
   isFirst: boolean;
   children: JSX.Element;
 }): JSX.Element => (
-  <StyledHeading isFirst={isFirst} className={`heading-${depth}`}>
+  <StyledHeading
+    isFirst={isFirst}
+    className={`heading-${depth} heading ${text.toLowerCase()}`}
+  >
     {children}
   </StyledHeading>
 );

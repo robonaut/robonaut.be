@@ -4,8 +4,10 @@ import {
   FaCode,
   FaHeart,
   FaLaptopCode,
+  FaList,
   FaRegStar,
   FaStar,
+  FaThumbsUp,
 } from "react-icons/fa";
 import { IconType } from "react-icons/lib";
 
@@ -16,8 +18,10 @@ const icons: Record<string, IconType> = {
   FaCode,
   FaHeart,
   FaLaptopCode,
+  FaList,
   FaRegStar,
   FaStar,
+  FaThumbsUp,
 };
 
 export default ({

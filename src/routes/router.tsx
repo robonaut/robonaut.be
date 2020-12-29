@@ -65,7 +65,7 @@ const Router = ({
   return (
     <>
       {isLoggedIn && (
-        <StyledHeader>
+        <StyledHeader className="header">
           <Errors />
           <StyledHeaderContent>
             <Profile />

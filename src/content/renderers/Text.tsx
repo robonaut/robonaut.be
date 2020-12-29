@@ -11,5 +11,13 @@ export default ({
   type: string;
   children: JSX.Element;
 }): JSX.Element => {
-  return <StyledText type={type}>{children ? children : text}</StyledText>;
+  return (
+    <StyledText type={type}>
+      {children ? (
+        children
+      ) : (
+        <span dangerouslySetInnerHTML={{ __html: text }} />
+      )}
+    </StyledText>
+  );
 };
