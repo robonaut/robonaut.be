@@ -10,14 +10,14 @@ const GlobalStyle = createGlobalStyle`
   }
   :root {
     font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
+    font-size: 62.5%;
 
     @media (min-width: 768px) {
-      font-size: 80%;
+
     }
 
     @media (min-width: 1024px) {
-      font-size: 100%
+
     }
 
     @media print {
@@ -32,10 +32,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
   }
-  html body {
+  body {
     margin: 0px;
     margin: auto;
     overflow-y: scroll;
+    font-size: 1.4rem;
   }
 
   ul {

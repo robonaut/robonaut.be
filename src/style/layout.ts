@@ -33,7 +33,7 @@ export const StyledHeader = styled.div`
 export const StyledHeaderContent = styled.div`
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.6rem;
   height: 100%;
   justify-content: space-between;
 `;
@@ -41,12 +41,12 @@ export const StyledHeaderContent = styled.div`
 export const StyledNavigation = styled.div`
   display: flex;
   flex: 1;
-  margin-left: 2rem;
+  margin-left: 3rem;
 `;
 
 export const StyledNavigationLink = styled(NavLink)`
   color: ${colors.blue};
-  margin-right: 1rem;
+  margin-right: 2rem;
   text-decoration: none;
   color: ${colors.silver};
 
@@ -66,6 +66,7 @@ export const StyledUncaughtErrorText = styled.p`
 `;
 
 export const StyledErrorContainer = styled.div`
+  height: ${HEADER_HEIGHT};
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -83,7 +84,7 @@ export const StyledErrorTextContainer = styled.div`
 `;
 
 export const StyledErrorText = styled.p`
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   color: ${colors.whiteDarker};
 `;
 
@@ -109,7 +110,7 @@ export const StyledHeading = styled.div<{ isFirst: boolean }>`
   color: ${colors.navy};
 
   &.heading-1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -120,9 +121,9 @@ export const StyledHeading = styled.div<{ isFirst: boolean }>`
 
   &.heading-2 {
     color: ${colors.navy};
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bolder;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1.6rem;
     .icon {
       margin-right: 1rem;
@@ -134,12 +135,12 @@ export const StyledHeading = styled.div<{ isFirst: boolean }>`
     background-color: ${colors.whiteDarker};
     padding 0.4rem 1rem;
     border-radius: 8px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bolder;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     .icon {
       margin-right: 1rem;
     }
@@ -155,18 +156,18 @@ export const StyledHeading = styled.div<{ isFirst: boolean }>`
     display: inline-block;
     color: ${colors.blue};
     border-radius: 8px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
   }
 
   &.heading-5 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     font-style: italic;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
   }
 `;
 
@@ -204,6 +205,7 @@ export const StyledQuote = styled.div`
   + * .role {
     color: ${colors.grey};
     margin-left: 1rem;
+    font-size: 1rem;
   }
 `;
 
