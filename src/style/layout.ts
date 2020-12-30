@@ -69,6 +69,7 @@ export const StyledErrorContainer = styled.div`
   height: ${HEADER_HEIGHT};
   pointer-events: none;
   position: absolute;
+  z-index: 2;
   width: 100%;
   display: flex;
   align-items: center;

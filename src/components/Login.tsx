@@ -7,7 +7,6 @@ import { actionCreators } from "../redux/actions";
 import { RootState } from "../redux/reducers";
 import { isLoggedInSelector } from "../redux/selectors/auth";
 import {
-  StyledLoginAsGuest,
   StyledLoginContainer,
   StyledLoginError,
   StyledLoginErrorText,
@@ -92,13 +91,6 @@ const Login = ({
           }}
         />
         <StyledLoginInput type="submit" value="Log in!" onClick={handleLogin} />
-        <StyledLoginAsGuest
-          onClick={(): void => {
-            login({ username: "guest", password: "guest" });
-          }}
-        >
-          {t("pages.login.loginAsGuest")}
-        </StyledLoginAsGuest>
       </StyledLoginForm>
     </StyledLoginContainer>
   );

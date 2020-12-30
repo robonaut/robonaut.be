@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, ConnectedProps } from "react-redux";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch, useHistory } from "react-router-dom";
 
 import Errors from "../elements/errors";
 import Profile from "../elements/profile";
@@ -9,7 +9,8 @@ import { actionCreators } from "../redux/actions";
 import { RootState } from "../redux/reducers";
 import { isLoggedInSelector, userSelector } from "../redux/selectors/auth";
 import {
-  StyledLogout,
+  StyledAuth,
+  StyledLoginIcon,
   StyledLogoutIcon,
   StyledUserContainer,
   StyledUserEmail,
@@ -62,43 +63,57 @@ const Router = ({
   const loginPath =
     routeDefinitions.find((def) => def.key === "login")?.path ?? "/";
 
+  const history = useHistory();
+
   return (
     <>
       <Errors />
-      {isLoggedIn && (
-        <StyledHeader className="header">
-          <StyledHeaderContent>
-            <Profile />
-            <StyledNavigation>
-              {routeDefinitions.map(createNavigationLink)}
-            </StyledNavigation>
+      <StyledHeader className="header">
+        <StyledHeaderContent>
+          <Profile />
+          <StyledNavigation>
+            {routeDefinitions.map((definition, definitionIdx) => {
+              return !isLoggedIn && definition.requiresAuth
+                ? null
+                : createNavigationLink(definition, definitionIdx);
+            })}
+          </StyledNavigation>
+          {isLoggedIn && (
             <StyledUserContainer>
               <StyledUserEmail>{user.email}</StyledUserEmail>
-              <StyledLogout
+              <StyledAuth
                 onClick={(): void => {
                   logout();
                 }}
               >
                 <StyledLogoutIcon />
-              </StyledLogout>
+              </StyledAuth>
             </StyledUserContainer>
-          </StyledHeaderContent>
-        </StyledHeader>
-      )}
+          )}
+          {!isLoggedIn && (
+            <StyledAuth
+              onClick={(): void => {
+                history.push(loginPath);
+              }}
+            >
+              <StyledLoginIcon />
+            </StyledAuth>
+          )}
+        </StyledHeaderContent>
+      </StyledHeader>
       <Switch>
-        {routeDefinitions.map(({ Component, path, key }, routeIdx) => {
+        {routeDefinitions.map(({ Component, path, requiresAuth }, routeIdx) => {
           return (
             <Route key={`route-${routeIdx}`} path={path} exact={path === "/"}>
-              {key === "login" && <Component />}
-              {key !== "login" && isLoggedIn ? (
-                <MainContent>
-                  <ErrorBoundary>
+              <MainContent>
+                <ErrorBoundary>
+                  {requiresAuth && !isLoggedIn ? (
+                    <Redirect to={loginPath} />
+                  ) : (
                     <Component />
-                  </ErrorBoundary>
-                </MainContent>
-              ) : (
-                <Redirect to={loginPath} />
-              )}
+                  )}
+                </ErrorBoundary>
+              </MainContent>
             </Route>
           );
         })}
