@@ -1,8 +1,8 @@
-import { RiLogoutBoxRLine } from "react-icons/ri";
+import { IoLogInOutline, IoLogOutOutline } from "react-icons/io5";
 import styled from "styled-components";
 
 import colors from "./colors";
-import { LOGIN_FORM_WIDTH } from "./sizes";
+import { HEADER_HEIGHT, LOGIN_FORM_WIDTH } from "./sizes";
 
 export const StyledUserContainer = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ export const StyledUserEmail = styled.div`
   margin-right: 2rem;
 `;
 
-export const StyledLogout = styled.div`
+export const StyledAuth = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +25,16 @@ export const StyledLogout = styled.div`
   }
 `;
 
-export const StyledLogoutIcon = styled(RiLogoutBoxRLine)`
-  font-size: 2rem;
+export const StyledLogoutIcon = styled(IoLogOutOutline)`
+  font-size: 3rem;
+  color: ${colors.silver};
+  &:hover {
+    color: ${colors.blue};
+  }
+`;
+
+export const StyledLoginIcon = styled(IoLogInOutline)`
+  font-size: 3rem;
   color: ${colors.silver};
   &:hover {
     color: ${colors.blue};
@@ -34,8 +42,12 @@ export const StyledLogoutIcon = styled(RiLogoutBoxRLine)`
 `;
 
 export const StyledLoginContainer = styled.div`
-  width: 100%;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(100vh - ${HEADER_HEIGHT});
+  margin-top: ${HEADER_HEIGHT};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,12 +100,12 @@ export const StyledLoginInput = styled.input`
 `;
 
 export const StyledLoginError = styled.div`
-  height: 1rem;
+  height: 2rem;
 `;
 
 export const StyledLoginErrorText = styled.p`
   color: ${colors.red};
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 `;
 
 export const StyledLoginAsGuest = styled.a`
