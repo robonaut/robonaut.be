@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Admin from "../components/Admin";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
 import Projects from "../components/Projects";
@@ -38,6 +39,6 @@ export const routeDefinitions = [
     title: i18n.t("navigation.admin.title"),
     path: "/admin",
     requiresAuth: true,
-    Component: Contact,
+    Component: Admin,
   },
 ];
