@@ -30,4 +30,8 @@ export const StyledAboutPage = styled.div`
   .company {
     color: red;
   }
+
+  .heading-3 ~ div span[type="em"] {
+    font-size: 1.2rem;
+  }
 `;

@@ -7,10 +7,10 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 ## ![icon](FaLaptopCode) Skills
 
-*  Advanced *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-*  Proficient *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-*  Intermediate *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-*  Basic *![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
+>*  Advanced *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
+>*  Proficient *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
+>*  Intermediate *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+>*  Basic *![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
 
 ### Languages
 
@@ -101,17 +101,13 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 *Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. Sentiance context intelligence enables solutions for lifestyle based insurance, contextual marketing & commerce, smart mobility, connected health, smart home, smart city and connected car.*
 
-<br />
-
-![icon](FaBookmark) I led a team of full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, friending, commenting, picture upload, notifications, ...). The project resulted in a new company Aaqua.
+![icon](FaBookmark) I led a team of full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, friending, commenting, picture upload, notifications, ...). The project resulted in a new company [Aaqua](https://aaqua.live/).
 
 ![icon](FaBookmark) I initiated a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We then created a brand new app (React Native, Redux, Redux Saga) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) while enforcing 98% test coverage.
 
 ### Small Town Heroes
 
 *Small Town Heroes is a Ghent based startup that provides software tools and services for broadcaster and publishers with a focus on mobile video experiences and user interactions.*
-
-<br />
 
 ![icon](FaBookmark) I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously and actively learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, SQL and NoSQL data stores and a plethora of frontend development frameworks like backbone.js, react.js and react-native.
 
@@ -125,8 +121,6 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 *VRT-medialab was the technological research department of VRT, Flanders’ public service broadcaster. VRT-medialab carries out research into the creation, management and distribution of media content. Its focus is on the Flemish media market, but VRT-medialab pursues collaboration on a European and worldwide level.*
 
-<br />
-
 ![icon](FaBookmark) I was part of the development team that launched one of the first second-screen applications (Ruby, Redis, PostgreSQL) for a live TV show in Flanders. In the hours before going live on air I fixed a critical performance issue.
 
 ![icon](FaBookmark) I wrote and presented an IEE publication for SMPTE (Society of Motion Picture & Television Engineers): "Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations."
@@ -134,8 +128,6 @@ Software engineer with a background in theoretical physics who specializes in sc
 ### Spector Photogroup [[link]](https://smartphoto.be/)
 
 *SmartPhoto is one of the leading providers of photo service in Europe; and is dedicated to making beautiful Photo products. Our intuitive web platform helps you share your pictures, and create stunning Photo products.*
-
-<br />
 
 ![icon](FaBookmark) As an application tester I reviewed the code and database queries and gained hands-on experience with an international e-commerce platform coded in .NET #C and MS SQL. I also developed an internal tool in C# for validating photo orders.
 
