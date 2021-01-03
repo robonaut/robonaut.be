@@ -151,9 +151,6 @@ export const StyledHeading = styled.div<{ isFirst: boolean }>`
       text-decoration: none;
       color: ${colors.blue};
     }
-    ~ div {
-      padding 0 1rem;
-    }
   }
 
   &.heading-4 {

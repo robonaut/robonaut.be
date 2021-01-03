@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+import colors from "./colors";
 import prism from "./prism";
 
 const GlobalStyle = createGlobalStyle`
@@ -47,6 +48,14 @@ const GlobalStyle = createGlobalStyle`
 
   iframe {
     border-width: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${colors.blue};
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   ${prism}
