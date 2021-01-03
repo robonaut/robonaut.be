@@ -190,7 +190,7 @@ export const StyledText = styled.span<{ type: string }>`
 `;
 
 export const StyledQuote = styled.div`
-  border-left: 8px solid ${colors.silver};
+  border-left: 8px solid ${colors.whiteDarker};
   padding-left: 8px;
 
   + * .cite {
