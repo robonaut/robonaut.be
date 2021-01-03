@@ -1,9 +1,12 @@
-// import { RiLogoutBoxRLine } from "react-icons/ri";
 import styled from "styled-components";
 
 import colors from "./colors";
 
 export const StyledAboutPage = styled.div`
+  .icon.FaBookmark {
+    color: ${colors.blue};
+    margin-right: 0.4rem;
+  }
   ul li {
     display: inline-block;
     &:not(:last-child) {
