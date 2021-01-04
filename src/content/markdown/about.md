@@ -135,24 +135,26 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 ### Master of science - Applied Information Technology [[UGent]](https://www.ugent.be/)
 
-<div class="highlight">2006/10/01 - 2007/08/31</div>
+<div class="date">2006/10/01 - 2007/08/31</div>
+<!-- <div class="thesis"><span>Thesis: </span>Design of dynamic website</div> -->
 
 ### Master of science - Physics [[UGent]](https://www.ugent.be/)
-<div class="highlight">2002/10/01 - 2006/06/30</div>
+<div class="date">2002/10/01 - 2006/06/30</div>
+<!-- <div class="thesis"><span>Thesis: </span>An introduction to magnetic monopoles</div> -->
 
 ## ![icon](FaThumbsUp) References
 
 >Ilja is a gifted Full Stack Engineer and brought lots of maturity to the team. He has a deep understanding of the whole software development lifecycle and set out to build a solid exemplary pipeline. He should not only join your team, he should lead it.
-<span class="cite">~ <span class="author">Filip Van Titelboom</span><span class="role">Infrastructure Lead at Sentiance</span>
+<span class="cite">~ <span class="author">Filip Van Titelboom</span><span class="role">worked together in different teams as Infrastructure Lead at Sentiance</span>
 
 >Ilja & I built the Full Stack Engineering team at Sentiance. He was highly involved in hiring and mentoring engineers, introducing best practices, making sure our software standards were excellent, setting up software architecture, and successfully shipping several products. Ilja is exceptionally skilled in JavaScript, which allows him to apply this knowledge on multiple layers of software architecture. I can only conclude that Ilja is truly one of the best Full Stack Engineers I've ever worked with.
-<span class="cite">~ <span class="author">Jiri Crispeyn</span><span class="role">Senior Full Stack Engineer at Sentiance</span>
+<span class="cite">~ <span class="author">Jiri Crispeyn</span><span class="role">worked together in the same team as Senior Full Stack Engineer at Sentiance</span>
 
 > Ilja is the canonical example of "Mens sana in corpore sano". He gracefully lived through the rough times of an early startup: designing scalable architecture, developing it and ... also running it. Over the years I've seen him evolve to a professional cloud native with a great hunger for new things but with enough pragmatism to deliver your product without the worries. Allrounder skilled in AWS, Mobile, Modern Web and data algorithms, I can only recommend him and envy you when you hire him.
-<span class="cite">~ <span class="author">Patrick Debois</span><span class="role">CTO at Small Town Heroes</span>
+<span class="cite">~ <span class="author">Patrick Debois</span><span class="role">managed Ilja directly as CTO of Small Town Heroes</span>
 
 > I've had the pleasure of studying for my M. Sc. in physics together with Ilja, including many group assignments, and having his sharp mind and inspiring creativity around consistently made it more pleasant to Get Things Done
-<span class="cite">~ <span class="author">Wouter Smet</span><span class="role">Studied physics together at UGent</span>
+<span class="cite">~ <span class="author">Wouter Smet</span><span class="role">Studied physics with Ilja at UGent</span>
 
 ## ![icon](FaHeart) Interests
 

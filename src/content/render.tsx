@@ -27,7 +27,7 @@ const renderer: Partial<Renderer> = {
     return `<pre class="language-ts"><code class="language-ts">${html}</code></pre>`;
   },
   link(href: string, _title: string, text: string) {
-    return `<a href=${href} target="_blank" rel="noopener noreferrer">${text}</a>`;
+    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`;
   },
 };
 
