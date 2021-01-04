@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack serve --config webpack.config.ts",
     "build": "rm -rf dist && NODE_ENV=production webpack --config webpack.config.ts --progress --profile --color",
+    "deploy": "npm run build && ./scripts/deploy.sh",
     "lint": "eslint --ext .tsx,.ts ./src/",
     "lint:fix": "npm run lint -- --fix",
     "postinstall": "./scripts/fix_typings.sh",
