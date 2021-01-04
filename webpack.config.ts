@@ -84,6 +84,8 @@ const productionConfig: webpack.Configuration = {
 };
 
 const webpackConfig: webpack.Configuration =
-  process.env.NODE_ENV === "production" ? productionConfig : developmentConfig;
+  process.env.WEBPACK_ENV === "production"
+    ? productionConfig
+    : developmentConfig;
 
 export default webpackConfig;

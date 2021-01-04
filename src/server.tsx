@@ -15,5 +15,7 @@ export function renderStatic(
 
   const style = sheet.getStyleTags();
 
+  sheet.seal();
+
   return { body, style };
 }
