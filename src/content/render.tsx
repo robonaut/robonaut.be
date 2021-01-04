@@ -1,59 +1,41 @@
-import { lexer, Token } from "marked";
+import marked, { Renderer } from "marked";
+import Prism from "prismjs";
 import React from "react";
+import { renderToString } from "react-dom/server";
 
-import {
-  Code,
-  Heading,
-  Html,
-  Image,
-  Link,
-  List,
-  ListItem,
-  Paragraph,
-  Quote,
-  Table,
-  Text,
-} from "./renderers";
+import { StyledPage } from "../style/page";
+import Image from "./renderers/Image";
 
-// eslint-disable-next-line  @typescript-eslint/no-explicit-any
-const Renderers: Record<string, React.FC<any>> = {
-  blockquote: Quote,
-  br: Text,
-  code: Code,
-  codespan: Code,
-  em: Text,
-  heading: Heading,
-  html: Html,
-  image: Image,
-  link: Link,
-  list: List,
-  list_item: ListItem,
-  paragraph: Paragraph,
-  strong: Text,
-  text: Text,
-  table: Table,
+require("prismjs/components/prism-typescript");
+
+const renderer: Partial<Renderer> = {
+  image(href: string, title: string, text: string) {
+    const image = <Image href={href} text={text} title={title} />;
+    // const div = document.createElement("div");
+    const html = renderToString(image);
+
+    return html;
+  },
+  codespan(text: string) {
+    const html = Prism.highlight(text, Prism.languages.ts, "ts");
+
+    return `<code class="language-ts">${html}</code>`;
+  },
+  code(text: string) {
+    const html = Prism.highlight(text, Prism.languages.ts, "ts");
+
+    return `<pre class="language-ts"><code class="language-ts">${html}</code></pre>`;
+  },
+  link(href: string, _title: string, text: string) {
+    return `<a href=${href} target="_blank" rel="noopener noreferrer">${text}</a>`;
+  },
 };
 
-export function renderToken(token: Token, idx: number): JSX.Element | null {
-  // @ts-ignore
-  const Renderer = Renderers[token.type] ?? null;
-
-  if (Renderer === null) {
-    return null;
-  }
-
-  return (
-    <Renderer key={`token-${idx}`} {...token} isFirst={idx === 0}>
-      {
-        // @ts-ignore
-        Array.isArray(token.tokens) ? token.tokens.map(renderToken) : null
-      }
-    </Renderer>
-  );
-}
+// @ts-ignore
+marked.use({ renderer });
 
 export default (markdown: string): JSX.Element | null => {
-  const tokens = lexer(markdown, { gfm: true });
+  const html = marked(markdown, { gfm: true, smartypants: true });
 
-  return <>{tokens.map(renderToken)}</>;
+  return <StyledPage dangerouslySetInnerHTML={{ __html: html }} />;
 };

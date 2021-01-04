@@ -42,7 +42,6 @@ const GlobalStyle = createGlobalStyle`
 
   ul {
     list-style-type: none;
-    margin: 1rem;
     padding: 0;
   }
 
@@ -56,6 +55,10 @@ const GlobalStyle = createGlobalStyle`
     &:hover {
       font-weight: bold;
     }
+  }
+
+  p {
+    margin-bottom: 2rem;
   }
 
   ${prism}
