@@ -15,6 +15,7 @@ whitelist: &whitelist
     - node_modules/*
     - test/*
     - src/*
+    - scripts
     - Makefile
     - package-lock.json
     - package.json
