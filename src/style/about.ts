@@ -3,6 +3,10 @@ import styled from "styled-components";
 import colors from "./colors";
 
 export const StyledAboutPage = styled.div`
+  .rating {
+    color: ${colors.blue};
+    font-size: 0.8rem;
+  }
   .icon.FaBookmark {
     color: ${colors.blue};
     margin-right: 0.4rem;
@@ -12,26 +16,15 @@ export const StyledAboutPage = styled.div`
     &:not(:last-child) {
       margin-right: 2rem;
     }
-    > span {
-      color: ${colors.blue};
-      font-weight: bold;
-      display: flex;
-      flex-direction: column;
-      .icon {
-        color: ${colors.blue};
-        font-size: 0.6rem;
-      }
+  }
+  #icon-work {
+    ~ h3 + p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
   }
-  .work-entry {
+  .highlight {
+    font-weight: bold;
     color: ${colors.blue};
-  }
-
-  .company {
-    color: red;
-  }
-
-  .heading-3 ~ div span[type="em"] {
-    font-size: 1.2rem;
   }
 `;

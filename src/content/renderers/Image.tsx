@@ -36,6 +36,7 @@ export default ({
 }: {
   text: string;
   href: string;
+  title?: string;
 }): JSX.Element | null => {
   if (text === "icon") {
     const Icon = icons[href];

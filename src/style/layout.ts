@@ -2,7 +2,11 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 import colors from "./colors";
-import { HEADER_HEIGHT, MAIN_PADDING } from "./sizes";
+import {
+  FULL_HEADER_MINIMAL_WIDTH,
+  HEADER_HEIGHT,
+  MAIN_PADDING,
+} from "./sizes";
 
 // MAIN
 
@@ -41,7 +45,6 @@ export const StyledHeaderContent = styled.div`
 export const StyledNavigation = styled.div`
   display: flex;
   flex: 1;
-  margin-left: 3rem;
 `;
 
 export const StyledNavigationLink = styled(NavLink)`
@@ -104,112 +107,6 @@ export const StyledErrorClose = styled.div`
   cursor: pointer;
 `;
 
-export const StyledHeading = styled.div<{ isFirst: boolean }>`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: ${colors.navy};
-
-  &.heading-1 {
-    font-size: 2.6rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid ${colors.silver};
-    color: ${colors.navy};
-  }
-
-  &.heading-2 {
-    color: ${colors.navy};
-    font-size: 2rem;
-    font-weight: bolder;
-    margin-top: 3rem;
-    margin-bottom: 1.6rem;
-    .icon {
-      margin-right: 1rem;
-    }
-  }
-
-  &.heading-3 {
-    color: ${colors.navy};
-    background-color: ${colors.whiteDarker};
-    padding 0.4rem 1rem;
-    border-radius: 8px;
-    font-size: 1.6rem;
-    font-weight: bolder;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 2rem;
-    margin-bottom: 1.6rem;
-    .icon {
-      margin-right: 1rem;
-    }
-    a {
-      font-size: 1rem;
-      margin-left: 1rem;
-      text-decoration: none;
-      color: ${colors.blue};
-    }
-  }
-
-  &.heading-4 {
-    display: inline-block;
-    color: ${colors.blue};
-    border-radius: 8px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 1.6rem;
-  }
-
-  &.heading-5 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    font-style: italic;
-    margin-top: 2rem;
-    margin-bottom: 1.6rem;
-  }
-`;
-
-export const StyledParagraph = styled.div`
-  margin-top: 1rem;
-`;
-
-export const StyledList = styled.ul``;
-
-export const StyledListItem = styled.li``;
-
-export const StyledLink = styled.a``;
-
-export const StyledText = styled.span<{ type: string }>`
-  font-weight: ${(props): string =>
-    props.type === "strong" ? "bold" : "inherit"};
-  font-style: ${(props): string =>
-    props.type === "em" ? "italic" : "inherit"};
-`;
-
-export const StyledQuote = styled.div`
-  border-left: 8px solid ${colors.whiteDarker};
-  padding-left: 8px;
-
-  + * .cite {
-    display: inline-block;
-    margin: 1rem 0;
-    font-weight: bold;
-  }
-
-  + * .author {
-    color: ${colors.blue};
-  }
-
-  + * .role {
-    color: ${colors.grey};
-    margin-left: 1rem;
-    font-size: 1rem;
-  }
-`;
-
 export const StyledImage = styled.img`
   width: calc(50% - 4px);
   border-radius: 8px;
@@ -233,4 +130,8 @@ export const StyledAvatar = styled.img`
   width: 4rem;
   height: 4rem;
   flex-grow: none;
+  margin-right: 2rem;
+  @media (max-width: ${FULL_HEADER_MINIMAL_WIDTH}px) {
+    display: none;
+  }
 `;

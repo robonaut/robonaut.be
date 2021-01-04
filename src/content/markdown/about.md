@@ -7,90 +7,90 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 ## ![icon](FaLaptopCode) Skills
 
->*  Advanced *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
->*  Proficient *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
->*  Intermediate *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
->*  Basic *![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
+>*  Advanced <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+>*  Proficient <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+>*  Intermediate <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+>*  Basic <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### Languages
 
-* Dutch *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* English *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* French *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* German *![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
+* Dutch <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* English <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* French <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* German <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### Programming
 
-* TypeScript *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* JavaScript *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Node.js *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* HTML/CSS *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* React Native *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* SQL *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Python *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* Ruby *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* Java *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* C# *![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
-* PHP *![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)*
+* TypeScript <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* JavaScript <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Node.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* HTML/CSS <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* React Native <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* SQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Python <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* Ruby <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* Java <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* C# <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* PHP <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### Software Architecture
 
-* API Design *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Web Development *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* TDD *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Microservices *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* AWS *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* NoSQL *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Serverless *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Database Design *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Kafka *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* RabbitMQ *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+* API Design <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Web Development <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* TDD <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Microservices <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* AWS <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* NoSQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Serverless <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Database Design <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Kafka <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* RabbitMQ <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### Mobile Applications
 
-* Fastlane *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Push Notifications *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Analytics *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Release pipelines *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* React Native bridging *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Android Studio *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* XCode *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* Mobile SDK's *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+* Fastlane <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Push Notifications <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Analytics <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Release pipelines <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* React Native bridging <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Android Studio <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* XCode <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* Mobile SDK's <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### Frameworks
 
-* Koa.js *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Express.js *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* React.js *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* React Native *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Styled Components *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* GraphQL *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Socket.io *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* D3 *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* Thrift *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+* Koa.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Express.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* React.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* React Native <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Styled Components <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* GraphQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Socket.io <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* D3 <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* Thrift <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### Data Stores
 
-* Redis *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* S3 *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* PostgreSQL *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* MySQL *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* DynamoDB *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* ElasticSearch *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Neo4j *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
-* RethinkDB *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+* Redis <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* S3 <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* PostgreSQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* MySQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* DynamoDB <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* ElasticSearch <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Neo4j <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* RethinkDB <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### DevOps
 
-* Git *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Docker *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Mocha *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Jest *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Gitlab CI/CD *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* Jenkins *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* CircleCI *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)*
-* DataDog *![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)*
-* Kubernetes *![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)*
+* Git <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Docker <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Mocha <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Jest <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Gitlab CI/CD <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* Jenkins <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* CircleCI <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* DataDog <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Kubernetes <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 
 ## ![icon](FaList) Work
@@ -135,42 +135,42 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 ### Master of science - Applied Information Technology [[UGent]](https://www.ugent.be/)
 
-* 2006/10/01 - 2007/08/31
+<div class="highlight">2006/10/01 - 2007/08/31</div>
 
 ### Master of science - Physics [[UGent]](https://www.ugent.be/)
-* 2002/10/01 - 2006/06/30
+<div class="highlight">2002/10/01 - 2006/06/30</div>
 
 ## ![icon](FaThumbsUp) References
 
 >Ilja is a gifted Full Stack Engineer and brought lots of maturity to the team. He has a deep understanding of the whole software development lifecycle and set out to build a solid exemplary pipeline. He should not only join your team, he should lead it.
-<div class="cite"><span class="author">Filip Van Titelboom</span><span class="role">Infrastructure Lead at Sentiance</div>
+<span class="cite">~ <span class="author">Filip Van Titelboom</span><span class="role">Infrastructure Lead at Sentiance</span>
 
 >Ilja & I built the Full Stack Engineering team at Sentiance. He was highly involved in hiring and mentoring engineers, introducing best practices, making sure our software standards were excellent, setting up software architecture, and successfully shipping several products. Ilja is exceptionally skilled in JavaScript, which allows him to apply this knowledge on multiple layers of software architecture. I can only conclude that Ilja is truly one of the best Full Stack Engineers I've ever worked with.
-<div class="cite"><span class="author">Jiri Crispeyn</span><span class="role">Senior Full Stack Engineer at Sentiance</div>
+<span class="cite">~ <span class="author">Jiri Crispeyn</span><span class="role">Senior Full Stack Engineer at Sentiance</span>
 
 > Ilja is the canonical example of "Mens sana in corpore sano". He gracefully lived through the rough times of an early startup: designing scalable architecture, developing it and ... also running it. Over the years I've seen him evolve to a professional cloud native with a great hunger for new things but with enough pragmatism to deliver your product without the worries. Allrounder skilled in AWS, Mobile, Modern Web and data algorithms, I can only recommend him and envy you when you hire him.
-<div class="cite"><span class="author">Patrick Debois</span><span class="role">CTO at Small Town Heroes</div>
+<span class="cite">~ <span class="author">Patrick Debois</span><span class="role">CTO at Small Town Heroes</span>
 
 > I've had the pleasure of studying for my M. Sc. in physics together with Ilja, including many group assignments, and having his sharp mind and inspiring creativity around consistently made it more pleasant to Get Things Done
-<div class="cite"><span class="author">Wouter Smet</span><span class="role">Studied physics together at UGent</div>
+<span class="cite">~ <span class="author">Wouter Smet</span><span class="role">Studied physics together at UGent</span>
 
 ## ![icon](FaHeart) Interests
 
 ### Music
 
-* Piano
-* Guitar
-* Music production
+* <span class="highlight">Piano</span>
+* <span class="highlight">Guitar</span>
+* <span class="highlight">Music production</span>
 
 ### Sports
 
-* Cycling
-* Running
-* Snowboarding
-* Soccer
-* Chess
+* <span class="highlight">Cycling</span>
+* <span class="highlight">Running</span>
+* <span class="highlight">Snowboarding</span>
+* <span class="highlight">Soccer</span>
+* <span class="highlight">Chess</span>
 
 ### Fun
 
-* Live music
-* Ted talks
+* <span class="highlight">Live music</span>
+* <span class="highlight">Ted talks</span>
