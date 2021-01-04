@@ -126,11 +126,11 @@ export const StyledImage = styled.img`
 `;
 
 export const StyledAvatar = styled.img`
-  border-radius: 2rem;
-  width: 4rem;
-  height: 4rem;
+  border-radius: 2.5rem;
+  width: 5rem;
+  height: 5rem;
   flex-grow: none;
-  margin-right: 2rem;
+  margin-right: 3rem;
   @media (max-width: ${FULL_HEADER_MINIMAL_WIDTH}px) {
     display: none;
   }

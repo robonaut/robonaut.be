@@ -52,9 +52,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: ${colors.blue};
-    &:hover {
-      font-weight: bold;
-    }
   }
 
   p {

@@ -67,11 +67,8 @@ jobs:
             sudo python get-pip.py
             sudo pip install awscli
       - run:
-          name: "build"
-          command: make build
-      - run:
           name: "deploy"
-          command: make deploy
+          command: npm run deploy
 
 workflows:
   version: 2
