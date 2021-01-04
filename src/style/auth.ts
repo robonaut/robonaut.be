@@ -2,7 +2,11 @@ import { IoLogInOutline, IoLogOutOutline } from "react-icons/io5";
 import styled from "styled-components";
 
 import colors from "./colors";
-import { HEADER_HEIGHT, LOGIN_FORM_WIDTH } from "./sizes";
+import {
+  FULL_HEADER_MINIMAL_WIDTH,
+  HEADER_HEIGHT,
+  LOGIN_FORM_WIDTH,
+} from "./sizes";
 
 export const StyledUserContainer = styled.div`
   display: flex;
@@ -21,6 +25,9 @@ export const StyledAuth = styled.div`
   justify-content: center;
   cursor: pointer;
   @media print {
+    display: none;
+  }
+  @media (max-width: ${FULL_HEADER_MINIMAL_WIDTH}px) {
     display: none;
   }
 `;

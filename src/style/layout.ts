@@ -2,7 +2,11 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 import colors from "./colors";
-import { HEADER_HEIGHT, MAIN_PADDING } from "./sizes";
+import {
+  FULL_HEADER_MINIMAL_WIDTH,
+  HEADER_HEIGHT,
+  MAIN_PADDING,
+} from "./sizes";
 
 // MAIN
 
@@ -41,7 +45,6 @@ export const StyledHeaderContent = styled.div`
 export const StyledNavigation = styled.div`
   display: flex;
   flex: 1;
-  margin-left: 3rem;
 `;
 
 export const StyledNavigationLink = styled(NavLink)`
@@ -233,4 +236,8 @@ export const StyledAvatar = styled.img`
   width: 4rem;
   height: 4rem;
   flex-grow: none;
+  margin-right: 2rem;
+  @media (max-width: ${FULL_HEADER_MINIMAL_WIDTH}px) {
+    display: none;
+  }
 `;
