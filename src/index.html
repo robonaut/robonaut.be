@@ -9,6 +9,18 @@
   </head>
   <body>
     <div id="app"><%= body %></div>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,900&display=swap" rel="stylesheet" defer />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,900&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
   </body>
 </html>
