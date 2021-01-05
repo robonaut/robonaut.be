@@ -28,7 +28,7 @@ const createNavigationLink = (
   { key, path, title }: { key: string; path: string; title: string },
   idx: number
 ): JSX.Element | null => {
-  if (key !== "login") {
+  if (!["login", "404"].includes(key)) {
     return (
       <StyledNavigationLink exact key={`nav-link-${idx}`} to={path}>
         {title}

@@ -58,25 +58,8 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 2rem;
   }
 
-  .image {
-    width: calc(50% - 4px);
-    border-radius: 8px;
-    object-fit: contain;
-    &[alt="apple_appstore"] {
-      width: 100px;
-    }
-    &[alt="google_playstore"] {
-      width: 112px;
-    }
-    @media (min-width: 768px) {
-      width: calc(25% - 8px);
-    }
-    @media (min-width: 1024px) {
-      width: calc(20% - 4px);
-    }
-  }
-
   ${prism}
 `;
 
 export default GlobalStyle;
+3;

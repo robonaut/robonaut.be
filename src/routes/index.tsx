@@ -2,10 +2,18 @@ import About from "../components/About";
 import Admin from "../components/Admin";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
+import NotFound from "../components/NotFound";
 import Projects from "../components/Projects";
 import i18n from "../i18n";
 
 export const routeDefinitions = [
+  {
+    key: "404",
+    title: i18n.t("navigation.404.title"),
+    path: "/404",
+    requiresAuth: false,
+    Component: NotFound,
+  },
   {
     key: "login",
     title: i18n.t("navigation.login.title"),

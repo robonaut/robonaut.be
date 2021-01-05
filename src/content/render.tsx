@@ -35,7 +35,11 @@ const renderer: Partial<Renderer> = {
 marked.use({ renderer });
 
 export default (markdown: string): JSX.Element | null => {
-  const html = marked(markdown, { gfm: true, smartypants: true });
+  const html = marked(markdown, {
+    gfm: true,
+    smartypants: true,
+    headerPrefix: "header-",
+  });
 
   return <StyledPage dangerouslySetInnerHTML={{ __html: html }} />;
 };
