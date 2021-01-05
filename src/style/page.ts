@@ -91,7 +91,9 @@ export const StyledPage = styled.div`
   }
 
   .image {
-    width: calc(50% - 4px);
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+    width: calc(50% - 1rem);
     border-radius: 8px;
     object-fit: contain;
     &[alt="apple_appstore"] {
@@ -101,10 +103,10 @@ export const StyledPage = styled.div`
       width: 112px;
     }
     @media (min-width: 768px) {
-      width: calc(25% - 8px);
+      width: calc(25% - 1.6rem);
     }
     @media (min-width: 1024px) {
-      width: calc(20% - 4px);
+      width: calc(20% - 2rem);
     }
   }
 `;
