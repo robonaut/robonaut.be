@@ -10,23 +10,23 @@ Migrated the existing SQL Server database to AWS Aurora MySQL hereby reducing co
 
 ### Mobile Application
 
-[![apple_appstore](/assets/images/apple_appstore.png)](https://apps.apple.com/us/app/iqo2/id1330388026?ls=1)
-[![google_playstore](/assets/images/google_playstore.png)](https://play.google.com/store/apps/details?id=com.iqo2.tracker)
+[![apple_appstore](/assets/images/apple_appstore.webp)](https://apps.apple.com/us/app/iqo2/id1330388026?ls=1)
+[![google_playstore](/assets/images/google_playstore.webp)](https://play.google.com/store/apps/details?id=com.iqo2.tracker)
 
 Created a mobile app in **React Native**. In the app coaches and athletes can keep track of their progress and view both planned and executed workouts. Athletes can keep track of their body metrics and also view their training zones. This app has push notifications support and is backed by technologies such as **Redux**, **Redux Saga**, **Firebase**, **Mapbox**, **D3**, **Styled Components** and **React Navigation**.
 
 #### Screenshots
 
-![Login](/assets/images/iqo2/Login.png)
-![Feed](/assets/images/iqo2/Feed.png)
-![Contacts](/assets/images/iqo2/Contacts.png)
-![Contact_Summary](/assets/images/iqo2/Contact_Summary.png)
-![Contact_Metrics](/assets/images/iqo2/Contact_Metrics.png)
-![Event_Detail](/assets/images/iqo2/Event_Detail.png)
-![Event_Map](/assets/images/iqo2/Event_Map.png)
-![Event_Zones](/assets/images/iqo2/Event_Zones.png)
-![Planned_Workout](/assets/images/iqo2/Planned_Workout.png)
-![Contact_Zones](/assets/images/iqo2/Contact_Zones.png)
+![Login](/assets/images/iqo2/Login.webp)
+![Feed](/assets/images/iqo2/Feed.webp)
+![Contacts](/assets/images/iqo2/Contacts.webp)
+![Contact_Summary](/assets/images/iqo2/Contact_Summary.webp)
+![Contact_Metrics](/assets/images/iqo2/Contact_Metrics.webp)
+![Event_Detail](/assets/images/iqo2/Event_Detail.webp)
+![Event_Map](/assets/images/iqo2/Event_Map.webp)
+![Event_Zones](/assets/images/iqo2/Event_Zones.webp)
+![Planned_Workout](/assets/images/iqo2/Planned_Workout.webp)
+![Contact_Zones](/assets/images/iqo2/Contact_Zones.webp)
 
 
 ### API

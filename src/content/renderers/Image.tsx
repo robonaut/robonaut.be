@@ -14,7 +14,7 @@ import {
 import { IoSchool } from "react-icons/io5";
 import { IconType } from "react-icons/lib";
 
-import { StyledImage } from "../../style/layout";
+import Image from "../../elements/image";
 
 const icons: Record<string, IconType> = {
   FaAddressCard,
@@ -48,5 +48,7 @@ export default ({
     return <Icon className={`icon ${href}`} />;
   }
 
-  return <StyledImage src={href} alt={text} />;
+  return (
+    <Image src={href} alt={text} fallback={href.replace(".webp", ".png")} />
+  );
 };

@@ -107,24 +107,6 @@ export const StyledErrorClose = styled.div`
   cursor: pointer;
 `;
 
-export const StyledImage = styled.img`
-  width: calc(50% - 4px);
-  border-radius: 8px;
-  object-fit: contain;
-  &[alt="apple_appstore"] {
-    width: 100px;
-  }
-  &[alt="google_playstore"] {
-    width: 112px;
-  }
-  @media (min-width: 768px) {
-    width: calc(25% - 8px);
-  }
-  @media (min-width: 1024px) {
-    width: calc(20% - 4px);
-  }
-`;
-
 export const StyledAvatar = styled.img`
   border-radius: 2.5rem;
   width: 5rem;

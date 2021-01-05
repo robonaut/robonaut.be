@@ -1,7 +1,8 @@
-// import React from "react";
+import React from "react";
 
-// import { StyledAvatar } from "../../style/layout";
+import { StyledAvatar } from "../../style/layout";
 
-export default (): JSX.Element | null =>
-  // <StyledAvatar src="/assets/images/cv_profile_picture.jpeg" />
-  null;
+export default (): JSX.Element | null => (
+  <StyledAvatar src="/assets/images/cv_profile_picture.jpeg" />
+);
+null;
