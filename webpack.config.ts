@@ -62,6 +62,7 @@ const developmentConfig: webpack.Configuration = {
   mode: "development",
   devtool: "source-map",
   devServer: {
+    historyApiFallback: true,
     hot: true,
     inline: true,
     port: 3030,

@@ -8,13 +8,6 @@ import i18n from "../i18n";
 
 export const routeDefinitions = [
   {
-    key: "404",
-    title: i18n.t("navigation.404.title"),
-    path: "/404",
-    requiresAuth: false,
-    Component: NotFound,
-  },
-  {
     key: "login",
     title: i18n.t("navigation.login.title"),
     path: "/login",
@@ -48,5 +41,12 @@ export const routeDefinitions = [
     path: "/admin",
     requiresAuth: true,
     Component: Admin,
+  },
+  {
+    key: "404",
+    title: i18n.t("navigation.404.title"),
+    path: "/404",
+    requiresAuth: false,
+    Component: NotFound,
   },
 ];

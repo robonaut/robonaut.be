@@ -102,21 +102,27 @@ const Router = ({
         </StyledHeaderContent>
       </StyledHeader>
       <Switch>
-        {routeDefinitions.map(({ Component, path, requiresAuth }, routeIdx) => {
-          return (
-            <Route key={`route-${routeIdx}`} path={path} exact={path === "/"}>
-              <MainContent>
-                <ErrorBoundary>
-                  {requiresAuth && !isLoggedIn ? (
-                    <Redirect to={loginPath} />
-                  ) : (
-                    <Component />
-                  )}
-                </ErrorBoundary>
-              </MainContent>
-            </Route>
-          );
-        })}
+        {routeDefinitions.map(
+          ({ Component, key, path, requiresAuth }, routeIdx) => {
+            return (
+              <Route
+                key={`route-${routeIdx}`}
+                path={key === "404" ? "*" : path}
+                exact={path === "/"}
+              >
+                <MainContent>
+                  <ErrorBoundary>
+                    {requiresAuth && !isLoggedIn ? (
+                      <Redirect to={loginPath} />
+                    ) : (
+                      <Component />
+                    )}
+                  </ErrorBoundary>
+                </MainContent>
+              </Route>
+            );
+          }
+        )}
       </Switch>
     </>
   );
