@@ -1,11 +1,17 @@
-import React from "react";
+import { useEffect } from "react";
 
-import { getContent } from "../content";
+const Page = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: JSX.Element;
+}): JSX.Element => {
+  useEffect((): void => {
+    document.title = title;
+  }, []);
 
-const Page: React.FunctionComponent<{ key: string }> = ({
-  key,
-}): JSX.Element | null => {
-  return getContent(key);
+  return children;
 };
 
 export default Page;

@@ -23,6 +23,7 @@ import {
   StyledNavigationLink,
 } from "../style/layout";
 import { routeDefinitions } from ".";
+import Page from "../components/Page";
 
 const createNavigationLink = (
   { key, path, title }: { key: string; path: string; title: string },
@@ -103,7 +104,7 @@ const Router = ({
       </StyledHeader>
       <Switch>
         {routeDefinitions.map(
-          ({ Component, key, path, requiresAuth }, routeIdx) => {
+          ({ Component, key, path, title, requiresAuth }, routeIdx) => {
             return (
               <Route
                 key={`route-${routeIdx}`}
@@ -115,7 +116,9 @@ const Router = ({
                     {requiresAuth && !isLoggedIn ? (
                       <Redirect to={loginPath} />
                     ) : (
-                      <Component />
+                      <Page title={title}>
+                        <Component />
+                      </Page>
                     )}
                   </ErrorBoundary>
                 </MainContent>
