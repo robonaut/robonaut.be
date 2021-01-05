@@ -107,7 +107,7 @@ export const StyledErrorClose = styled.div`
   cursor: pointer;
 `;
 
-export const StyledAvatar = styled.img`
+export const StyledAvatar = styled.div`
   border-radius: 2.5rem;
   width: 5rem;
   height: 5rem;
