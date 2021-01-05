@@ -87,7 +87,7 @@ export const StyledErrorTextContainer = styled.div`
   align-items: center;
 `;
 
-export const StyledErrorText = styled.p`
+export const StyledErrorText = styled.div`
   font-size: 1.4rem;
   color: ${colors.whiteDarker};
 `;

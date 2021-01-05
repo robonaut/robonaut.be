@@ -2,11 +2,7 @@ import { IoLogInOutline, IoLogOutOutline } from "react-icons/io5";
 import styled from "styled-components";
 
 import colors from "./colors";
-import {
-  FULL_HEADER_MINIMAL_WIDTH,
-  HEADER_HEIGHT,
-  LOGIN_FORM_WIDTH,
-} from "./sizes";
+import { FULL_HEADER_MINIMAL_WIDTH, HEADER_HEIGHT } from "./sizes";
 
 export const StyledUserContainer = styled.div`
   display: flex;
@@ -71,39 +67,6 @@ export const StyledLoginWelcomeText = styled.p`
   color: ${colors.navy};
   font-size: 2rem;
   white-space: pre-line;
-`;
-
-export const StyledLoginForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: ${LOGIN_FORM_WIDTH}px;
-`;
-
-export const StyledLoginInput = styled.input`
-  font-size: 1.6rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: ${colors.grey};
-  border-radius: 4px;
-  padding: 0.6rem;
-  margin: 0.6rem;
-  width: ${LOGIN_FORM_WIDTH}px;
-  color: ${colors.navy};
-  &:hover {
-    border-color: ${colors.blue};
-  }
-  &[type="submit"] {
-    cursor: pointer;
-    border: none;
-    background-color: ${colors.navy};
-    color: ${colors.white};
-    font-weight: bold;
-    &:hover {
-      background-color: ${colors.blue};
-    }
-  }
 `;
 
 export const StyledLoginError = styled.div`

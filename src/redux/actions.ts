@@ -41,4 +41,9 @@ export const actionCreators = {
     type: ActionTypes.ERRORS_DISMISS,
     payload: {},
   }),
+
+  contactSubmit: (payload: ActionPayload): Action => ({
+    type: ActionTypes.CONTACT_SUBMIT,
+    payload,
+  }),
 };

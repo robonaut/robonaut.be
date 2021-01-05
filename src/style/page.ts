@@ -36,7 +36,7 @@ export const StyledPage = styled.div`
 
   h3 {
     background-color: ${colors.whiteDarker};
-    padding 0.4rem 1rem;
+    padding: 0.4rem 1rem;
     border-radius: 8px;
     font-size: 1.6rem;
     font-weight: bolder;
@@ -82,7 +82,7 @@ export const StyledPage = styled.div`
       .author {
         color: ${colors.blue};
       }
-     .role {
+      .role {
         color: ${colors.grey};
         margin-left: 1rem;
         font-size: 1rem;

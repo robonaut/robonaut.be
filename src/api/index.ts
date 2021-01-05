@@ -1,4 +1,8 @@
-import { AUTH_LOGIN_URL, AUTH_USER_URL } from "../constants";
+import {
+  AUTH_LOGIN_URL,
+  AUTH_USER_URL,
+  CONTACT_SUBMIT_URL,
+} from "../constants";
 import log from "../log";
 import { ApiCallPayload, ApiResponse } from "../typings";
 
@@ -67,4 +71,16 @@ export const loginUser = ({
   };
 
   return apiRequest(AUTH_LOGIN_URL, token, options);
+};
+
+export const submitContactForm = ({
+  data,
+  token,
+}: ApiCallPayload): Promise<ApiResponse> => {
+  const options = {
+    method: "POST",
+    body: JSON.stringify(data),
+  };
+
+  return apiRequest(CONTACT_SUBMIT_URL, token, options);
 };

@@ -10,11 +10,11 @@ import {
   StyledLoginContainer,
   StyledLoginError,
   StyledLoginErrorText,
-  StyledLoginForm,
-  StyledLoginInput,
   StyledLoginWelcome,
   StyledLoginWelcomeText,
 } from "../style/auth";
+import { StyledForm, StyledInput } from "../style/form";
+import { LOGIN_FORM_WIDTH } from "../style/sizes";
 
 const mapState = (
   state: RootState
@@ -63,7 +63,7 @@ const Login = ({
 
   return (
     <StyledLoginContainer>
-      <StyledLoginForm>
+      <StyledForm style={{ width: LOGIN_FORM_WIDTH }}>
         <StyledLoginWelcome>
           <StyledLoginWelcomeText>
             {t("pages.login.welcome")}
@@ -74,7 +74,7 @@ const Login = ({
             <StyledLoginErrorText>{error}</StyledLoginErrorText>
           )}
         </StyledLoginError>
-        <StyledLoginInput
+        <StyledInput
           type="text"
           placeholder="username"
           onChange={(e): void => {
@@ -82,7 +82,7 @@ const Login = ({
             setError("");
           }}
         />
-        <StyledLoginInput
+        <StyledInput
           type="password"
           placeholder="password"
           onChange={(e): void => {
@@ -90,8 +90,8 @@ const Login = ({
             setError("");
           }}
         />
-        <StyledLoginInput type="submit" value="Log in!" onClick={handleLogin} />
-      </StyledLoginForm>
+        <StyledInput type="submit" value="Log in!" onClick={handleLogin} />
+      </StyledForm>
     </StyledLoginContainer>
   );
 };
