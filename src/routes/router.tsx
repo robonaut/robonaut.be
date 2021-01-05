@@ -2,6 +2,7 @@ import React from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { Redirect, Route, Switch, useHistory } from "react-router-dom";
 
+import Page from "../components/Page";
 import Errors from "../elements/errors";
 import Profile from "../elements/profile";
 import ErrorBoundary from "../errors/boundary";
@@ -23,7 +24,6 @@ import {
   StyledNavigationLink,
 } from "../style/layout";
 import { routeDefinitions } from ".";
-import Page from "../components/Page";
 
 const createNavigationLink = (
   { key, path, title }: { key: string; path: string; title: string },
