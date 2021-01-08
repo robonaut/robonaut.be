@@ -27,11 +27,14 @@ const ContactForm = ({
   contactSubmit,
   formState,
 }: ConnectedProps<typeof connector>): JSX.Element => {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [successMessage, setSuccessMessage] = useState("");
-  const { t } = useTranslation();
+  const [successMessage, setSuccessMessage] = useState(
+    t("pages.contact.emptyMessage")
+  );
 
   useEffect(() => {
     if (formState.response) {

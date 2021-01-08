@@ -27,6 +27,7 @@
       "loginAsGuest": "login as guest"
     },
     "contact": {
+      "emptyMessage": "You didn't drop a message yet 😉",
       "successMessage": "Thanks for your message!"
     }
   }
