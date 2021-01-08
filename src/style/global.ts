@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     margin: auto;
     overflow-y: scroll;
     font-size: 1.4rem;
+    max-width: 100rem;
   }
 
   ul {
