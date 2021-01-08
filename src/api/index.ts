@@ -67,7 +67,10 @@ export const loginUser = ({
 }: ApiCallPayload): Promise<ApiResponse> => {
   const options = {
     method: "POST",
-    body: JSON.stringify(data),
+    body: JSON.stringify({
+      strategy: "password",
+      payload: data,
+    }),
   };
 
   return apiRequest(AUTH_LOGIN_URL, token, options);

@@ -32,7 +32,7 @@ export const routeDefinitions = [
     key: "contact",
     title: i18n.t("navigation.contact.title"),
     path: "/contact",
-    requiresAuth: true,
+    requiresAuth: false,
     Component: Contact,
   },
   {

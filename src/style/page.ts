@@ -73,6 +73,10 @@ export const StyledPage = styled.div`
     margin-bottom: 1.6rem;
   }
 
+  p {
+    margin-bottom: 2rem;
+  }
+
   blockquote {
     border-left: 8px solid ${colors.whiteDarker};
     padding-left: 8px;

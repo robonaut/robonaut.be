@@ -25,6 +25,9 @@
       "usernameEmptyError": "Please provide a username",
       "passwordEmptyError": "Please provide a password",
       "loginAsGuest": "login as guest"
+    },
+    "contact": {
+      "successMessage": "Thanks for your message!"
     }
   }
 }

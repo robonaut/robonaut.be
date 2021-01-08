@@ -8,8 +8,8 @@ export const tokenSelector = createSelector(
 );
 
 export const userSelector = createSelector(
-  (state: RootState) => state.auth.data.agent,
-  (agent) => agent
+  (state: RootState) => state.auth.data.user,
+  (user) => user
 );
 
 export const isLoggedInSelector = createSelector(tokenSelector, (token) =>

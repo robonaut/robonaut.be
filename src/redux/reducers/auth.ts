@@ -11,8 +11,8 @@ const authStatusReducer = (
 
 const initialAuthData = {
   token: "",
-  agent: {
-    agentid: "",
+  user: {
+    id: "",
     email: "",
   },
 };

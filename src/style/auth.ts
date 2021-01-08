@@ -11,7 +11,7 @@ export const StyledUserContainer = styled.div`
 `;
 
 export const StyledUserEmail = styled.div`
-  color: ${colors.blue};
+  color: ${colors.white};
   margin-right: 2rem;
 `;
 

@@ -28,6 +28,9 @@ const showErrorsReducer = (
   if (action.type === ActionTypes.ERRORS_DISMISS) {
     return false;
   }
+  if (action.type === ActionTypes.API_SUCCESS) {
+    return false;
+  }
 
   return state;
 };
