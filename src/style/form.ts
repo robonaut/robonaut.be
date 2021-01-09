@@ -21,8 +21,6 @@ const BASE_INPUT_STYLE = `
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const StyledInput = styled.input`

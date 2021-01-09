@@ -6,15 +6,22 @@ import {
   FULL_HEADER_MINIMAL_WIDTH,
   HEADER_HEIGHT,
   MAIN_PADDING,
+  MAX_WIDTH,
 } from "./sizes";
 
 // MAIN
 
-export const MainContainer = styled.div``;
+export const MainContainer = styled.div`
+  background-color: ${colors.white};
+`;
 
 export const MainContent = styled.div`
   padding: ${HEADER_HEIGHT} ${MAIN_PADDING} ${MAIN_PADDING} ${MAIN_PADDING};
   position: relative;
+  max-width: ${MAX_WIDTH};
+  min-height: 100vh;
+  background-color: ${colors.white};
+  margin: auto;
   @media print {
     padding: 0 ${MAIN_PADDING};
   }
@@ -40,6 +47,8 @@ export const StyledHeaderContent = styled.div`
   font-size: 1.6rem;
   height: 100%;
   justify-content: space-between;
+  max-width: ${MAX_WIDTH};
+  margin: auto;
 `;
 
 export const StyledNavigation = styled.div`

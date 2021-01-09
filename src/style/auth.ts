@@ -2,7 +2,7 @@ import { IoLogInOutline, IoLogOutOutline } from "react-icons/io5";
 import styled from "styled-components";
 
 import colors from "./colors";
-import { FULL_HEADER_MINIMAL_WIDTH, HEADER_HEIGHT } from "./sizes";
+import { FULL_HEADER_MINIMAL_WIDTH } from "./sizes";
 
 export const StyledUserContainer = styled.div`
   display: flex;
@@ -45,17 +45,12 @@ export const StyledLoginIcon = styled(IoLogInOutline)`
 `;
 
 export const StyledLoginContainer = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: calc(100vh - ${HEADER_HEIGHT});
-  margin-top: ${HEADER_HEIGHT};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${colors.whiteDarker};
+  height: calc(100vh - 40rem);
+  min-height: 30rem;
 `;
 
 export const StyledLoginWelcome = styled.div`

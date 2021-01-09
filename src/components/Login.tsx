@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { connect, ConnectedProps } from "react-redux";
 import { Redirect } from "react-router-dom";
 
+import { getContent } from "../content";
 import { actionCreators } from "../redux/actions";
 import { RootState } from "../redux/reducers";
 import { isLoggedInSelector } from "../redux/selectors/auth";
@@ -62,37 +63,40 @@ const Login = ({
   };
 
   return (
-    <StyledLoginContainer>
-      <StyledForm style={{ width: LOGIN_FORM_WIDTH }}>
-        <StyledLoginWelcome>
-          <StyledLoginWelcomeText>
-            {t("pages.login.welcome")}
-          </StyledLoginWelcomeText>
-        </StyledLoginWelcome>
-        <StyledLoginError>
-          {error.length > 0 && (
-            <StyledLoginErrorText>{error}</StyledLoginErrorText>
-          )}
-        </StyledLoginError>
-        <StyledInput
-          type="text"
-          placeholder="username"
-          onChange={(e): void => {
-            setUsername(e.target.value);
-            setError("");
-          }}
-        />
-        <StyledInput
-          type="password"
-          placeholder="password"
-          onChange={(e): void => {
-            setPassword(e.target.value);
-            setError("");
-          }}
-        />
-        <StyledInput type="submit" value="Log in!" onClick={handleLogin} />
-      </StyledForm>
-    </StyledLoginContainer>
+    <>
+      {getContent("login")}
+      <StyledLoginContainer>
+        <StyledForm style={{ width: LOGIN_FORM_WIDTH }}>
+          <StyledLoginWelcome>
+            <StyledLoginWelcomeText>
+              {t("pages.login.welcome")}
+            </StyledLoginWelcomeText>
+          </StyledLoginWelcome>
+          <StyledLoginError>
+            {error.length > 0 && (
+              <StyledLoginErrorText>{error}</StyledLoginErrorText>
+            )}
+          </StyledLoginError>
+          <StyledInput
+            type="text"
+            placeholder="username"
+            onChange={(e): void => {
+              setUsername(e.target.value);
+              setError("");
+            }}
+          />
+          <StyledInput
+            type="password"
+            placeholder="password"
+            onChange={(e): void => {
+              setPassword(e.target.value);
+              setError("");
+            }}
+          />
+          <StyledInput type="submit" value="Log in!" onClick={handleLogin} />
+        </StyledForm>
+      </StyledLoginContainer>
+    </>
   );
 };
 
