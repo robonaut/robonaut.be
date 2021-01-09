@@ -122,6 +122,7 @@ export const StyledAvatar = styled.div`
   height: 5rem;
   flex-grow: none;
   margin-right: 3rem;
+  background-color: ${colors.white};
   @media (max-width: ${FULL_HEADER_MINIMAL_WIDTH}px) {
     display: none;
   }
