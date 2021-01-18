@@ -109,8 +109,8 @@ export const StyledPage = styled.div`
     @media (min-width: 768px) {
       width: calc(25% - 1.6rem);
     }
-    @media (min-width: 1024px) {
-      width: calc(20% - 2rem);
+    @media (min-width: 100rem) {
+      width: 18rem;
     }
   }
 `;

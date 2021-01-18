@@ -15,6 +15,9 @@
     "admin": {
       "title": "Admin"
     },
+    "playground": {
+      "title": "Playground"
+    },
     "404": {
       "title": "Not found"
     }

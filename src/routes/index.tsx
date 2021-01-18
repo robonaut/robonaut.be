@@ -3,6 +3,7 @@ import Admin from "../components/Admin";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
 import NotFound from "../components/NotFound";
+import Playground from "../components/Playground";
 import Projects from "../components/Projects";
 import i18n from "../i18n";
 
@@ -34,6 +35,13 @@ export const routeDefinitions = [
     path: "/contact",
     requiresAuth: false,
     Component: Contact,
+  },
+  {
+    key: "playground",
+    title: i18n.t("navigation.playground.title"),
+    path: "/playground",
+    requiresAuth: false,
+    Component: Playground,
   },
   {
     key: "admin",
