@@ -1,0 +1,10 @@
+include:
+  - project: "robonaut.be/devops"
+    ref: "master"
+    file: "/ci-templates/node-typescript.yml"
+
+stages:
+  - compile
+  - lint
+  - typecheck
+  - coverage
