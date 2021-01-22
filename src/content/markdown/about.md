@@ -98,7 +98,9 @@ Software engineer with a background in theoretical physics who specializes in sc
 ### Nokia Bell Labs [[link]](https://www.bell-labs.com/)
 #### Senior Software Engineer <span class="date">May 2020 - Febr 2021</span>
 
-*Nokia Bell Labs is the world-renowned industrial research arm of Nokia, having invented many of the foundational technologies that underpin information and communications networks and all digital devices and systems. The Nokia Bell Labs innovation engine accelerates technology development for Nokia’s core service provider and enterprise businesses, while also researching the fundamental technologies that will shape future society. Over its more than 90-year history, Nokia Bell Labs research breakthroughs have produced nine Nobel Prizes, four Turing Awards and numerous other international awards.*
+*Nokia Bell Labs is the world-renowned industrial research arm of Nokia, having invented many of the foundational technologies that underpin information and communications networks and all digital devices and systems.*
+
+![icon](FaBookmark) I joined the team that created the [World Wide Streams](https://worldwidestreams.io/) platform. I mainly focused on the transition of this platform from research to a service offering. This included a rethink of the architectural design of the platform and the rewrite and introduction of some (new) services. Examples include a new Gateway API with request validation, a new TypeScript CLI that communicates with this API, a shared logger library and an authentication service. I created an end to end pipeline shared across all components that enforces a standard way of versioning, testing and releasing. I also introduced sprint plannings to the team so the agreed roadmap could be delivered in time with small incremental steps.
 
 ### EnergyLab [[link]](https://sentiance.com/)
 #### Freelance Software Engineer <span class="date">Apr 2020 - May 2020</span>
@@ -149,7 +151,7 @@ You can find more info [here](projects).
 ### Applied Information Technology [[UGent]](https://www.ugent.be/)
 #### Master of science <span class="date">Oct 2006 - Aug 2007</span>
 
-### Master of science - Physics [[UGent]](https://www.ugent.be/)
+###   Physics [[UGent]](https://www.ugent.be/)
 #### Master of science <span class="date">Oct 2002 - Jun 2006</span>
 
 ## ![icon](FaThumbsUp) References
