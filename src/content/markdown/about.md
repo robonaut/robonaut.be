@@ -96,8 +96,17 @@ Software engineer with a background in theoretical physics who specializes in sc
 ## ![icon](FaList) Work
 
 ### Nokia Bell Labs [[link]](https://www.bell-labs.com/)
+#### Senior Software Engineer <span class="date">May 2020 - Febr 2021</span>
+
+*Nokia Bell Labs is the world-renowned industrial research arm of Nokia, having invented many of the foundational technologies that underpin information and communications networks and all digital devices and systems. The Nokia Bell Labs innovation engine accelerates technology development for Nokia’s core service provider and enterprise businesses, while also researching the fundamental technologies that will shape future society. Over its more than 90-year history, Nokia Bell Labs research breakthroughs have produced nine Nobel Prizes, four Turing Awards and numerous other international awards.*
+
+### EnergyLab [[link]](https://sentiance.com/)
+#### Freelance Software Engineer <span class="date">Apr 2020 - May 2020</span>
+
+You can find more info [here](projects).
 
 ### Sentiance [[link]](https://sentiance.com/)
+#### Senior Full-Stack Engineer <span class="date">Apr 2018 - March 2020</span>
 
 *Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. Sentiance context intelligence enables solutions for lifestyle based insurance, contextual marketing & commerce, smart mobility, connected health, smart home, smart city and connected car.*
 
@@ -106,6 +115,7 @@ Software engineer with a background in theoretical physics who specializes in sc
 ![icon](FaBookmark) I initiated a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We then created a brand new app (React Native, Redux, Redux Saga) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) while enforcing 98% test coverage.
 
 ### Small Town Heroes
+#### Full Stack Hero <span class="date">May 2012 - Apr 2018</span>
 
 *Small Town Heroes is a Ghent based startup that provides software tools and services for broadcaster and publishers with a focus on mobile video experiences and user interactions.*
 
@@ -114,10 +124,12 @@ Software engineer with a background in theoretical physics who specializes in sc
 ![icon](FaBookmark) I was a major contributor on most API's and mobile applications for major brands and television shows like 'Ketnet', 'Studio 100', 'Blokken', 'Eurosong', 'Ook Getest Op Mensen', 'The Passion', ...
 
 ### iMinds [[link]](https://iminds.be/)
+#### R&D Engineer <span class="date">Jan 2012 - May 2012</span>
 
 *iMinds is Flanders’ digital research & entrepreneurship hub. We drive digital innovation for society and economy, through strategic and applied research on key digital technologies.*
 
 ### VRT Medialab [[link]](https://innovatie.vrt.be/)
+#### R&D Engineer <span class="date">Jan 2009 - Jan 2012</span>
 
 *VRT-medialab was the technological research department of VRT, Flanders’ public service broadcaster. VRT-medialab carries out research into the creation, management and distribution of media content. Its focus is on the Flemish media market, but VRT-medialab pursues collaboration on a European and worldwide level.*
 
@@ -126,6 +138,7 @@ Software engineer with a background in theoretical physics who specializes in sc
 ![icon](FaBookmark) I wrote and presented an IEE publication for SMPTE (Society of Motion Picture & Television Engineers): "Taking File-Based Workflows to the Next Level: Project and Timeline Based Integrations."
 
 ### Spector Photogroup [[link]](https://smartphoto.be/)
+#### Application Tester <span class="date">Sep 2007 - Dec 2008</span>
 
 *SmartPhoto is one of the leading providers of photo service in Europe; and is dedicated to making beautiful Photo products. Our intuitive web platform helps you share your pictures, and create stunning Photo products.*
 
@@ -133,14 +146,11 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 ## ![icon](IoSchool) Education
 
-### Master of science - Applied Information Technology [[UGent]](https://www.ugent.be/)
-
-<div class="date">2006/10/01 - 2007/08/31</div>
-<!-- <div class="thesis"><span>Thesis: </span>Design of dynamic website</div> -->
+### Applied Information Technology [[UGent]](https://www.ugent.be/)
+#### Master of science <span class="date">Oct 2006 - Aug 2007</span>
 
 ### Master of science - Physics [[UGent]](https://www.ugent.be/)
-<div class="date">2002/10/01 - 2006/06/30</div>
-<!-- <div class="thesis"><span>Thesis: </span>An introduction to magnetic monopoles</div> -->
+#### Master of science <span class="date">Oct 2002 - Jun 2006</span>
 
 ## ![icon](FaThumbsUp) References
 

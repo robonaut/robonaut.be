@@ -56,13 +56,10 @@ export const StyledPage = styled.div`
   }
 
   h4 {
-    display: inline-block;
     color: ${colors.blue};
-    border-radius: 8px;
     font-size: 1.4rem;
     font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
   }
 
   h5 {
@@ -112,5 +109,11 @@ export const StyledPage = styled.div`
     @media (min-width: 100rem) {
       width: 18rem;
     }
+  }
+
+  .date {
+    font-size: 1rem;
+    color: ${colors.navy};
+    margin-left: 1rem;
   }
 `;
