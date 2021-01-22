@@ -57,7 +57,7 @@ export const StyledPage = styled.div`
 
   h4 {
     color: ${colors.blue};
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
   }
@@ -112,7 +112,7 @@ export const StyledPage = styled.div`
   }
 
   .date {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: ${colors.navy};
     margin-left: 1rem;
   }
