@@ -2,7 +2,7 @@ version: 2.1
 defaults: &defaults
   working_directory: ~/robonaut.be
   docker:
-    - image: circleci/node:14
+    - image: cimg/node:14.15
 
 whitelist: &whitelist
   paths:
@@ -30,6 +30,7 @@ jobs:
           command: |
             node --version
             npm --version
+            python --version
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
@@ -63,7 +64,8 @@ jobs:
       - run:
           name: Install aws-cli
           command: |
-            sudo apt-get install python-dev
+            apt update
+            sudo apt install
             curl -O https://bootstrap.pypa.io/get-pip.py
             sudo python get-pip.py
             sudo pip install awscli
