@@ -44,6 +44,7 @@ export const StyledPage = styled.div`
     align-items: flex-start;
     margin-top: 2rem;
     margin-bottom: 1.6rem;
+    margin-left: -1rem;
     .icon {
       margin-right: 1rem;
     }
@@ -56,18 +57,25 @@ export const StyledPage = styled.div`
   }
 
   h4 {
-    color: ${colors.blue};
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   h5 {
     font-size: 1.4rem;
     font-weight: bold;
     font-style: italic;
-    margin-top: 2rem;
-    margin-bottom: 1.6rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  h6 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
   }
 
   p {
@@ -112,8 +120,9 @@ export const StyledPage = styled.div`
   }
 
   .date {
+    color: ${colors.grey};
     font-size: 1.2rem;
-    color: ${colors.navy};
-    margin-left: 1rem;
+    align-self: center;
+    margin-left: 2rem;
   }
 `;

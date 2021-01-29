@@ -108,7 +108,7 @@ Software engineer with a background in theoretical physics who specializes in sc
 You can find more info [here](projects).
 
 ### Sentiance [[link]](https://sentiance.com/)
-#### Senior Full-Stack Engineer <span class="date">Apr 2018 - March 2020</span>
+#### Senior Full-Stack Engineer <span class="date">Apr 2018 - Mar 2020</span>
 
 *Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. Sentiance context intelligence enables solutions for lifestyle based insurance, contextual marketing & commerce, smart mobility, connected health, smart home, smart city and connected car.*
 
