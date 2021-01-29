@@ -30,7 +30,7 @@ jobs:
           command: |
             node --version
             npm --version
-            python --version
+            python3 --version
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
@@ -64,7 +64,7 @@ jobs:
       - run:
           name: Install aws-cli
           command: |
-            apt update
+            sudo apt update
             sudo apt install
             curl -O https://bootstrap.pypa.io/get-pip.py
             sudo python get-pip.py
