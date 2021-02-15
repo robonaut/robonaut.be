@@ -1,6 +1,6 @@
 {
   "name": "@robonaut/website",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Robonaut website",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,6 +9,7 @@
     "build": "rm -rf dist && WEBPACK_ENV=production webpack --config webpack.config.ts --progress --profile --color",
     "coverage": "",
     "deploy": "npm run build && ./scripts/deploy.sh",
+    "git:hooks": "git config core.hooksPath .githooks",
     "lint": "eslint --ext .tsx,.ts ./src/",
     "lint:fix": "npm run lint -- --fix",
     "postinstall": "./scripts/fix_typings.sh",
@@ -55,7 +56,6 @@
     "eslint-plugin-react": "7.22.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
     "html-webpack-plugin": "5.1.0",
-    "husky": "5.0.9",
     "i18next": "19.8.7",
     "marked": "2.0.0",
     "prettier": "2.2.1",
@@ -80,10 +80,5 @@
     "webpack-cli": "4.5.0",
     "webpack-dev-server": "3.11.2"
   },
-  "dependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run typecheck && npm run lint"
-    }
-  }
+  "dependencies": {}
 }

@@ -17,7 +17,7 @@ export const StyledPage = styled.div`
 
   h1 {
     font-size: 2.6rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
@@ -26,7 +26,7 @@ export const StyledPage = styled.div`
 
   h2 {
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: 600;
     margin-top: 3rem;
     margin-bottom: 1.6rem;
     .icon {
@@ -39,7 +39,7 @@ export const StyledPage = styled.div`
     padding: 0.4rem 1rem;
     border-radius: 8px;
     font-size: 1.6rem;
-    font-weight: bolder;
+    font-weight: 600;
     display: flex;
     align-items: flex-start;
     margin-top: 2rem;
@@ -58,13 +58,13 @@ export const StyledPage = styled.div`
 
   h4 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 1.5rem;
   }
 
   h5 {
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
@@ -72,7 +72,7 @@ export const StyledPage = styled.div`
 
   h6 {
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
@@ -87,7 +87,7 @@ export const StyledPage = styled.div`
     padding-left: 8px;
 
     .cite {
-      font-weight: bold;
+      font-weight: 600;
       .author {
         color: ${colors.blue};
       }

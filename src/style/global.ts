@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
+    font-weight: lighter;
 
     @media (min-width: 768px) {
 

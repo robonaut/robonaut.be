@@ -63,6 +63,7 @@ const developmentConfig: webpack.Configuration = {
   devtool: "source-map",
   devServer: {
     historyApiFallback: true,
+    contentBase: path.join(__dirname, 'dist'),
     hot: true,
     inline: true,
     port: 3030,

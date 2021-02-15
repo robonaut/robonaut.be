@@ -67,7 +67,7 @@ export const StyledNavigationLink = styled(NavLink)`
   }
 
   &[aria-current="page"] {
-    font-weight: bold;
+    font-weight: 600;
     color: ${colors.white};
     border-bottom: 1px solid ${colors.white};
   }
@@ -103,7 +103,7 @@ export const StyledErrorText = styled.div`
 
 export const StyledErrorDetailText = styled.p`
   color: ${colors.whiteDarker};
-  font-weight: bold;
+  font-weight: 600;
 `;
 
 export const StyledErrorClose = styled.div`

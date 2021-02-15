@@ -18,7 +18,7 @@ export const StyledFlowsBatchAction = styled.div`
   margin: 1rem;
   border-bottom: 1px solid ${colors.blue};
   &:hover {
-    font-weight: bold;
+    font-weight: 600;
   }
 `;
 

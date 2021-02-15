@@ -30,7 +30,7 @@ export const StyledInput = styled.input`
     border: none;
     background-color: ${colors.navy};
     color: ${colors.white};
-    font-weight: bold;
+    font-weight: 600;
     &:hover {
       background-color: ${colors.blue};
     }
