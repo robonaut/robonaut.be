@@ -24,7 +24,7 @@ export const StyledAboutPage = styled.div`
     }
   }
   .highlight {
-    font-weight: bold;
+    font-weight: 600;
     color: ${colors.blue};
   }
 `;

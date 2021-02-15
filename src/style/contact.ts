@@ -5,7 +5,7 @@ import colors from "./colors";
 export const StyledContactPage = styled.div`
   ul li {
     &:hover {
-      font-weight: bold;
+      font-weight: 600;
     }
   }
 

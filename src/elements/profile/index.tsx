@@ -7,7 +7,7 @@ export default (): JSX.Element | null => (
     <picture>
       <source srcSet="/assets/images/robonaut.webp" type="image/webp" />
       <img
-        src="/assets/images/robonaut.jpeg"
+        src="/assets/images/robonaut.png"
         style={{ width: "100%", height: "100%", borderRadius: "50%" }}
       />
     </picture>
