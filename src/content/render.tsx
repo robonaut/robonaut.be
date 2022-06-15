@@ -1,12 +1,13 @@
-import marked, { Renderer } from "marked";
-import Prism from "prismjs";
-import React from "react";
-import { renderToString } from "react-dom/server";
+import type { Renderer } from 'marked';
+import { marked } from 'marked';
+import Prism from 'prismjs';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
 
-import { StyledPage } from "../style/page";
-import Image from "./renderers/Image";
+import { StyledPage } from '../style/page';
+import Image from './renderers/Image';
 
-require("prismjs/components/prism-typescript");
+require('prismjs/components/prism-typescript');
 
 const renderer: Partial<Renderer> = {
   image(href: string, title: string, text: string) {
@@ -17,12 +18,12 @@ const renderer: Partial<Renderer> = {
     return html;
   },
   codespan(text: string) {
-    const html = Prism.highlight(text, Prism.languages.ts, "ts");
+    const html = Prism.highlight(text, Prism.languages.ts, 'ts');
 
     return `<code class="language-ts">${html}</code>`;
   },
   code(text: string) {
-    const html = Prism.highlight(text, Prism.languages.ts, "ts");
+    const html = Prism.highlight(text, Prism.languages.ts, 'ts');
 
     return `<pre class="language-ts"><code class="language-ts">${html}</code></pre>`;
   },
@@ -31,14 +32,14 @@ const renderer: Partial<Renderer> = {
   },
 };
 
-// @ts-ignore
+// @typescript-eslint/prefer-ts-expect-error
 marked.use({ renderer });
 
 export default (markdown: string): JSX.Element | null => {
   const html = marked(markdown, {
     gfm: true,
     smartypants: true,
-    headerPrefix: "header-",
+    headerPrefix: 'header-',
   });
 
   return <StyledPage dangerouslySetInnerHTML={{ __html: html }} />;

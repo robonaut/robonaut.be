@@ -1,12 +1,10 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import { Action, ActionTypes, UnknownError } from "../../typings";
+import type { Action, UnknownError } from '../../typings';
+import { ActionTypes } from '../../typings';
 
 const initialErrors: UnknownError[] = [];
-const errorsReducer = (
-  state = initialErrors,
-  action: Action
-): typeof initialErrors => {
+const errorsReducer = (state = initialErrors, action: Action): typeof initialErrors => {
   if (action.type === ActionTypes.APP_BOOTSTRAP) {
     return initialErrors;
   }
@@ -18,10 +16,7 @@ const errorsReducer = (
 };
 
 const initialShowErrorsState = false;
-const showErrorsReducer = (
-  state = initialShowErrorsState,
-  action: Action
-): boolean => {
+const showErrorsReducer = (state = initialShowErrorsState, action: Action): boolean => {
   if (action.type === ActionTypes.API_ERROR && action.payload.error) {
     return true;
   }

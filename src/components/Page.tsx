@@ -1,12 +1,6 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-const Page = ({
-  title,
-  children,
-}: {
-  title: string;
-  children: JSX.Element;
-}): JSX.Element => {
+const Page = ({ title, children }: { title: string; children: JSX.Element }): JSX.Element => {
   useEffect((): void => {
     document.title = title;
   }, []);

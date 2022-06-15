@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { getContent } from "../content";
-import render from "../content/render";
-import { StyledForm, StyledTextArea } from "../style/form";
+import { getContent } from '../content';
+import render from '../content/render';
+import { StyledForm, StyledTextArea } from '../style/form';
 
 const Blog: React.FunctionComponent = (): JSX.Element | null => {
   const [content, setContent] = useState(<div />);
@@ -16,11 +16,9 @@ const Blog: React.FunctionComponent = (): JSX.Element | null => {
 
   return (
     <>
-      {getContent("blog")}
+      {getContent('blog')}
       <StyledForm>
-        <StyledTextArea
-          onChange={(e): void => renderMarkdown(e.target.value)}
-        />
+        <StyledTextArea onChange={(e): void => renderMarkdown(e.target.value)} />
       </StyledForm>
       {content}
     </>

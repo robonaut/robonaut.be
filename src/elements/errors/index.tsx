@@ -1,24 +1,22 @@
-import React from "react";
-import { RiCloseCircleLine } from "react-icons/ri";
-import { connect, ConnectedProps } from "react-redux";
+import React from 'react';
+import { RiCloseCircleLine } from 'react-icons/ri';
+import type { ConnectedProps } from 'react-redux';
+import { connect } from 'react-redux';
 
-import { actionCreators } from "../../redux/actions";
-import { RootState } from "../../redux/reducers";
-import {
-  errorsSelector,
-  showErrorsSelector,
-} from "../../redux/selectors/errors";
-import colors from "../../style/colors";
+import { actionCreators } from '../../redux/actions';
+import type { RootState } from '../../redux/reducers';
+import { errorsSelector, showErrorsSelector } from '../../redux/selectors/errors';
+import colors from '../../style/colors';
 import {
   StyledErrorClose,
   StyledErrorContainer,
   StyledErrorDetailText,
   StyledErrorText,
   StyledErrorTextContainer,
-} from "../../style/layout";
+} from '../../style/layout';
 
 const mapState = (
-  state: RootState
+  state: RootState,
 ): {
   errors: ReturnType<typeof errorsSelector>;
   showErrors: ReturnType<typeof showErrorsSelector>;

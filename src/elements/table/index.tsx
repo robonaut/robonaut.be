@@ -1,18 +1,15 @@
-import React from "react";
-import {
+import React from 'react';
+import type {
   Cell,
   ColumnInstance,
   Row,
   TableCellProps,
   TableOptions,
-  useExpanded,
   UseExpandedOptions,
-  useFilters,
   UseFiltersOptions,
-  useSortBy,
   UseSortByOptions,
-  useTable,
-} from "react-table";
+} from 'react-table';
+import { useExpanded, useFilters, useSortBy, useTable } from 'react-table';
 
 import {
   StyledEmptyTableText,
@@ -23,8 +20,8 @@ import {
   StyledTableHeaderCell,
   StyledTableHeaderRow,
   StyledTableRow,
-} from "../../style/table";
-import { UnknownRecord } from "../../typings";
+} from '../../style/table';
+import type { UnknownRecord } from '../../typings';
 
 interface WWSTableOptions<D extends UnknownRecord>
   extends TableOptions<D>,
@@ -40,7 +37,7 @@ interface WWSTableOptions<D extends UnknownRecord>
 export default function Table<D extends UnknownRecord>({
   columns,
   data,
-  emptyText = "No data",
+  emptyText = 'No data',
   getCellProps,
   getColumnProps,
   getRowProps,
@@ -48,32 +45,26 @@ export default function Table<D extends UnknownRecord>({
 }: {
   emptyText?: string | (() => JSX.Element);
 } & WWSTableOptions<D>): JSX.Element {
-  const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    rows,
-    prepareRow,
-    visibleColumns,
-  } = useTable(
-    {
-      columns,
-      data,
-    },
-    useFilters,
-    useSortBy,
-    useExpanded
-  );
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow, visibleColumns } =
+    useTable(
+      {
+        columns,
+        data,
+      },
+      useFilters,
+      useSortBy,
+      useExpanded,
+    );
 
   return (
     <>
       <StyledTable {...getTableProps()}>
         <StyledTableHeader>
-          {headerGroups.map((headerGroup) => (
+          {headerGroups.map(headerGroup => (
             <StyledTableHeaderRow {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
+              {headerGroup.headers.map(column => (
                 <StyledTableHeaderCell {...column.getHeaderProps()}>
-                  {column.render("Header")}
+                  {column.render('Header')}
                 </StyledTableHeaderCell>
               ))}
             </StyledTableHeaderRow>
@@ -84,18 +75,18 @@ export default function Table<D extends UnknownRecord>({
             <StyledTableRow>
               <StyledTableCell colSpan={visibleColumns.length}>
                 <StyledEmptyTableText>
-                  {typeof emptyText === "string" ? emptyText : emptyText()}
+                  {typeof emptyText === 'string' ? emptyText : emptyText()}
                 </StyledEmptyTableText>
               </StyledTableCell>
             </StyledTableRow>
           )}
-          {rows.map((row) => {
+          {rows.map(row => {
             prepareRow(row);
 
             return (
               <React.Fragment key={row.id}>
                 <StyledTableRow {...row.getRowProps(getRowProps?.(row))}>
-                  {row.cells.map((cell) => {
+                  {row.cells.map(cell => {
                     return (
                       <StyledTableCell
                         {...cell.getCellProps([
@@ -103,7 +94,7 @@ export default function Table<D extends UnknownRecord>({
                           getCellProps?.(cell) || {},
                         ])}
                       >
-                        {cell.render("Cell")}
+                        {cell.render('Cell')}
                       </StyledTableCell>
                     );
                   })}

@@ -1,19 +1,21 @@
-import { applyMiddleware, createStore, Store } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension";
-import createSagaMiddleware from "redux-saga";
+import type { Store } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import createSagaMiddleware from 'redux-saga';
 
-import { LOCALSTORAGE_KEY } from "../constants";
-import log from "../log";
-import { actionCreators } from "./actions";
-import { rootReducer, RootState } from "./reducers";
-import sagas from "./sagas";
+import { LOCALSTORAGE_KEY } from '../constants';
+import log from '../log';
+import { actionCreators } from './actions';
+import type { RootState } from './reducers';
+import { rootReducer } from './reducers';
+import sagas from './sagas';
 
 // Convert object to string and store in localStorage
 function saveToLocalStorage(state: RootState): void {
   try {
     localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(state));
   } catch (e) {
-    log.warn(e);
+    log.warn((e as Error).message, e);
   }
 }
 
@@ -27,7 +29,7 @@ function loadFromLocalStorage(): RootState | undefined {
 
     return JSON.parse(serializedState);
   } catch (e) {
-    log.warn(e);
+    log.warn((e as Error).message, e);
 
     return undefined;
   }
@@ -43,7 +45,7 @@ export const setupStore = ({ isServer }: { isServer: boolean }): Store => {
   const store = createStore(
     rootReducer,
     loadFromLocalStorage(),
-    composeWithDevTools(applyMiddleware(sagaMiddleware))
+    composeWithDevTools(applyMiddleware(sagaMiddleware)),
   );
 
   sagaMiddleware.run(sagas);

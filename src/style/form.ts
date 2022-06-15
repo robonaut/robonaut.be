@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import colors from "./colors";
+import colors from './colors';
 
 const BASE_INPUT_STYLE = `
   font-size: 1.6rem;

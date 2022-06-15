@@ -1,0 +1,42 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "be.colruyt.xtradcs.debug,",
+      "sha256_cert_fingerprints": [
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "be.colruyt.xtradcs.syst,",
+      "sha256_cert_fingerprints": [
+        "F5:0E:C9:BB:F3:01:B5:77:28:76:34:8C:46:58:43:8D:8C:7D:D5:90:30:18:D5:48:60:33:EF:62:BF:92:32:8C"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "be.colruyt.xtradcs.rc,",
+      "sha256_cert_fingerprints": [
+        "F5:0E:C9:BB:F3:01:B5:77:28:76:34:8C:46:58:43:8D:8C:7D:D5:90:30:18:D5:48:60:33:EF:62:BF:92:32:8C"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "be.colruyt.xtradcs,",
+      "sha256_cert_fingerprints": [
+        "F5:0E:C9:BB:F3:01:B5:77:28:76:34:8C:46:58:43:8D:8C:7D:D5:90:30:18:D5:48:60:33:EF:62:BF:92:32:8C"
+      ]
+    }
+  }
+]
