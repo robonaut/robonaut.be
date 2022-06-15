@@ -1,7 +1,8 @@
-import React, { Component, ErrorInfo, ReactNode } from "react";
+import type { ErrorInfo, ReactNode } from 'react';
+import React, { Component } from 'react';
 
-import log from "../log";
-import { StyledUncaughtErrorText } from "../style/layout";
+import log from '../log';
+import { StyledUncaughtErrorText } from '../style/layout';
 
 interface Props {
   children: ReactNode;
@@ -22,15 +23,14 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
-    log.error("Uncaught error:", { error, errorInfo });
+    log.error('Uncaught error:', { error, errorInfo });
   }
 
   public render(): ReactNode {
     if (this.state.hasError) {
       return (
         <StyledUncaughtErrorText>
-          Oeps.. that didn't go as intended. Check the console for more error
-          info.
+          Oeps.. that didn't go as intended. Check the console for more error info.
         </StyledUncaughtErrorText>
       );
     }

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export default ({
   src,
   fallback,
-  type = "image/webp",
+  type = 'image/webp',
   alt,
   ...delegated
 }: {

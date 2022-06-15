@@ -1,8 +1,8 @@
-import { IoLogInOutline, IoLogOutOutline } from "react-icons/io5";
-import styled from "styled-components";
+import { IoLogInOutline, IoLogOutOutline } from 'react-icons/io5';
+import styled from 'styled-components';
 
-import colors from "./colors";
-import { FULL_HEADER_MINIMAL_WIDTH } from "./sizes";
+import colors from './colors';
+import { FULL_HEADER_MINIMAL_WIDTH } from './sizes';
 
 export const StyledUserContainer = styled.div`
   display: flex;

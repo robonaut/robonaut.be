@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { getContent } from "../content";
+import { getContent } from '../content';
 
 const Projects = (): JSX.Element | null => {
-  return <>{getContent("projects/iqo2")}</>;
+  return <>{getContent('projects/iqo2')}</>;
 };
 
 export default Projects;

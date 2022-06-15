@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   FaAddressCard,
   FaBookmark,
@@ -13,11 +13,11 @@ import {
   FaRegStar,
   FaStar,
   FaThumbsUp,
-} from "react-icons/fa";
-import { IoSchool } from "react-icons/io5";
-import { IconType } from "react-icons/lib";
+} from 'react-icons/fa';
+import { IoSchool } from 'react-icons/io5';
+import type { IconType } from 'react-icons/lib';
 
-import Image from "../../elements/image";
+import Image from '../../elements/image';
 
 const icons: Record<string, IconType> = {
   FaAddressCard,
@@ -44,7 +44,7 @@ export default ({
   href: string;
   title?: string;
 }): JSX.Element | null => {
-  if (text === "icon") {
+  if (text === 'icon') {
     const Icon = icons[href];
 
     if (!Icon) {
@@ -54,7 +54,5 @@ export default ({
     return <Icon className={`icon ${href}`} />;
   }
 
-  return (
-    <Image src={href} alt={text} fallback={href.replace(".webp", ".png")} />
-  );
+  return <Image src={href} alt={text} fallback={href.replace('.webp', '.png')} />;
 };

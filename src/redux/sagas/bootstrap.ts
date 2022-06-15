@@ -1,9 +1,9 @@
-import { SagaIterator } from "redux-saga";
-import { put, select, takeLatest } from "redux-saga/effects";
+import type { SagaIterator } from 'redux-saga';
+import { put, select, takeLatest } from 'redux-saga/effects';
 
-import { ActionTypes } from "../../typings";
-import { actionCreators } from "../actions";
-import { isLoggedInSelector } from "../selectors/auth";
+import { ActionTypes } from '../../typings';
+import { actionCreators } from '../actions';
+import { isLoggedInSelector } from '../selectors/auth';
 
 const bootstrap = function* (): Generator {
   const isLoggedIn = yield select(isLoggedInSelector);

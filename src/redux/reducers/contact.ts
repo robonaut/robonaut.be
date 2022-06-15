@@ -1,23 +1,16 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import {
-  Action,
-  ActionPayload,
-  ActionTypes,
-  UnknownError,
-} from "../../typings";
+import type { Action, ActionPayload, UnknownError } from '../../typings';
+import { ActionTypes } from '../../typings';
 
 const initialFormState: {
   error?: UnknownError;
-  response?: ActionPayload["response"];
+  response?: ActionPayload['response'];
 } = {
   error: undefined,
   response: undefined,
 };
-const formStateReducer = (
-  state = initialFormState,
-  action: Action
-): typeof initialFormState => {
+const formStateReducer = (state = initialFormState, action: Action): typeof initialFormState => {
   if (action.type === ActionTypes.APP_BOOTSTRAP) {
     return initialFormState;
   }

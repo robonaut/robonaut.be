@@ -1,13 +1,8 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
-import colors from "./colors";
-import {
-  FULL_HEADER_MINIMAL_WIDTH,
-  HEADER_HEIGHT,
-  MAIN_PADDING,
-  MAX_WIDTH,
-} from "./sizes";
+import colors from './colors';
+import { FULL_HEADER_MINIMAL_WIDTH, HEADER_HEIGHT, MAIN_PADDING, MAX_WIDTH } from './sizes';
 
 // MAIN
 
@@ -66,7 +61,7 @@ export const StyledNavigationLink = styled(NavLink)`
     color: ${colors.blue};
   }
 
-  &[aria-current="page"] {
+  &[aria-current='page'] {
     font-weight: 600;
     color: ${colors.white};
     border-bottom: 1px solid ${colors.white};

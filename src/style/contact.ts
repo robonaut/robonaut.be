@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import colors from "./colors";
+import colors from './colors';
 
 export const StyledContactPage = styled.div`
   ul li {

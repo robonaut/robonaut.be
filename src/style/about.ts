@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import colors from "./colors";
+import colors from './colors';
 
 export const StyledAboutPage = styled.div`
   .rating {

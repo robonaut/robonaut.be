@@ -2,8 +2,18 @@ import CopyPlugin from "copy-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 import webpack from "webpack";
+import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
 import { routeDefinitions } from "./src/routes";
 import { renderStatic } from "./src/server";
+
+const devServer: DevServerConfiguration = {
+  static: {
+    directory: path.join(__dirname, "dist"),
+  },
+  hot: true,
+  port: 3030,
+  open: true,
+};
 
 const configuration: webpack.Configuration = {
   entry: {
@@ -61,14 +71,7 @@ const developmentConfig: webpack.Configuration = {
   },
   mode: "development",
   devtool: "source-map",
-  devServer: {
-    historyApiFallback: true,
-    contentBase: path.join(__dirname, 'dist'),
-    hot: true,
-    inline: true,
-    port: 3030,
-    open: true,
-  },
+  devServer,
 };
 
 const productionConfig: webpack.Configuration = {

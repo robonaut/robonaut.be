@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { connect, ConnectedProps } from "react-redux";
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import type { ConnectedProps } from 'react-redux';
+import { connect } from 'react-redux';
 
-import { actionCreators } from "../../redux/actions";
-import { RootState } from "../../redux/reducers";
-import { formStateSelector } from "../../redux/selectors/contact";
-import { StyledSuccessMessage } from "../../style/contact";
-import { StyledForm, StyledInput, StyledTextArea } from "../../style/form";
-import { CONTACT_FORM_WIDTH } from "../../style/sizes";
+import { actionCreators } from '../../redux/actions';
+import type { RootState } from '../../redux/reducers';
+import { formStateSelector } from '../../redux/selectors/contact';
+import { StyledSuccessMessage } from '../../style/contact';
+import { StyledForm, StyledInput, StyledTextArea } from '../../style/form';
+import { CONTACT_FORM_WIDTH } from '../../style/sizes';
 
 const mapState = (
-  state: RootState
+  state: RootState,
 ): {
   formState: ReturnType<typeof formStateSelector>;
 } => ({
@@ -29,19 +30,20 @@ const ContactForm = ({
 }: ConnectedProps<typeof connector>): JSX.Element => {
   const { t } = useTranslation();
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState(
-    t("pages.contact.emptyMessage")
+    // t("pages", { keyPrefix: "pages.contact.errorMessage" })
+    '',
   );
 
   useEffect(() => {
     if (formState.response) {
-      setSuccessMessage(t("pages.contact.successMessage"));
-      setName("");
-      setEmail("");
-      setMessage("");
+      setSuccessMessage(t('pages', { keyPrefix: 'pages.contact.successMessage' }));
+      setName('');
+      setEmail('');
+      setMessage('');
     }
   }, [formState]);
 

@@ -1,0 +1,76 @@
+{
+  "applinks": {
+    "substitutionVariables": {
+      "language": [
+        "nl",
+        "fr"
+      ],
+      "shop": [
+        "colruyt",
+        "bioplanet"
+      ],
+      "pdp": "pdp_?*",
+      "promo": "promo_?*_?*",
+      "search": [
+        "zoek",
+        "recherche"
+      ]
+    },
+    "defaults": {
+      "caseSensitive": "false"
+    },
+    "details": [
+      {
+        "appIDs": [
+          "N8KQH658T6.be.colruyt.xtradcs.debug",
+          "N8KQH658T6.be.colruyt.xtradcs.syst",
+          "N8KQH658T6.be.colruyt.xtradcs.rc",
+          "N8KQH658T6.be.colruyt.xtradcs"
+        ],
+        "components": [
+          {
+            "/": "/$(shop)/$(language)/assortiment/?*",
+            "#": "$(pdp)",
+            "comment": "Product Detail - Based on product id"
+          },
+          {
+            "/": "/$(shop)/$(language)/assortiment/?*-?*",
+            "comment": "Product Detail - Based on commercial id"
+          },
+          {
+            "/": "/$(shop)/$(language)/$(search)",
+            "?": {
+              "searchTerm": "?*",
+              "catalogId": "?*"
+            },
+            "comment": "Search results"
+          },
+          {
+            "/": "$(shop)/$(language)/?*",
+            "#": "$(promo)",
+            "comment": "Promo detail"
+          },
+          {
+            "/": "$(shop)/$(language)/weekly-recipes/?*",
+            "comment": "Recipe detail"
+          },
+          {
+            "/": "OrderDetail",
+            "?": {
+              "orderPlaced": "true",
+              "storeId": "?*",
+              "catalogId": "?*",
+              "langId": "?*",
+              "orderId": "?*"
+            },
+            "comment": "Reservation detail"
+          },
+          {
+            "/": "$(shop)/$(language)/themerecipe/?*",
+            "comment": "Custom link to navigate to recipe theme pages in WebViews"
+          }
+        ]
+      }
+    ]
+  }
+}

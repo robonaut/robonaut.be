@@ -1,7 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-import colors from "./colors";
-import prism from "./prism";
+import colors from './colors';
+import prism from './prism';
 
 const GlobalStyle = createGlobalStyle`
   * {

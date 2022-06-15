@@ -1,25 +1,21 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import { Action, ActionTypes } from "../../typings";
+import type { Action } from '../../typings';
+import { ActionTypes } from '../../typings';
 
 const initialAuthStatus = {};
-const authStatusReducer = (
-  state = initialAuthStatus
-): typeof initialAuthStatus => {
+const authStatusReducer = (state = initialAuthStatus): typeof initialAuthStatus => {
   return state;
 };
 
 const initialAuthData = {
-  token: "",
+  token: '',
   user: {
-    id: "",
-    email: "",
+    id: '',
+    email: '',
   },
 };
-const authDataReducer = (
-  state = initialAuthData,
-  action: Action
-): typeof initialAuthData => {
+const authDataReducer = (state = initialAuthData, action: Action): typeof initialAuthData => {
   if (
     action.type === ActionTypes.API_SUCCESS &&
     action.payload.originalAction?.type === ActionTypes.AUTH_LOGIN

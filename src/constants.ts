@@ -1,6 +1,6 @@
-import config from "./config";
+import config from './config';
 
-export const LOCALSTORAGE_KEY = "robonaut.store";
+export const LOCALSTORAGE_KEY = 'robonaut.store';
 
 export const API_ENDPOINT = `${config.API_HOST}`;
 

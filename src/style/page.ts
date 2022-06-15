@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import colors from "./colors";
+import colors from './colors';
 
 export const StyledPage = styled.div`
   h1,
@@ -105,10 +105,10 @@ export const StyledPage = styled.div`
     width: calc(50% - 1rem);
     border-radius: 8px;
     object-fit: contain;
-    &[alt="apple_appstore"] {
+    &[alt='apple_appstore'] {
       width: 100px;
     }
-    &[alt="google_playstore"] {
+    &[alt='google_playstore'] {
       width: 112px;
     }
     @media (min-width: 768px) {

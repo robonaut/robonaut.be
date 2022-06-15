@@ -1,4 +1,5 @@
-import { Action, ActionPayload, ActionTypes, UnknownRecord } from "../typings";
+import type { Action, ActionPayload, UnknownRecord } from '../typings';
+import { ActionTypes } from '../typings';
 
 export const actionCreators = {
   bootstrap: (payload: ActionPayload): Action => ({
