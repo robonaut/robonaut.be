@@ -1,4 +1,4 @@
-import type { Renderer } from 'marked';
+import type { Renderer, Tokens } from 'marked';
 import { marked } from 'marked';
 import Prism from 'prismjs';
 import React from 'react';
@@ -10,24 +10,24 @@ import Image from './renderers/Image';
 require('prismjs/components/prism-typescript');
 
 const renderer: Partial<Renderer> = {
-  image(href: string, title: string, text: string) {
+  image({ href, title, text }: Tokens.Image) {
     const image = <Image href={href} text={text} title={title} />;
     // const div = document.createElement("div");
     const html = renderToString(image);
 
     return html;
   },
-  codespan(text: string) {
+  codespan({ text }: Tokens.Codespan) {
     const html = Prism.highlight(text, Prism.languages.ts, 'ts');
 
     return `<code class="language-ts">${html}</code>`;
   },
-  code(text: string) {
+  code({ text }: Tokens.Code) {
     const html = Prism.highlight(text, Prism.languages.ts, 'ts');
 
     return `<pre class="language-ts"><code class="language-ts">${html}</code></pre>`;
   },
-  link(href: string, _title: string, text: string) {
+  link({ href, text }: Tokens.Link) {
     return `<a href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`;
   },
 };
@@ -38,8 +38,6 @@ marked.use({ renderer });
 export default (markdown: string): JSX.Element | null => {
   const html = marked(markdown, {
     gfm: true,
-    smartypants: true,
-    headerPrefix: 'header-',
   });
 
   return <StyledPage dangerouslySetInnerHTML={{ __html: html }} />;

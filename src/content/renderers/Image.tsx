@@ -42,7 +42,7 @@ export default ({
 }: {
   text: string;
   href: string;
-  title?: string;
+  title: string | null;
 }): JSX.Element | null => {
   if (text === 'icon') {
     const Icon = icons[href];
