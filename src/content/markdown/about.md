@@ -2,14 +2,14 @@
 
 ## ![icon](FaAddressCard) Intro
 
-Software engineer with a background in theoretical physics who specializes in scalable software architecture, performant API’s and beautiful user interfaces. Out of the box thinker who is fluent in a number of programming languages and frameworks and comfortable with both frontend and backend development. Autodidact who learns quickly and is intrinsically motivated to get things done. Excellent communication skills, both verbal and written. Willing to take the initiative when working both individually and as part of a team. Proven track record of delivering well executed solutions in high performance environments. Passionate about space travel, big questions, creativity and the fabric of reality. Applies string theory to guitars and pianos.
+Experienced software engineer with a background in theoretical physics. Out of the box thinker, fluent in a variety of programming languages and frameworks, and comfortable with architecture, cloud, infrastructure, mobile, web, devops, and all-around software engineering. Autodidact who learns quickly and is driven to deliver results. Possesses excellent communication skills, both verbal and written, and takes the initiative when working independently or as part of a team. Proven track record of delivering well-executed solutions in high-performance environments. Passionate about space travel, big questions, creativity, and the fabric of reality. Applies string theory to guitars and pianos. And most importantly, authentically me.
 
 ## ![icon](FaLaptopCode) Skills
-
+<!-- 
 >* Advanced <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 >* Proficient <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
 >* Intermediate <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
->* Basic <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+>* Basic <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div> -->
 
 ### Languages
 
@@ -23,73 +23,66 @@ Software engineer with a background in theoretical physics who specializes in sc
 * TypeScript <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * JavaScript <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * Node.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
+* React (Native) <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * HTML/CSS <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* React Native <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * SQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Python <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* Ruby <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* Python <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
 * Java <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* C# <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* PHP <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
-### Software Architecture
+### Architecture
 
-* API Design <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Web Development <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* TDD <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Microservices <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* AWS <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* NoSQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Serverless <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Database Design <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Kafka <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* RabbitMQ <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* AWS
+* GCP
+* CI/CD Pipelines
+* Database Design
+* Web Fundamentals
+* Test Driven Development
+* Containerization (Docker/Kubernetes)
+* Microservices
+* API Gateways
+* API Design
+* Serverless
+* Message Queues
+* Event-Driven Architecture
+* GraphQl
 
-### Mobile Applications
+### Mobile Delivery
 
-* Fastlane <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Push Notifications <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Analytics <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Release pipelines <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* React Native bridging <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Android Studio <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* XCode <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* Mobile SDK's <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-
-### Frameworks
-
-* Koa.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Express.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* React.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* React Native <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Styled Components <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* GraphQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Socket.io <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* D3 <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* Thrift <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* CI/CD for Mobile Apps
+* Cross-Platform Development
+* Automated Testing
+* Crash Reporting & Monitoring
+* User Experience Design
+* API Integration
+* Push Notifications
 
 ### Data Stores
 
-* Redis <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* S3 <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* PostgreSQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* MySQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* DynamoDB <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* ElasticSearch <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Neo4j <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
-* RethinkDB <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* PostgreSQL
+* MySQL
+* Cloud Storage
+* Redis
+* DynamoDB
+* ElasticSearch
+* MongoDb
+* Neo4j
 
 ### DevOps
 
-* Git <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Docker <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Mocha <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Jest <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Gitlab CI/CD <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* Jenkins <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* CircleCI <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* DataDog <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
-* Kubernetes <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
+* Git
+* Docker
+* Kubernetes
+* GitLab Pipelines
+* GitHub Actions
+* CircleCI
+* Jenkins
+* DataDog
+* Sentry
+* Terraform
+* Nx Monorepo
+* Kibana
+* New Relic
+* SonarQube
 
 ## ![icon](FaList) Work
 
@@ -101,13 +94,17 @@ Software engineer with a background in theoretical physics who specializes in sc
 
 #### Software Engineering Lead <span class="date">Mar 2021 - Dec 2022</span>
 
+![icon](FaBookmark) As an Engineering Lead, I contributed to both technical projects and company-wide initiatives aimed at improving team collaboration and efficiency. A key project involved developing a backend system for a brand's IoT-enabled heat pumps and air conditioners, enabling data transmission from devices to an AWS backend with multiple adapter services and utilizing MongoDB for data storage. I also conducted load testing on this IoT backend to ensure stability under varying conditions.
+
+![icon](FaBookmark) I implemented a shared pipelines approach to streamline CI/CD processes and ensure consistency across various microservices. Additionally, I supported engineers through regular check-ins, conducted interviews, and helped define clear engineering levels within the organization. I participated in a pre-sales track, proposing tailored technical solutions for a major client. Separately, I contributed to the development of the Colruyt Xtra app using React Native, enhancing the app's user experience.
+
 ### Nokia Bell Labs [[link]](https://www.bell-labs.com/)
 
-#### Senior Software Engineer <span class="date">May 2020 - Febr 2021</span>
+#### Senior Software Engineer <span class="date">May 2020 - Feb 2021</span>
 
 *Nokia Bell Labs is the world-renowned industrial research arm of Nokia, having invented many of the foundational technologies that underpin information and communications networks and all digital devices and systems.*
 
-![icon](FaBookmark) I joined the team that created the [World Wide Streams](https://worldwidestreams.io/) platform. I mainly focused on the transition of this platform from research to a service offering. This included a rethink of the architectural design of the platform and the rewrite and introduction of some (new) services. Examples include a new Gateway API with request validation, a new TypeScript CLI that communicates with this API, a shared logger library and an authentication service. I created an end to end pipeline shared across all components that enforces a standard way of versioning, testing and releasing. I also introduced sprint plannings to the team so the agreed roadmap could be delivered in time with small incremental steps.
+![icon](FaBookmark) I joined the team that created the [World Wide Streams](https://worldwidestreams.io/) platform. I mainly focused on the transition of this platform from research to a service offering. This included a rethinking of the architectural design of the platform and the rewrite and introduction of some (new) services. Examples include a new Gateway API with request validation, a new TypeScript CLI that communicates with this API, a shared logger library and an authentication service. I created an end to end pipeline shared across all components that enforces a standard way of versioning, testing and releasing. I also introduced sprint plannings to the team so the agreed roadmap could be delivered in time with small incremental steps.
 
 ### EnergyLab [[link]](https://sentiance.com/)
 
@@ -121,7 +118,7 @@ You can find more info [here](projects).
 
 *Sentiance is a data science company turning IOT sensor data into rich insights about people’s behavior and real-time context. Sentiance context intelligence enables solutions for lifestyle based insurance, contextual marketing & commerce, smart mobility, connected health, smart home, smart city and connected car.*
 
-![icon](FaBookmark) I led a team of full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects we attained 100% code coverage and a continuous CICD pipeline delivering multiple automated deploys every day. This way our team was consistently able to support an ever growing feature set (social login, friending, commenting, picture upload, notifications, ...). The project resulted in a new company [Aaqua](https://aaqua.live/).
+![icon](FaBookmark) I led a team of full stack engineers to create a new fandom centric social network. I was responsible for delivering a brand new mobile app (TypeScript, Redux, Apollo) and a public graphQL API (TypeScript, Koa, Apollo) backed by a Neo4j graph database. In both frontend and backend projects, we attained 100% code coverage and established a continuous CI/CD pipeline, delivering multiple automated deployments daily. This enabled our team to consistently support an ever-growing feature set (social login, friending, commenting, picture upload, notifications, ...). The project eventually resulted in a new spin-off company.
 
 ![icon](FaBookmark) I initiated a complete rewrite of the Sentiance demo app (Journeys) which embeds their proprietary tracking SDK. Therefore we bridged the native SDK's for android and iOS to React Native. We then created a brand new app (React Native, Redux, Redux Saga) and added animated interactive map views (Mapbox) together with custom animations and data visualisations, powered by a GraphQL API interface. I also created a CI/CD pipeline that automated distributing multiple flavors of their app (and sdk) while enforcing 98% test coverage.
 
@@ -133,7 +130,7 @@ You can find more info [here](projects).
 
 ![icon](FaBookmark) I was responsible for the design and implementation of scalable backend services, high traffic websites, API's and CMS interfaces for a variety of (live) TV shows. I took care of the full release cycle of the services - from concept to production releases - with an eye for quality, detail and user experience. My area of expertise essentially covered their complete technology stack ranging from architectural design to server deploys and UI tweaks. While continuously and actively learning I gained expert knowledge of and hands-on experience with Amazon Web Services, Node.js and its ecosystem, serverless architectures, RESTful dockerized web services, SQL and NoSQL data stores and a plethora of frontend development frameworks like backbone.js, react.js and react-native.
 
-![icon](FaBookmark) I was a major contributor on most API's and mobile applications for major brands and television shows like 'Ketnet', 'Studio 100', 'Blokken', 'Eurosong', 'Ook Getest Op Mensen', 'The Passion', ...
+![icon](FaBookmark) I was a major contributor to most APIs and mobile applications for major brands and television shows like 'Ketnet', 'Studio 100', 'Blokken', 'Eurosong', 'Ook Getest Op Mensen', 'The Passion', ...
 
 ### iMinds [[link]](https://iminds.be/)
 
