@@ -2,7 +2,7 @@ version: 2.1
 defaults: &defaults
   working_directory: ~/robonaut.be
   docker:
-    - image: cimg/node:14.15
+    - image: cimg/node:20.18
 
 whitelist: &whitelist
   paths:
@@ -26,7 +26,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Checking Versions"
+          name: 'Checking Versions'
           command: |
             node --version
             npm --version
@@ -34,7 +34,7 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: "npm install"
+          name: 'npm install'
           command: npm i
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
@@ -50,7 +50,7 @@ jobs:
       - attach_workspace:
           at: ~/robonaut.be
       - run:
-          name: "npm test"
+          name: 'npm test'
           command: npm t
       - persist_to_workspace:
           root: ~/robonaut.be
@@ -68,7 +68,7 @@ jobs:
             unzip awscliv2.zip
             sudo ./aws/install
       - run:
-          name: "deploy"
+          name: 'deploy'
           command: npm run deploy
 
 workflows:
