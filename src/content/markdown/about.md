@@ -14,7 +14,7 @@ Experienced software engineer with a background in theoretical physics. Out of t
 ### Languages
 
 * Dutch <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* English <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* English <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * French <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 * German <div class="rating">![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
