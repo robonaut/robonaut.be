@@ -21,12 +21,12 @@ Experienced software engineer with a background in theoretical physics. Out of t
 ### Programming
 
 * TypeScript <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
-* JavaScript <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * Node.js <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * React (Native) <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * HTML/CSS <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaStar)</div>
 * SQL <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
 * Python <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
+* Shell <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaStar)![icon](FaRegStar)</div>
 * Java <div class="rating">![icon](FaStar)![icon](FaStar)![icon](FaRegStar)![icon](FaRegStar)</div>
 
 ### Architecture

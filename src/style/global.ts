@@ -23,7 +23,17 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media print {
-      @page { margin: 0; }
+      @page {
+        margin: 0;
+      }
+
+      @page :first {
+        margin-top: 0;
+      }
+
+      @page {
+        margin-top: 4em;
+      }
       html {
         font-size: 11px;
       }
