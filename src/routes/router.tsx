@@ -12,7 +12,7 @@ import type { RootState } from '../redux/reducers';
 import { isLoggedInSelector, userSelector } from '../redux/selectors/auth';
 import {
   StyledAuth,
-  StyledLoginIcon,
+  // StyledLoginIcon,
   StyledLogoutIcon,
   StyledUserContainer,
   StyledUserEmail,
@@ -85,7 +85,7 @@ const Router = ({ isLoggedIn, user, logout }: ConnectedProps<typeof connector>):
               </StyledAuth>
             </StyledUserContainer>
           )}
-          {!isLoggedIn && (
+          {/* {!isLoggedIn && (
             <StyledAuth
             // onClick={(): void => {
             //   history.push(loginPath);
@@ -93,7 +93,7 @@ const Router = ({ isLoggedIn, user, logout }: ConnectedProps<typeof connector>):
             >
               <StyledLoginIcon />
             </StyledAuth>
-          )}
+          )} */}
         </StyledHeaderContent>
       </StyledHeader>
       <Routes>

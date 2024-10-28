@@ -1,6 +1,6 @@
 import About from '../components/About';
 import Admin from '../components/Admin';
-import Contact from '../components/Contact';
+// import Contact from '../components/Contact';
 import Login from '../components/Login';
 import NotFound from '../components/NotFound';
 import Playground from '../components/Playground';
@@ -29,13 +29,13 @@ export const routeDefinitions = [
     requiresAuth: false,
     Component: Projects,
   },
-  {
-    key: 'contact',
-    title: i18n.t('navigation.contact.title'),
-    path: '/contact',
-    requiresAuth: false,
-    Component: Contact,
-  },
+  // {
+  //   key: 'contact',
+  //   title: i18n.t('navigation.contact.title'),
+  //   path: '/contact',
+  //   requiresAuth: false,
+  //   Component: Contact,
+  // },
   {
     key: 'playground',
     title: i18n.t('navigation.playground.title'),

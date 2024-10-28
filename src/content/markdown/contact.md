@@ -2,9 +2,9 @@
 
 You can find me here:
 
-* [![icon](FaGithub) GitHub](https://github.com/robonaut/)
-* [![icon](FaGitlab) GitLab](https://gitlab.com/robonaut/)
-* [![icon](FaLinkedin) LinkedIn](https://www.linkedin.com/in/iljastrobbe/)
+* <a href="https://github.com/robonaut">![icon](FaGithub) Github</a>
+* <a href="https://gitlab.com/robonaut">![icon](FaGitlab) Gitlab</a>
+* <a href="https://www.linkedin.com/in/iljastrobbe/">![icon](FaLinkedin) LinkedIn</a>
 
 <br />
 
